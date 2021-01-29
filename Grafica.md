@@ -1,8 +1,8 @@
 # Descrizione grafica dell'applicazione
 
-##Indice:
+## INDICE:
 - [PAGINA LOGIN](#Pagina-di-login)
-- [Home page](#Home-page)
+- [HOME PAGE](#Home-page)
 - [Pagina](#
 - 
 
