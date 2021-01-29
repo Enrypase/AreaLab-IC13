@@ -15,19 +15,16 @@ corretta, sicura e semplice di tutto il necessario.<br>
 :point_right:[File d'installazione](https://github.com/Enrypase/AreaLab/blob/main/Installazione.md)
 <br>
 <br>
-Il prodotto è garantito dagli sviluppatori nella sua versione portable. L'esecuzione dell'applicazione
-avverrà inserendo una semplice chiavetta USB (o supporto esterno) all'interno di un computer connesso
-in rete.<br>
-Al momento dell'esecuzione dell'applicazione verrà creato in automatico nel supporto esterno un backup 
-totale del database, che verrà, quindi, sovrascritto ad ogni esecuzione all'interno della chiavetta
-USB e, simultaneamente, verrà creato o sovrascritto un file CSV con tutti i dati aggiornati direttamente
-da database e che potrà essere utilizzato per inserire temporaneamente i dati.<br>
+Al momento dell'esecuzione dell'applicazione verrà richiesto il [LOGIN](#LOGIN) tramite username e password.<br>
+Una volta eseguito l'accesso, l'utente [GESTORE](#GESTORE) visualizzerà una pagina dove saranno evidenziati i messaggi prioritari e due bottoni
+che permetteranno di svolgere l'aggiornamento dei dati tramite due procedimenti diversi:
+* tramite [FOGLIO CSV](#FOGLIO-CVS) e relativo backup periodico nel database 
+* tramite l'[APPLICAZIONE](#APPLICAZIONE) diretta. 
 
 ## LOGIN<br>
 Il login, neccesario, consente l'accesso all'interno dell'applicazione.<br>
 Utente e password per l'accesso sono memorizzate in una tabella apposita chiave-valore, modificabile solamente 
-da root.
-[GESTORE](#GESTORE)<br>
+da root.<br>
 Una volta svolto l'accesso saranno visibili dei messaggi che evidenzieranno le 
 informazioni prioritare come:<br>
 * "Il lavoratore X deve svolgere il corso Z entro il dd-mm-YYYY"
@@ -35,8 +32,15 @@ informazioni prioritare come:<br>
 * ecc...
 
 ## GESTORE<br>
-:warning: Il gestore è colui che accede e accede, aggiorna o revisiona la situazione dei corsi di sicurezza,
+:warning: Il gestore è colui che accede, aggiorna o revisiona la situazione dei corsi di sicurezza,
 primo soccorso, anticendio, ecc. svolti o meno dai lavoratori.<br>
+Il gestore può modificare, eliminare, aggiungere i record direttamente tramite applicazione o tramite
+foglio CSV.
+:clipboard: Il gestore sarà in grado di inserire i dati in modo semplice. 
 
-:clipboard: Il gestore sarà in grado di inserire i dati semplicemente. Il gestore potrà scegliere un comando alla volta
-tra tutti quelli presenti in base al comando scelto visualizzerà una schermata relativa. 
+## FOGLIO CSV<br>
+Se l'aggiornamento dei dati viene svolto tramite foglio CSV sarà allora neccessario aggiornare periodicamente il database.
+L'operazione di aggiornamento del database potrà essere 
+
+## APPLICAZIONE<br>
+
