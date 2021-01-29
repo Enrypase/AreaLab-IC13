@@ -1,16 +1,17 @@
 ## Descrizione grafica dell'applicazione
 
 Indice:
-- Pagina Login
-- Pagine Iniziale
-- Pagina 
+- [Pagina Login](#Pagina-di-login)
+- [Home page](#Home-page)
+- [Pagina](#
+- 
 
 ## Home Page
-- Menù Impostazioni
-- Menù About us
-- Backup button
-- Action button
-- Alert button
+- [Menù Impostazioni](#Menù-Impostazioni)
+- [Menù About us](#Menù-About-us)
+- [Backup button](#CSV-buttuno)
+- [Action button](#Action-Button)
+- [Alert button](#Lista-professori-e-corsi-di-sicurezza)
 
 ## Menu Impostazioni
 - Menù directory di esportazione
@@ -30,3 +31,6 @@ Questo bottone apre una finestra dove saranno disponibili:
 - Add button
 - Remove button
 - Modify button
+
+## Lista professori e corsi di sicurezza
+- 
