@@ -21,18 +21,18 @@ Indice:
 - Chi siamo
 - Come usare l'applicazione
 
-### CSV button
+#### CSV button
 Questo bottone apre una nuova finestra dove saranno disponibili:
 - Esporta button
 - Importa button
 
-### Action button
+#### Action button
 Questo bottone apre una finestra dove saranno disponibili:
 - Add button
 - Remove button
 - Modify button
 
-### Lista professori e corsi di sicurezza
+#### Lista professori e corsi di sicurezza
 - Corsi
 - Utenti
 - Scadenza( data)
