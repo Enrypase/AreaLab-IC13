@@ -13,7 +13,7 @@ Indice:
 - [Action button](#Action-Button)
 - [Alert button](#Lista-professori-e-corsi-di-sicurezza)
 
-## Menu Impostazioni
+## Menù Impostazioni
 - Menù directory di esportazione
 - Carattere di default del CSV
 
