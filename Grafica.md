@@ -3,11 +3,12 @@
 Indice:
 - Pagine Iniziale
 
-## Pagine iniziale
-- Menu File
+## Home Page
 - Menu Impostazioni
-- Menu Informazioni
-- Menu attenzione
+- Menu About us
+- Backup button
+- Action button
+- Alert button
 
-## Menu File
-COn il menu file
+## Menu Impostazioni
+- 
