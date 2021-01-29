@@ -6,18 +6,18 @@ Indice:
 - [Pagina](#
 - 
 
-### Home Page
+#### Home Page
 - [Menù Impostazioni](#Menù-Impostazioni)
 - [Menù About us](#Menù-About-us)
 - [Backup button](#CSV-buttuno)
 - [Action button](#Action-Button)
 - [Alert button](#Lista-professori-e-corsi-di-sicurezza)
 
-### Menù Impostazioni
+#### Menù Impostazioni
 - Menù directory di esportazione
 - Carattere di default del CSV
 
-### Menù About us 
+#### Menù About us 
 - Chi siamo
 - Come usare l'applicazione
 
