@@ -25,11 +25,13 @@ da database e che potrà essere utilizzato per inserire temporaneamente i dati.<
 
 ## LOGIN<br>
 Il login, neccesario, consente l'accesso all'interno dell'applicazione.<br>
+Utente e password per l'accesso sono memorizzate in una tabella apposita chiave-valore, modificabile solamente 
+da root.
 [GESTORE](#GESTORE)<br>
 Una volta svolto l'accesso saranno visibili dei messaggi che evidenzieranno le 
 informazioni prioritare come:<br>
 * "Il lavoratore X deve svolgere il corso Z entro il dd-mm-YYYY"
-* "Il tempo do aggironamento per il corso Z del lavoratore X è scaduto"
+* "Il tempo di aggiornamento per il corso Z del lavoratore X è scaduto"
 * ecc...
 
 ## GESTORE<br>
