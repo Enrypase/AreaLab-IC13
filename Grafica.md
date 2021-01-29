@@ -3,10 +3,9 @@
 ## INDICE:
 - [PAGINA LOGIN](#Pagina-di-login)
 - [HOME PAGE](#Home-page)
-- [Pagina](#
-- 
+- [Pagina](#)
 
-#### Home Page
+### Home Page
 - [Menù Impostazioni](#Menù-Impostazioni)
 - [Menù About us](#Menù-About-us)
 - [Backup button](#CSV-buttuno)
