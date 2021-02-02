@@ -21,18 +21,18 @@ L'home page e strutturata cosi,
 :mag:
 
 
-()[# **impostazioni**]<br>
-()[# **About-us**]<br>
-()[# **CSV**]<br>
-()[# **action**]<br>
+(Impostazioni)[#**impostazioni**]<br>
+(About us)[#**About-us**]<br>
+(CSV)[#**CSV**]<br>
+(Action)[#**action**]<br>
 
-# **impostazioni**
-# **About us**
+## **impostazioni**
+## **About us**
   Chi siamo<br>
-# **CSV**
+## **CSV**
   esporta<br>
   importa<br>
-# **action**
+## **action**
 
 
 * visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che devono a breve rinnovare la presenza a corsi
