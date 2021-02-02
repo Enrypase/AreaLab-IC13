@@ -16,7 +16,24 @@ Il fruitore che interagisce è un dirigente scolastico, ed ha la visibilità com
 il dirigente scolastico potra cosi visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
 
 ***FUNZIONALITA'*** 
+All'avvio dell'applicazione sara visibili la pagina login, dove bisogna eseguire l'operazioe di login, l'utente dovra inserire 'user name' e 'password', se questi risulteranno essere corretti, e non si verifichera nessun messaggio di errore allora si avra accesso alla Home page.
+L'home page e strutturata cosi, 
 :mag:
+
+
+()[# **impostazioni**]<br>
+()[# **About-us**]<br>
+()[# **CSV**]<br>
+()[# **action**]<br>
+
+# **impostazioni**
+# **About us**
+  Chi siamo<br>
+# **CSV**
+  esporta<br>
+  importa<br>
+# **action**
+
 
 * visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che devono a breve rinnovare la presenza a corsi
 * corsi correlati allo stato del personale 
