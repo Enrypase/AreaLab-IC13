@@ -21,10 +21,10 @@ L'home page e strutturata cosi,
 :mag:
 
 
-(Impostazioni)[#**impostazioni**]<br>
-(About us)[#**About-us**]<br>
-(CSV)[#**CSV**]<br>
-(Action)[#**action**]<br>
+[Impostazioni](#**impostazioni**)<br>
+[About us](#**About-us**)<br>
+[CSV](#**CSV**)<br>
+[Action](#**action**)<br>
 
 ## **impostazioni**
 ## **About us**
