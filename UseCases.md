@@ -1,5 +1,5 @@
 
-**Use Case**<br>
+**CASI D'USO**<br>
 In questo documento seguira la descrizione relativa ai possibili usi da parte di un utente dell'applicazione (Nome).
 L'applicazione si occupa della gestione di tutti gli eventi riguardanti la formazione di docenti di varie scuole.
 L'applicazione è di tipo User-friendly, quindi si presenta all'utente con una [grafica](Grafica.md), che permette l'interazione in modo semplice e dinamico, adatta appunto alle esigenze del consumatore.
@@ -19,14 +19,23 @@ in base ai vari pulsanti si eseguiranno azioni deiverse,
 
 
 
+:small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br>
+:small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**) :calendar:<br>
+:small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br>
+## **CONSULTAZIONE**
+## **AGGIORNAMENTO-ANAGRAFICO**
+## **AGGIORNAMENTO-CORSI**
+
+
+
 :small_orange_diamond:[Impostazioni](#**impostazioni**):gear:<br>
 :small_orange_diamond:[About us](#**About-us**) :question:<br>
 :small_orange_diamond:[CSV](#**CSV**) :page_facing_up:<br>
-:small_orange_diamond:[Action](#**action**) :clapper:<br>
+:small_orange_diamond:[Action](#**action**) <br>
 
 ## **Impostazioni** :gear:
 ## **About us**
-  Chi siamo<br>
+  Chi siamo? Perchè esistiamo? <br>
 ## **CSV**
   esporta<br>
   importa<br>
@@ -43,5 +52,5 @@ in base ai vari pulsanti si eseguiranno azioni deiverse,
 * background
 * importare le informazioni personale
 
-garantisce la sorveglianza per quanto riguarda gli insegnanti ed i da essi corsi svolti (formazione base/specifica)
+garantisce la sorveglianza per quanto riguarda gli insegnanti ed  i corsi da essi svolti (formazione base/specifica)
 
