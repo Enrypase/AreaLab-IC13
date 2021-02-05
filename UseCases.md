@@ -6,31 +6,39 @@ L'applicazione è di tipo User-friendly, quindi si presenta all'utente con una [
 
 
 ***UTENTE***:bust_in_silhouette: :closed_lock_with_key:<br>
-L'utente tramite login si identifica e accede all'applicazione, in caso di login errato, l'accesso non sara consentito ed apparira un messaggio di errore.
+L'utente tramite login si identifica e accede all'applicazione, in caso di login errato, l'accesso non sara consentito ed apparira un messaggio di errore, questa oerazion risulta essere necessaria in quanto i dati trattati sono personali e per politiche di privcy non possono essere diffusi.
 `Login errato, riprova`
 
 Il fruitore che interagisce è un dirigente scolastico, ed ha la visibilità completa dei dati relativa alla propri scuola.
 il dirigente scolastico potra cosi visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
 
 ***FUNZIONALITA'*** :mag:<br>
-All'avvio dell'applicazione sara visibile la pagina di login, dove bisogna eseguire l'operazioe di login, l'utente dovra inserire 'user name' e 'password' nei riquadri appositi, se questi risulteranno essere corretti, e non si verifichera nessun messaggio di errore allora si avra accesso alla Home page.<br>
-L'home pagina è strutturata cosi, nell'hader della pagina son visibili diversi messagi che servono per visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che raggruppati per tipologia di corso, che devono a breve rinnovare la presenza.<br>
-Nel body della pagina sono presenti dei bottoni 'aggiorna corsi' 'consulta' 'aggiorna anagrafica'
-in basso alla pagina c'è un bottone centrale 'OTTIENI BACKUP'e presente uno dove 
+All'avvio dell'applicazione sara visibile la pagina di login, dove bisogna eseguire l'operazioe di login, l'utente dovra inserire `user name:       ` e `password:    ` nei riquadri appositi, se questi risulteranno essere corretti, e non si verifichera nessun messaggio di errore allora si avra accesso alla Home page.<br>
+L'home pagina è strutturata cosi, nell'hader della pagina son visibili diversi messagi prioritari che servono per visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che raggruppati per tipologia di corso, che devono a breve rinnovare la presenza.<br>
+Nel body della pagina sono presenti dei bottoni `aggiorna corsi` `consulta` `aggiorna anagrafica`.<br>
+in basso alla pagina c'è un bottone centrale `OTTIENI BACKUP`e presente uno dove .<br>
 
-Le diverse operazioni, che l'utente può svolgere durante l'utilizzo della applicazione sono principalmente:
+**Le diverse operazioni, che l'utente può svolgere durante l'utilizzo della applicazione sono principalmente:**<br>
 :small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br>
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**) :calendar:<br>
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br>
-## **CONSULTAZIONE**
-All'operazione di consultazione dei dati relativi ai corsi correlati allo stato del personale, viene eseguita   ,.
-
-## **AGGIORNAMENTO-ANAGRAFICO**
-Per aggiornare l'anagrafica all'utentenon bastera far altro che 
-## **AGGIORNAMENTO-CORSI**
+## **CONSULTAZIONE**:book:
+L'operazione di consultazione dei dati relativi ai corsi correlati allo stato del personale, viene eseguita   ,.
+`ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA` una tabella con i dati del personale e in funzione dei corsi.<br>
 
 
+## **AGGIORNAMENTO-ANAGRAFICO**:calendar:
+Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pulsante apposito `aggiorna anagrafica`, si aprirà una Landing page, dove sarnno present altri due pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i reltivi dati anagrafii del personale.<br>
+`AGGIUNGI PERSONA` inserimento di un docente,
 
+## **AGGIORNAMENTO-CORSI**:arrows_clockwise:
+`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi.<br>
+
+`AGGIUNGI PERSONA` 
+<br>
+
+
+----------------------------------------------------------------------------------
 :small_orange_diamond:[Impostazioni](#**impostazioni**):gear:<br>
 :small_orange_diamond:[About us](#**About-us**) :question:<br>
 :small_orange_diamond:[CSV](#**CSV**) :page_facing_up:<br>
