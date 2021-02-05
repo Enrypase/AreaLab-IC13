@@ -5,6 +5,20 @@
 - [HOME PAGE](#Home-page)
 - [Pagina](#)
 
+### Pagina di Login
+- [Username](#Username)
+- [Password](#Password)
+
+<hr>
+
+#### Username
+In questa casella di inserimento si inserisce il nome utente 
+#### Password
+In questa casella di inserimento si inserisce la password
+
+Effettuato il login si ìi ha accesso all'applicazione
+<hr>
+
 ### Home Page
 - [Menù Impostazioni](#Menù-Impostazioni)
 - [Menù About us](#Menù-About-us)
