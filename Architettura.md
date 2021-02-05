@@ -4,16 +4,14 @@
 
 ## :clipboard: Descrizione
 Per sviluppare questa applicazione, la quale descrizione è presente [qui](DescrizioneProgetto.md), sono presenti più possibilità. <br>
-Quella pensata dal nostro gruppo adotta due aspetti principali: un database, un programma java che si interfaccia con esso. <br>
-L'utilizzo di un server web è stato escluso, essendo che complicherebbe le cose a entrambe le parti, sia ai programmatori che a chi riceve il progetto.
+Quella pensata dal nostro gruppo adotta due aspetti principali: un database dove salvare tutti i dati, java a libello backend e css in frontend. <br>
+L'utilizzo del server web è stato pensato per poter accedere all'applicazione da più dispositivi senza necessariamente dover installare l'applicazione su ognuno di essi ma, solamente, sulla macchina che svolgerà la funzione del server.
 
 ## :gear: Features
 Nel progetto sono richieste le seguenti features:
 - Meccanismo di autenticazione: per eseguire l'accesso al programma;
 - Connessione a un database: Dal quale il programma seleziona o inserisce dei particolari dati;
-- Interfaccia grafica: Necessaria per interagire con il programma e contenente tutte le funzioni che esso può compiere;
-- Impostazioni: Il programma deve essere personalizzabile tramite delle impostazioni (salvate in DB / scritte su file) (Aggiungere 1/+ Corsi) (Modificare impostazioni corso);
-- Log: Questa funzionalità e strettamente necessaria per tenere traccia delle attività dell'utente, nonchè dei possibili crash a cui il programma potrebbe andare in contro;
+- Meccanismo di log: in modo tale da tenere traccia delle attività degli utenti;
 
 ## :busts_in_silhouette: Entità
 - Scuole: Ogni scuola è un'entità essendo che il programma e pensato per soddisfare le esigenze di più scuole; (personalizzabile nelle impostazioni?);
@@ -30,4 +28,5 @@ Nel progetto sono richieste le seguenti features:
 
 ## :pushpin: Nello specifico
 - Per quanto riguarda il database si prevede l'utilizzo di MySql, software reperibile gratuitamente.
-- Per quanto riguarda la programmazione, invece, il linguaggio di programmazione utilizzato sarà Java.
+- Per quanto riguarda il lato backend verranno utilizzate servlet, (JSP?).
+- Per il lato frontend, invece, html e css. (ReactJS?)
