@@ -20,18 +20,23 @@ Effettuato il login si ìi ha accesso all'applicazione
 <hr>
 
 ### Home Page
-- [Menù Impostazioni](#Menù-Impostazioni)
-- [Menù About us](#Menù-About-us)
-- [Backup button](#CSV-buttuno)
-- [Action button](#Action-Button)
-- [Alert button](#Lista-professori-e-corsi-di-sicurezza)
+- [Priority Box](#Priority-Box)
+- [Aggiornamento Corsi Button](#Aggiornamento Corsi)
+- [Consulta button](#Consulta)
+- [Aggiornamento Anagrafica Button](#Aggiornamento Anagrafica)
+- [Backup button](#Ottieni-Backup)
 
-#### Menù Impostazioni
-- Menù directory di esportazione
-- Carattere di default del CSV
+#### Priority Box
 
-#### Menù About us 
-- Chi siamo
+- [Aggiungi corso Button](#Aggiungi-corso)
+- [Rimuovi corso Button](#Rimuovi-corso)
+- [Modifica corso Button](#Modifica-corso)
+- [Ricerca corso Button](#Ricerca-corso)
+- [Corsi Tabella ](#Tabella Corsi)
+
+
+#### Aggiungi corso Button
+- 
 - Come usare l'applicazione
 
 #### CSV button
