@@ -19,11 +19,11 @@ corretta, sicura e semplice di tutto il necessario.<br>
 Al momento dell'esecuzione dell'applicazione verrà richiesto il [LOGIN](#LOGIN) tramite username e password.<br>
 Una volta eseguito l'accesso, l'utente [GESTORE](#GESTORE) visualizzerà una pagina [HOME PAGE](#HOME-PAGE).<br>
 Dalla Home Page si visualizzeranno delle frasi prioritarie e o urgenti. Dalla Home Page, inoltre, si potranno scegliere
-i quattro comandi principali per la gestione del sistema: 
+i quattro comandi principali per la gestione del sistema:<br>
 [AGGIORNAMENTO CORSI](#AGGIORNAMENTO-CORSI) <br>
 [AGGIORNAMENTO ANAGRAFICA](#AGGIORNAMENTO-ANAGRAFICA) <br>
 [CONSULTAZIONE](#CONSULTAZIONE) <br>
-[Ottieni backup](#Ottieni-backup) <br>
+[OTTIENI BACKUP](#Ottieni-backup) <br>
 
 <hr>
 
