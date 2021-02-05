@@ -17,7 +17,7 @@ corretta, sicura e semplice di tutto il necessario.<br>
 <br>
 <br>
 Al momento dell'esecuzione dell'applicazione verrà richiesto il [LOGIN](#LOGIN) tramite username e password.<br>
-Una volta eseguito l'accesso, l'utente [GESTORE](#GESTORE) visualizzerà una pagina [HOME PAGE](#HOME-PAGE).<br>
+Una volta eseguito l'accesso, l'utente [GESTORE](#GESTORE) visualizzerà una pagina HOME PAGE.<br>
 Dalla Home Page si visualizzeranno delle frasi prioritarie e o urgenti. Dalla Home Page, inoltre, si potranno scegliere
 i quattro comandi principali per la gestione del sistema:<br>
 [AGGIORNAMENTO CORSI](#AGGIORNAMENTO-CORSI) <br>
@@ -39,6 +39,11 @@ da root.
 primo soccorso, anticendio, ecc. svolti o meno dai lavoratori.<br>
 Il gestore può modificare, eliminare, aggiungere i record direttamente tramite applicazione.
 :clipboard: Il gestore sarà in grado di inserire i dati in modo semplice.
+Il gestore potrà:<br>
+* AGGIORNARE I CORSI;<br>
+* AGGIORNARE L'ANAGRAFICA;<br>
+* CONSULTARE LE INFORMAZIONI;<br>
+* OTTENERE UN FILE DI BACKUP.<br>
 
 <hr>
 
