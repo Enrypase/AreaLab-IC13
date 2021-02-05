@@ -42,7 +42,7 @@ Il gestore può modificare, eliminare, aggiungere i record direttamente tramite 
 
 <hr>
 
-## AGGIORNAMENTO CORSI <br>
+## AGGIORNAMENTO CORSI<br>
 Cliccando sul relativo bottone si aprirà un'ulteriore pagina nella quale saranno visualizzati i diversi corsi.
 Cliccando sul relativo corso si visualizzeranno tutti i lavoratori presenti nel sistema; i partecipanti saranno 
 evidenziati opportunamente.
@@ -50,20 +50,20 @@ Sarà possibile modificare la partecipazione dei lavoratori, le ore di presenza 
 
 <hr>
 
-## AGGIORNAMENTO ANAGRAFICA <br>
+## AGGIORNAMENTO ANAGRAFICA<br>
 Cliccando sul relativo bottone si aprirà un'ulteriore pagina nella quale saranno visualizzati i dati anagrafici
 dei lavoratori: nome, cognome, codice fiscale. Sarà possibile modificare opportunamente i dati anagrafici dei lavoratori,
 aggiungendone quando necessario.
 
 <hr>
 
-## CONSULTAZIONE <br>
+## CONSULTAZIONE<br>
 Cliccando sul relativo bottone si aprirà un'ulteriore pagina nella quale sarà possibile ordinare una tabella per 
 persona, per corso o per ricerca selettiva tramite l'inserimento di una o più parole chiave.
 
 <hr>
 
-## OTTIENI BACKUP <br>
+## OTTIENI BACKUP<br>
 Cliccando sul relativo bottone si otterrà un file di backup del database .sql.
 
 <hr>
