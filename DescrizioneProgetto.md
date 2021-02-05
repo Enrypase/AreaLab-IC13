@@ -23,7 +23,7 @@ i quattro comandi principali per la gestione del sistema:<br>
 [AGGIORNAMENTO CORSI](#AGGIORNAMENTO-CORSI) <br>
 [AGGIORNAMENTO ANAGRAFICA](#AGGIORNAMENTO-ANAGRAFICA) <br>
 [CONSULTAZIONE](#CONSULTAZIONE) <br>
-[OTTIENI BACKUP](#Ottieni-backup) <br>
+[OTTIENI BACKUP](#OTTIENI-BACKUP) <br>
 
 <hr>
 
