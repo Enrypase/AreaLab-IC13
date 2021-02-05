@@ -22,19 +22,24 @@ in basso alla pagina c'è un bottone centrale `OTTIENI BACKUP`e presente uno dov
 :small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br>
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**) :calendar:<br>
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br>
+
 ## **CONSULTAZIONE**:book:
+la consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore del sito.
 L'operazione di consultazione dei dati relativi ai corsi correlati allo stato del personale, viene eseguita   ,.
 `ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA` una tabella con i dati del personale e in funzione dei corsi.<br>
 
 
-## **AGGIORNAMENTO-ANAGRAFICO**:calendar:
+## **AGGIORNAMENTO ANAGRAFICA**:calendar:
 Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pulsante apposito `aggiorna anagrafica`, si aprirà una Landing page, dove sarnno present altri due pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i reltivi dati anagrafii del personale.<br>
 `AGGIUNGI PERSONA` inserimento di un docente,
+`MODIFICA PERSONA` modifica dello stato della persona, ovvero in caso 
 
-## **AGGIORNAMENTO-CORSI**:arrows_clockwise:
-`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi.<br>
+## **AGGIORNAMENTO CORSI**:arrows_clockwise:
+`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
 
-`AGGIUNGI PERSONA` 
+`AGGIUNGI CORSO` 
+`disabilita CORSO`
+`MODIFICA CORSO`
 <br>
 
 
