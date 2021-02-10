@@ -1,10 +1,10 @@
 # STRUTTURA DEL DATABASE
 
 La struttura del database prevederà 4 tabelle:
-* PERSONALE [#PERSONALE]
-* CORSI [#CORSI]
-* FREQUENTAZIONI [#FREQUENTAZIONI]
-* UTENTI [#UTENTI]
+* [PERSONALE](#PERSONALE)
+* [CORSI](#CORSI)
+* [FREQUENTAZIONI](#FREQUENTAZIONI)
+* [UTENTI](#UTENTI)
 
 ![ ](https://github.com/Enrypase/AreaLab/blob/main/Immagini/Database/db.JPG)
 
