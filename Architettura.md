@@ -15,6 +15,9 @@ Nel progetto sono richieste le seguenti features:
 ## :book: Database
 Per consultare l'architettura del database [clicca qui](Database.md).
 
+## :computer: Database
+Per consultare l'architettura del web-server [clicca qui](WebServer.md).
+
 ## :pushpin: Nello specifico
 - Per quanto riguarda il database si prevede l'utilizzo di MySql, software open source.
 - Per quanto riguarda il lato backend verranno utilizzate le servlet.
