@@ -30,8 +30,6 @@ Effettuato il login si ìi ha accesso all'applicazione
   - il professore x deve svolgere il corso y,z 
   - il professore a deve rinnovare il corso b
 
----
-
 #### Aggiornamento corsi
 
 - [Aggiungi corso Button](#Aggiungi-corso)
@@ -51,9 +49,6 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 ##### Visualizza corsi
 - Questo bottone permette di visualizzare tutti i corsi attivi.
-<hr>
-
----
 
 #### Consulta
 
@@ -70,7 +65,6 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 ##### Ricerca
 - Questo bottone permette di cercare un informazione all'interno della tabella (previa scelta della tabella tramite i bottoni precedenti)
-<hr>
 
 #### Aggiornamento anagrafica
 
@@ -87,4 +81,4 @@ Effettuato il login si ìi ha accesso all'applicazione
 #### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
-<hr>
+***
