@@ -3,7 +3,6 @@
 ## INDICE:
 - [PAGINA LOGIN](#Pagina-di-login)
 - [HOME PAGE](#Home-page)
-- [Pagina](#)
 
 ### Pagina di Login
 - [Username](#Username)
@@ -27,9 +26,10 @@ Effettuato il login si ìi ha accesso all'applicazione
 - [Backup button](#Ottieni-backup)
 
 #### Priority Box
-- Questa box contiene delle informazioni urgenti  quali per esempio : - il professore x deve svolgere il corso y,z 
-                                                                      - il professore a deve rinnovare il corso b 
-
+- Questa box contiene delle informazioni urgenti  quali per esempio:
+  - il professore x deve svolgere il corso y,z 
+  - il professore a deve rinnovare il corso b;
+<hr>
 #### Aggiornamento corsi
 
 - [Aggiungi corso Button](#Aggiungi-corso)
@@ -38,36 +38,48 @@ Effettuato il login si ìi ha accesso all'applicazione
 - [VIsualizza Corsi](#Visualizza corsi)
 
 
-#### Aggiungi corso
+##### Aggiungi corso
 - Questo bottone permette di aggiungere un corso all'elenco corsi e quindi alla tabella corsi nel database.
 
-#### Modifica corso
+##### Modifica corso
 - Questo bottone permette di modificare le informazioni di un corso, disattivare e attivare un corso. Avviene la modifica nel database.
 
-#### Ricerca corso (?)
-- Questo bottone permette di cercare in particolare un corso e di visualizzare i relativi professori partecipanti al corso o che lo hanno completato.
+##### Ricerca corso
+- Questo bottone permette di cercare in particolare un corso e le relative informazioni.
 
-#### Visualizza corsi
+##### Visualizza corsi
 - Questo bottone permette di visualizzare tutti i corsi attivi.
+<hr>
+#### Consulta
 
-<br<
+- [Ordina per personale Button](#Ordine per personale)
+- [Ordina per corso Button](#Ordine per corso)
+- [Ricerca](#Ricerca)
 
-#### CSV button
-Questo bottone apre una nuova finestra dove saranno disponibili:
-- Esporta button
-- Importa button
 
-#### Action button
-Questo bottone apre una finestra dove saranno disponibili:
-- Add button
-- Remove button
-- Modify button
+##### Ordine per persona
+- Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa al personale.
 
-#### Lista professori e corsi di sicurezza
+##### Ordine per corso
+- Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa ai corsi.
 
-- Corsi
-- Utenti
-- Scadenza( data)
-- Cerca Professore
+##### Ricerca
+- Questo bottone permette di cercare un informazione all'interno della tabella (previa scelta della tabella tramite i bottoni precedenti)
+<hr>
+
+#### Aggiornamento anagrafica
+
+- [Aggiungi-personale-Button](#Aggiungi-personale)  
+- [Modifica-personale-Button](#Modifica-personale)
+
+##### Aggiungi personale 
+- Questo bottone permette di aggiungere un utente del personale all'elenco del personale e quindi alla tabella personale nel database.
+
+##### Modifica personale
+- Questo bottone permette di modificare le informazioni di un utente del personale, di disattivarlo:ovvero che non è piu presente all'interno del plesso scolastico, oppure di riattivarlo nel caso in cui ritornasse in quella scuola.
+<hr>
+
+#### Backup Button
+- Questo bottone permette di scaricare un file sql per il backup del database
 
 <hr>
