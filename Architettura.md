@@ -1,11 +1,10 @@
 # Architettura
 
-<!-- (immagine architettura) -->
-
 ## :clipboard: Descrizione
 Per sviluppare questa applicazione, la quale descrizione è presente [qui](DescrizioneProgetto.md), sono presenti più possibilità. <br>
-Quella pensata dal nostro gruppo adotta due aspetti principali: un database dove salvare tutti i dati, java a libello backend e css in frontend. <br>
-L'utilizzo del server web è stato pensato per poter accedere all'applicazione da più dispositivi senza necessariamente dover installare l'applicazione su ognuno di essi ma, solamente, sulla macchina che svolgerà la funzione del server.
+Quella pensata dal nostro gruppo adotta due aspetti principali: un database dove salvare tutti i dati, e un web server ospitante il sito.
+I linguaggi di programmazione utilizzati sono java a livello back-end e css per il front-end. <br>
+L'utilizzo del server web è stato pensato per poter accedere all'applicazione da più dispositivi contemporaneamente senza necessariamente dover installare l'applicazione su ognuno di essi ma, solamente, sulla macchina che svolgerà la funzione del server.
 
 ## :gear: Features
 Nel progetto sono richieste le seguenti features:
