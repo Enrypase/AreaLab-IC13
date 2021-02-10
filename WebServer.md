@@ -24,8 +24,13 @@ Il Web-Server ospiterà le seguenti pagine web:
   * Questa pagina è formata da una colonna: ognuna delle quali contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa a tutti i corsi di formazione effettuati dalle singole persone;
 
 ## :mag: Immagini delle pagine
+FAC Simile alla schermata di Login: <br>
 ![Login](/Immagini/Sito/Login.PNG) <br>
-![PaginaIniziale](/Immagini/Sito/PaginaIniziale.png) <br>
-![AggiornaCorsi](/Immagini/Sito/AggiornaCorsi.png) <br>
-![AggiornaAnagrafica](/Immagini/Sito/AggiornaAnagrafica.png) <br>
-![Consulta](/Immagini/Sito/Consulta.png) <br>
+FAC Simile alla schermata iniziale: <br>
+![PaginaIniziale](/Immagini/Sito/PaginaIniziale.PNG) <br>
+FAC Simile alla schermata relativa ai corsi: <br>
+![AggiornaCorsi](/Immagini/Sito/AggiornaCorsi.PNG) <br>
+FAC Simile alla schermata relativa al personale: <br>
+![AggiornaAnagrafica](/Immagini/Sito/AggiornaAnagrafica.PNG) <br>
+FAC Simile alla schermata iniziale: <br>
+![Consulta](/Immagini/Sito/Consulta.PNG) <br>
