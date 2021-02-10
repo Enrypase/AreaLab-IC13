@@ -6,4 +6,4 @@ La struttura del database prevederà 4 tabelle:
 * FREQUENTAZIONI; <br>
 * UTENTI. <br!
 
-[a](/Immagini/Installazione/db.jpg)
+(https://github.com/Enrypase/AreaLab/blob/main/Immagini/Database/db.JPG)
