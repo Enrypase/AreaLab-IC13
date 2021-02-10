@@ -25,7 +25,7 @@ in basso alla pagina c'è un bottone centrale `OTTIENI BACKUP`e presente uno dov
 
 ## **CONSULTAZIONE**:book:
 la consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore del sito.
-L'operazione di consultazione dei dati relativi ai corsi correlati allo stato del personale, viene eseguita   ,.
+L'operazione di consultazione dei dati relativi ai corsi correlati allo stato del personale, viene eseguita in modo più approfondito   ,.
 `ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA` una tabella con i dati del personale e in funzione dei corsi.<br>
 
 
