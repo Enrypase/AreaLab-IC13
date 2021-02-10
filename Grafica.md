@@ -3,12 +3,14 @@
 # Indice:
 - [PAGINA LOGIN](#Pagina-di-login)
 - [HOME PAGE](#Home-page)
+
 <hr>
 
 ## Pagina di Login
 - [Username](#Username)
 - [Password](#Password)
 
+![a](/Immagini/Sito/PaginaInziale.PNG)
 
 ### Username
 In questa casella di inserimento si inserisce il nome utente 
@@ -19,11 +21,14 @@ Effettuato il login si ìi ha accesso all'applicazione
 <hr>
 
 ## Home Page
+
 - [Priority Box](#Priority-Box)
 - [Aggiornamento Corsi Button](#Aggiornamento-corsi)
 - [Consulta button](#Consulta)
 - [Aggiornamento Anagrafica Button](#Aggiornamento-anagrafica)
 - [Backup button](#Ottieni-backup)
+
+![a](/Immagini/Sito/Login.PNG)
 
 ### Priority Box
 - Questa box contiene delle informazioni urgenti  quali per esempio:
