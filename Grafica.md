@@ -71,8 +71,8 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 #### Aggiornamento anagrafica
 
-- [Aggiungi-personale-Button](#Aggiungi-personale)  
-- [Modifica-personale-Button](#Modifica-personale)
+- [Aggiungi personale Button](#Aggiungi-personale)  
+- [Modifica personale Button](#Modifica-personale)
 
 ##### Aggiungi personale 
 - Questo bottone permette di aggiungere un utente del personale all'elenco del personale e quindi alla tabella personale nel database.
