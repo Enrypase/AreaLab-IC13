@@ -15,7 +15,7 @@ Nel progetto sono richieste le seguenti features:
 ## :book: Database
 Per consultare l'architettura del database [clicca qui](Database.md).
 
-## :computer: Database
+## :computer: Web-Server
 Per consultare l'architettura del web-server [clicca qui](WebServer.md).
 
 ## :pushpin: Nello specifico
