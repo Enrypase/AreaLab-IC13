@@ -1,36 +1,36 @@
 # Descrizione grafica dell'applicazione
 
-## INDICE:
+#INDICE:
 - [PAGINA LOGIN](#Pagina-di-login)
 - [HOME PAGE](#Home-page)
 <hr>
 
-### Pagina di Login
+## Pagina di Login
 - [Username](#Username)
 - [Password](#Password)
 
 
-#### Username
+### Username
 In questa casella di inserimento si inserisce il nome utente 
-#### Password
+### Password
 In questa casella di inserimento si inserisce la password
 
 Effettuato il login si ìi ha accesso all'applicazione
 <hr>
 
-### Home Page
+## Home Page
 - [Priority Box](#Priority-Box)
 - [Aggiornamento Corsi Button](#Aggiornamento-corsi)
 - [Consulta button](#Consulta)
 - [Aggiornamento Anagrafica Button](#Aggiornamento-anagrafica)
 - [Backup button](#Ottieni-backup)
 
-#### Priority Box
+### Priority Box
 - Questa box contiene delle informazioni urgenti  quali per esempio:
   - il professore x deve svolgere il corso y,z 
   - il professore a deve rinnovare il corso b
 
-#### Aggiornamento corsi
+### Aggiornamento corsi
 
 - [Aggiungi corso Button](#Aggiungi-corso)
 - [Modifica corso Button](#Modifica-corso)
@@ -50,7 +50,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 ##### Visualizza corsi
 - Questo bottone permette di visualizzare tutti i corsi attivi.
 
-#### Consulta
+### Consulta
 
 - [Ordina per personale Button](#Ordine-per-personale)
 - [Ordina per corso Button](#Ordine-per-corso)
@@ -66,7 +66,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 ##### Ricerca
 - Questo bottone permette di cercare un informazione all'interno della tabella (previa scelta della tabella tramite i bottoni precedenti)
 
-#### Aggiornamento anagrafica
+### Aggiornamento anagrafica
 
 - [Aggiungi personale Button](#Aggiungi-personale)  
 - [Modifica personale Button](#Modifica-personale)
@@ -78,6 +78,6 @@ Effettuato il login si ìi ha accesso all'applicazione
 - Questo bottone permette di modificare le informazioni di un utente del personale, di disattivarlo:ovvero che non è piu presente all'interno del plesso scolastico, oppure di riattivarlo nel caso in cui ritornasse in quella scuola.
 <hr>
 
-#### Ottieni backup
+### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
