@@ -13,7 +13,7 @@ Nel progetto sono richieste le seguenti features:
 - Meccanismo di log: in modo tale da tenere traccia delle attività effettuate dagli utenti;
 
 ## :book: Database
-Per consultare il database [clicca qui](...).
+Per consultare l'architettura del database [clicca qui](...).
 
 ## :pushpin: Nello specifico
 - Per quanto riguarda il database si prevede l'utilizzo di MySql, software open source.
