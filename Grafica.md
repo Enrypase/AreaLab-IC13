@@ -36,7 +36,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 - [Aggiungi corso Button](#Aggiungi-corso)
 - [Modifica corso Button](#Modifica-corso)
 - [Ricerca corso Button](#Ricerca-corso)
-- [VIsualizza Corsi](#Visualizza corsi)
+- [VIsualizza corsi](#Visualizza-corsi)
 
 
 ##### Aggiungi corso
@@ -54,12 +54,12 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 #### Consulta
 
-- [Ordina per personale Button](#Ordine per personale)
-- [Ordina per corso Button](#Ordine per corso)
+- [Ordina per personale Button](#Ordine-per-personale)
+- [Ordina per corso Button](#Ordine-per-corso)
 - [Ricerca](#Ricerca)
 
 
-##### Ordine per persona
+##### Ordine per personale
 - Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa al personale.
 
 ##### Ordine per corso
@@ -81,7 +81,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 - Questo bottone permette di modificare le informazioni di un utente del personale, di disattivarlo:ovvero che non è piu presente all'interno del plesso scolastico, oppure di riattivarlo nel caso in cui ritornasse in quella scuola.
 <hr>
 
-#### Backup Button
+#### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
 <hr>
