@@ -25,3 +25,7 @@ Il Web-Server ospiterà le seguenti pagine web:
 
 ## :mag: Immagini delle pagine
 ![Login](/Immagini/Sito/Login.png) <br>
+![PaginaIniziale](/Immagini/Sito/PaginaIniziale.png) <br>
+![AggiornaCorsi](/Immagini/Sito/AggiornaCorsi.png) <br>
+![AggiornaAnagrafica](/Immagini/Sito/AggiornaAnagrafica.png) <br>
+![Consulta](/Immagini/Sito/Consulta.png) <br>
