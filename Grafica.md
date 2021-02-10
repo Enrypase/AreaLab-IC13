@@ -81,4 +81,3 @@ Effettuato il login si ìi ha accesso all'applicazione
 #### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
-***
