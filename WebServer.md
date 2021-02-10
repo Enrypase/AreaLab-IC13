@@ -24,7 +24,7 @@ Il Web-Server ospiterà le seguenti pagine web:
   * Questa pagina è formata da una colonna: ognuna delle quali contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa a tutti i corsi di formazione effettuati dalle singole persone;
 
 ## :mag: Immagini delle pagine
-![Login](/Immagini/Sito/Login.png) <br>
+![Login](/Immagini/Sito/Login.PNG) <br>
 ![PaginaIniziale](/Immagini/Sito/PaginaIniziale.png) <br>
 ![AggiornaCorsi](/Immagini/Sito/AggiornaCorsi.png) <br>
 ![AggiornaAnagrafica](/Immagini/Sito/AggiornaAnagrafica.png) <br>
