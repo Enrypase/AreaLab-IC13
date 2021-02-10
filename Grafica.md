@@ -3,12 +3,12 @@
 ## INDICE:
 - [PAGINA LOGIN](#Pagina-di-login)
 - [HOME PAGE](#Home-page)
+<hr>
 
 ### Pagina di Login
 - [Username](#Username)
 - [Password](#Password)
 
-<hr>
 
 #### Username
 In questa casella di inserimento si inserisce il nome utente 
