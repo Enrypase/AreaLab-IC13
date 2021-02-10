@@ -8,24 +8,14 @@ L'utilizzo del server web è stato pensato per poter accedere all'applicazione d
 
 ## :gear: Features
 Nel progetto sono richieste le seguenti features:
-- Meccanismo di autenticazione: per eseguire l'accesso al programma;
-- Connessione a un database: Dal quale il programma seleziona o inserisce dei particolari dati;
-- Meccanismo di log: in modo tale da tenere traccia delle attività degli utenti;
+- Meccanismo di autenticazione: per eseguire l'accesso al sito;
+- Connessione a un database: Dal quale il programma seleziona o inserisce dei particolari dati relativi a corsi o personale;
+- Meccanismo di log: in modo tale da tenere traccia delle attività effettuate dagli utenti;
 
-## :busts_in_silhouette: Entità
-- Scuole: Ogni scuola è un'entità essendo che il programma e pensato per soddisfare le esigenze di più scuole; (personalizzabile nelle impostazioni?);
-- Plessi: Ogni scuola è composta da uno (ex. Marconi) o più plessi (ex: IT13);
-- Professori: Persona che lavora in un determinato plesso (molti a molti oppure uno a molti??);
-- Corso: Seguito da un professore (trovare tutte le variabili che potrebbe contenere!);
-
-## :book: Tabelle
-- Scuole: IDScuola, denominazioneScuola
-- Plessi: IDScuola, IDPlesso, denominazionePlesso, indirizzoPlesso
-- Lavori: IDScuola, IDProfessore
-- Professori: IDProfessore, nome, cognome, dataNascita
-- Corso: IDProfessore, tipologia, durata, dataCorso, note
+## :book: Database
+Per consultare il database [clicca qui](...).
 
 ## :pushpin: Nello specifico
-- Per quanto riguarda il database si prevede l'utilizzo di MySql, software reperibile gratuitamente.
-- Per quanto riguarda il lato backend verranno utilizzate servlet, (JSP?).
-- Per il lato frontend, invece, html e css. (ReactJS?)
+- Per quanto riguarda il database si prevede l'utilizzo di MySql, software open source.
+- Per quanto riguarda il lato backend verranno utilizzate le servlet.
+- Per il lato frontend, invece, html, css e javaScript.
