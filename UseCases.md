@@ -38,26 +38,12 @@ Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pu
 `AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
 
 `AGGIUNGI CORSO` 
-`disabilita CORSO`
+`DISABILITA CORSO`
 `MODIFICA CORSO`
 <br>
 
 
 ----------------------------------------------------------------------------------
-:small_orange_diamond:[Impostazioni](#**impostazioni**):gear:<br>
-:small_orange_diamond:[About us](#**About-us**) :question:<br>
-:small_orange_diamond:[CSV](#**CSV**) :page_facing_up:<br>
-:small_orange_diamond:[Action](#**action**) <br>
-
-## **Impostazioni** :gear:
-## **About us**
-  Chi siamo? Perchè esistiamo? <br>
-## **CSV**
-  esporta<br>
-  importa<br>
-## **action**
-
-
 * visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che devono a breve rinnovare la presenza a corsi
 * corsi correlati allo stato del personale 
 * inserimento di un docente
