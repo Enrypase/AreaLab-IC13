@@ -10,7 +10,7 @@
 - [Username](#Username)
 - [Password](#Password)
 
-![a](/Immagini/Sito/PaginaInziale.PNG)
+![a](/Immagini/Sito/Login.PNG)
 
 ### Username
 In questa casella di inserimento si inserisce il nome utente 
@@ -28,7 +28,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 - [Aggiornamento Anagrafica Button](#Aggiornamento-anagrafica)
 - [Backup button](#Ottieni-backup)
 
-![a](/Immagini/Sito/Login.PNG)
+![a](/Immagini/Sito/PaginaIniziale.PNG)
 
 ### Priority Box
 - Questa box contiene delle informazioni urgenti  quali per esempio:
