@@ -22,7 +22,9 @@ corsi. Ogni lavoratore potrà essere collegato a più corsi.
 Questa tabella conterrà le informazioni di accesso o recupero degli utenti gestori
 del sistema.
 
+<br>
 <hr>
+<br>
 
 # PRIVILEGI UTENTI
 Gli utenti gestori del sistema disporranno **SOLAMENTE** dei seguenti privilegi:
