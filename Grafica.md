@@ -28,7 +28,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 #### Priority Box
 - Questa box contiene delle informazioni urgenti  quali per esempio:
   - il professore x deve svolgere il corso y,z 
-  - il professore a deve rinnovare il corso b;
+  - il professore a deve rinnovare il corso b
 <hr>
 
 #### Aggiornamento corsi
