@@ -30,6 +30,7 @@ Effettuato il login si ìi ha accesso all'applicazione
   - il professore x deve svolgere il corso y,z 
   - il professore a deve rinnovare il corso b;
 <hr>
+
 #### Aggiornamento corsi
 
 - [Aggiungi corso Button](#Aggiungi-corso)
@@ -50,6 +51,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 ##### Visualizza corsi
 - Questo bottone permette di visualizzare tutti i corsi attivi.
 <hr>
+
 #### Consulta
 
 - [Ordina per personale Button](#Ordine per personale)
