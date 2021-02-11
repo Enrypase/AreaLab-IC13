@@ -15,8 +15,8 @@ il dirigente scolastico potra cosi visionare, e controllare i vari dipendenti e 
 ***FUNZIONALITA'*** :mag:<br>
 All'avvio dell'applicazione sara visibile la pagina di login, dove bisogna eseguire l'operazioe di login, l'utente dovra inserire `user name:       ` e `password:    ` nei riquadri appositi, se questi risulteranno essere corretti, e non si verifichera nessun messaggio di errore allora si avra accesso alla Home page.<br>
 L'home pagina è strutturata cosi, nell'hader della pagina son visibili diversi messagi prioritari che servono per visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che raggruppati per tipologia di corso, che devono a breve rinnovare la presenza.<br>
-Nel body della pagina sono presenti dei bottoni `aggiorna corsi` `consulta` `aggiorna anagrafica`.<br>
-in basso alla pagina c'è un bottone centrale `OTTIENI BACKUP`e presente uno dove .<br>
+Nel body della pagina sono presenti dei bottoni `AGGIORNA CORSI` `CONSULTA` `AGGIORNA ANAGRAFICA`<br>
+In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 
 **Le diverse operazioni, che l'utente può svolgere durante l'utilizzo della applicazione sono principalmente:**<br>
 :small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br>
@@ -24,9 +24,13 @@ in basso alla pagina c'è un bottone centrale `OTTIENI BACKUP`e presente uno dov
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br>
 
 ## **CONSULTAZIONE**:book:
-la consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore del sito.
-L'operazione di consultazione dei dati relativi ai corsi correlati allo stato del personale, viene eseguita in modo più approfondito   ,.
-`ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA` una tabella con i dati del personale e in funzione dei corsi.<br>
+la consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore dll'applicazione.
+L'operazione di consultazione dei dati, viene eseguita in modo approfondito qundo si schiaccia sull'apposito bottone `CONSULTA`, ciò che apparirà sarnno diversi bottoni
+`ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA`.<br>
+* `ORDINA PER PERSONA`<br>
+* `ORDINA PER CORSO` <br>
+* `CERCA`<br>
+
 
 
 ## **AGGIORNAMENTO ANAGRAFICA**:calendar:
