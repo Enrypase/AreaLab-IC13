@@ -63,16 +63,3 @@ Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovver
 Ad esempio importazione su chiavetta in un file sql le informazioni personale.
 <br>
 
-
-----------------------------------------------------------------------------------
-* visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che devono a breve rinnovare la presenza a corsi
-* corsi correlati allo stato del personale 
-* inserimento di un docente
-* rimozione di un docente
-* aggiornamenti
-* modifica
-* informazione
-* background
-* importare le informazioni personale
-
-garantisce la sorveglianza per quanto riguarda gli insegnanti ed  i corsi da essi svolti (formazione base/specifica).
