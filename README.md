@@ -1,8 +1,8 @@
 # README - AreaLab
 
 ### [Descrizione progetto](DescrizioneProgetto.md)
+- Descrizione generale sul progetto
 - Obbiettivi da raggiungere
-- Esempio della tabella
 - Altre ipotesi
 
 ### [Architettura](Architettura.md)
@@ -14,9 +14,8 @@
 - Casi d'uso
 
 ### [Grafica](Grafica.md)
-- Schermate
-  - Immagine
-  - Descrizione
+- Schermate fac-simile
+- Descrizione layout grafico
 
 ### [Installazione](Installazione.md)
 - Guida all'installazione
