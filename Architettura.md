@@ -22,3 +22,5 @@ Per consultare l'architettura del web-server [clicca qui](WebServer.md).
 - Per quanto riguarda il database si prevede l'utilizzo di MySql, software open source.
 - Per quanto riguarda il lato backend verranno utilizzate le servlet.
 - Per il lato frontend, invece, html, css e javaScript.
+
+Ora Google Maps offre alle Local Guide un modo tutto nuovo per scoprire cosa c'è nelle vicinanze. Quando apri la scheda Esplora, vedrai un nuovo feed con informazioni pertinenti e aggiornate su quel che succede nella tua comunità. Il feed include foto e recensioni di Local Guide come te e di attività locali.
