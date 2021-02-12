@@ -77,6 +77,8 @@ Effettuato il login si ìi ha accesso all'applicazione
 - [Aggiungi personale Button](#Aggiungi-personale)  
 - [Modifica personale Button](#Modifica-personale)
 
+![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/AggiornaAnagrafica.PNG)
+
 ##### Aggiungi personale 
 - Questo bottone permette di aggiungere un utente del personale all'elenco del personale e quindi alla tabella personale nel database.
 
