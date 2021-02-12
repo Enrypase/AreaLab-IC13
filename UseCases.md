@@ -22,7 +22,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 :small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br>
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**) :calendar:<br>
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br>
-:small_orange_diamond:[OTTIENI FOGLI FIRMA](#**OTTIENI-FOGLI-FIRMA**):page_facing_up::page_facing_up::fountain_pen:<br>
+:small_orange_diamond:[OTTIENI FOGLO FIRMA](#**OTTIENI-FOGLI-FIRME**):page_facing_up::page_facing_up::fountain_pen:<br>
 :small_orange_diamond:[BACKUP](#**BACKUP**):floppy_disk:<br>
 
 ## **CONSULTAZIONE**:book:
@@ -46,17 +46,18 @@ Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella paggina dove sono pr
 * `RICERCA CORSO` bottone con cui nella tabella dei corsi è possibbile effettuare la rcerca di uno specifico corso, in base al nome o all'id. <br>
 * `VISUALIZZA CORSI` bottone che permette di visualizzare tutti i corsi persenti aggiornati all'ultima modifica effettuata.<br>
 
-## **OTTIENI FOGLI FIRMA**:page_facing_up::fountain_pen:
-Questo pulsante permette al gestore di ottenere uno o più fogli di carta fisici stampati formati da un titolo "nome del corso" e da una tabella composta dalle informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.
-Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso
-si otterrà una schermata stampabile formata da: 
+## **OTTIENI FOGLI FIRME**:page_facing_up::fountain_pen:
+Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br>
+Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso ciò che si otterrà sarà una schermata stampabile formata da: 
 * titolo del corso
 * tabella con: 
     - nome della persona;
     - cognome della persona;
     - codice del corso;
-    - spazio per la firma.
-I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un corso, c'è bisogna di registrare presenze dei dipendenti.
+    - spazio per la firma.<br>
+ 
+ 
+I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un corso, c'è bisogna di registrare la presenze dei dipendenti.
 ## **BACKUP**:floppy_disk:
 Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferira.<br>
 Ad esempio importazione su chiavetta in un file sql le informazioni personale.
