@@ -62,6 +62,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 - [Ordina per corso Button](#Ordine-per-corso)
 - [Ricerca](#Ricerca)
 
+![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/Consulta.PNG)
 
 ##### Ordine per personale
 - Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa al personale.
