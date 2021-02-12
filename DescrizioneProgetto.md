@@ -80,10 +80,10 @@ si otterrà una schermata stampabile formata da:
     - cognome della persona;
     - codice del corso;
     - spazio per la firma.
-    
+
 <hr>
 
 ## OTTIENI BACKUP<br>
-Cliccando sul relativo bottone si otterrà un file di backup del database .sql.
+Cliccando sul relativo bottone si otterrà un file di backup del database .sql .
 
 <hr>
