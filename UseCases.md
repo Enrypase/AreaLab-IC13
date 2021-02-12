@@ -30,7 +30,7 @@ L'operazione di consultazione dei dati, viene eseguita in modo approfondito qund
 `ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA`.<br>
 * `ORDINA PER PERSONA` bottone con cui in base al cognomi del personale, messi in ordine alfabetico, si visualizzano le tabelle dei corsi persenti.<br>
 * `ORDINA PER CORSO` bottone con cui in base al nome dei corsi, messi in ordine alfabetico, si visualizzano le tabelle dei corsi persenti. <br>
-* `CERCA` <br>
+* `CERCA` tramite questo bottone si pùo eseguire la ricerca nelle tabelle sottostanti precedentemente caricate, (avendo cliccato sui pulsanti superiori), e ordinate in base a corso o personale. <br>
 
 ## **AGGIORNAMENTO ANAGRAFICA**:calendar:
 Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pulsante apposito `AGGIORNAMENTO ANAGRAFICA`, si aprirà una Landing page, dove sarnno present altri due pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i reltivi dati anagrafii del personale.<br>
