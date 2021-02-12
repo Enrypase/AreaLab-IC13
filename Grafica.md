@@ -13,11 +13,12 @@
 ![a](/Immagini/Sito/Login.PNG)
 
 ### Username
-In questa casella di inserimento si inserisce il nome utente 
+In questa casella di inserimento si inserisce il nome utente.
 ### Password
-In questa casella di inserimento si inserisce la password
+In questa casella di inserimento si inserisce la password.
 
-Effettuato il login si ìi ha accesso all'applicazione
+Effettuato il login si ìi ha accesso all'applicazione.
+
 <hr>
 
 ## Home Page
@@ -35,6 +36,8 @@ Effettuato il login si ìi ha accesso all'applicazione
 - Questa box contiene delle informazioni urgenti  quali per esempio:
   - il professore x deve svolgere il corso y,z 
   - il professore a deve rinnovare il corso b
+    
+<hr>
 
 ### Aggiornamento corsi
 
@@ -56,6 +59,8 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 ##### Visualizza corsi
 - Questo bottone permette di visualizzare tutti i corsi attivi.
+    
+<hr>
 
 ### Consulta
 
@@ -73,6 +78,8 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 ##### Ricerca
 - Questo bottone permette di cercare un informazione all'interno della tabella (previa scelta della tabella tramite i bottoni precedenti)
+    
+<hr>
 
 ### Aggiornamento anagrafica
 
@@ -99,6 +106,8 @@ si otterrà una schermata stampabile formata da:
     - codice del corso;
     - spazio per la firma.
     
+<hr>
+
 ### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
