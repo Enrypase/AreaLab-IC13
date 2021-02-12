@@ -40,15 +40,21 @@ Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pu
 * `MODIFICA PERSONA` modifica dello stato della persona, ovvero in caso di periodi di aspettativa, cambio scuola... <br>
 
 ## **AGGIORNAMENTO CORSI**:arrows_clockwise:
-Dopo aver cliccato sul pulsanrte `AGGIORNAMENTO CORSI` Nella paggina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
+Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella paggina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
 * `AGGIUNGI CORSO` l'azione che consente di svolgere questo bottone è creare un nuovo corso che verra aggiunto agli altri. <br>
 * `MODIFICA CORSO` la modifica del corso fa si che l'utente possa cambiare la descrizione, l'id associato e il nome; ed in caso uno dei corsi sia ritenuto obsoleto viene disabilitato. <br>
 * `RICERCA CORSO` bottone con cui nella tabella dei corsi è possibbile effettuare la rcerca di uno specifico corso, in base al nome o all'id. <br>
 * `VISUALIZZA CORSI` bottone che permette di visualizzare tutti i corsi persenti aggiornati all'ultima modifica effettuata.<br>
 
 ## **OTTIENI FOGLI FIRMA**:page_facing_up:
-
-
+Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` si chiederà di inserire il nome del corso. Una volta inserito il nome del corso
+si otterrà una schermata stampabile formata da: 
+* titolo del corso
+* tabella con: 
+    - nome della persona;
+    - cognome della persona;
+    - codice del corso;
+    - spazio per la firma.
 
 ## **BACKUP**:floppy_disk:
 Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferira.<br>
