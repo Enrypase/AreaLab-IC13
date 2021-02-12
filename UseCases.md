@@ -22,7 +22,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 :small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br>
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**) :calendar:<br>
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br>
-:small_orange_diamond:[OTTIENI FOGLI FIRMA](#**OTTIENI-FOGLI-FIRMA**):page:<br>
+:small_orange_diamond:[OTTIENI FOGLI FIRMA](#**OTTIENI-FOGLI-FIRMA**):page_facing_up:<br>
 :small_orange_diamond:[BACKUP](#**BACKUP**):floppy_disk:<br>
 
 ## **CONSULTAZIONE**:book:
@@ -46,7 +46,8 @@ Dopo aver cliccato sul pulsanrte `AGGIORNAMENTO CORSI` Nella paggina dove sono p
 * `RICERCA CORSO` bottone con cui nella tabella dei corsi è possibbile effettuare la rcerca di uno specifico corso, in base al nome o all'id. <br>
 * `VISUALIZZA CORSI` bottone che permette di visualizzare tutti i corsi persenti aggiornati all'ultima modifica effettuata.<br>
 
-## **OTTIENI FOGLI FIRMA**:arrows_clockwise:
+## **OTTIENI FOGLI FIRMA**:page_facing_up:
+
 
 
 ## **BACKUP**:floppy_disk:
