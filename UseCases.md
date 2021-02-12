@@ -62,5 +62,5 @@ Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovver
 * background
 * importare le informazioni personale
 
-garantisce la sorveglianza per quanto riguarda gli insegnanti ed  i corsi da essi svolti (formazione base/specifica)
+garantisce la sorveglianza per quanto riguarda gli insegnanti ed  i corsi da essi svolti (formazione base/specifica).
 
