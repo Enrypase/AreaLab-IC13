@@ -1,7 +1,7 @@
 
 ## **CASI D'USO**<br>
-In questo documento seguira la descrizione relativa ai possibili usi da parte di un utente dell'applicazione (Nome).
-L'applicazione si occupa della gestione di tutti gli eventi riguardanti la formazione di docenti di varie scuole.
+In questo documento seguirà la descrizione relativa ai possibili usi da parte di un utente dell'applicazione.
+L'applicazione si occupa della gestione di tutti gli eventi riguardanti la formazione della sicurezza di docenti di varie scuole.
 L'applicazione è di tipo User-friendly, quindi si presenta all'utente con una [grafica](Grafica.md), che permette l'interazione in modo semplice e dinamico, adatta appunto alle esigenze del consumatore.
 
 
@@ -12,7 +12,7 @@ L'utente tramite login si identifica e accede all'applicazione, in caso di login
 Il fruitore che interagisce è un dirigente scolastico, ed ha la visibilità completa dei dati relativa alla propri scuola.
 il dirigente scolastico potra cosi visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
 
-## ***FUNZIONALITA'*** :mag:<br>
+## **FUNZIONALITA'** :mag:<br>
 All'avvio dell'applicazione sara visibile la pagina di login, dove bisogna eseguire l'operazioe di login, l'utente dovra inserire `user name:       ` e `password:    ` nei riquadri appositi, se questi risulteranno essere corretti, e non si verifichera nessun messaggio di errore allora si avra accesso alla Home page.<br>
 L'home pagina è strutturata cosi, nell'hader della pagina son visibili diversi messagi prioritari che servono per visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che raggruppati per tipologia di corso, che devono a breve rinnovare la presenza.<br>
 Nel body della pagina sono presenti dei bottoni `AGGIORNA CORSI` `CONSULTA` `AGGIORNA ANAGRAFICA`<br>
