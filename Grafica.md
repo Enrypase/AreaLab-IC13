@@ -22,10 +22,11 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 ## Home Page
 
-- [Priority Box](#Priority-Box)
-- [Aggiornamento Corsi Button](#Aggiornamento-corsi)
+- [Priority box](#Priority-Box)
+- [Aggiornamento corsi button](#Aggiornamento-corsi)
 - [Consulta button](#Consulta)
-- [Aggiornamento Anagrafica Button](#Aggiornamento-anagrafica)
+- [Aggiornamento anagrafica button](#Aggiornamento-anagrafica)
+- [Ottieni fogli firma button](#Ottieni-fogli-firma)
 - [Backup button](#Ottieni-backup)
 
 ![a](/Immagini/Sito/PaginaIniziale.PNG)
@@ -85,8 +86,19 @@ Effettuato il login si ìi ha accesso all'applicazione
 
 ##### Modifica personale
 - Questo bottone permette di modificare le informazioni di un utente del personale, di disattivarlo:ovvero che non è piu presente all'interno del plesso scolastico, oppure di riattivarlo nel caso in cui ritornasse in quella scuola.
+
 <hr>
 
+### Ottieni fogli firma<br>
+Cliccando sul relativo bottone si chiederà di inserire il nome del corso. Una volta inserito il nome del corso
+si otterrà una schermata stampabile formata da: 
+* titolo del corso
+* tabella con: 
+    - nome della persona;
+    - cognome della persona;
+    - codice del corso;
+    - spazio per la firma.
+    
 ### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
