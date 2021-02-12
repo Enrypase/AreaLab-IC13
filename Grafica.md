@@ -97,6 +97,8 @@ Effettuato il login si ìi ha accesso all'applicazione.
 <hr>
 
 ### Ottieni fogli firma<br>
+Questo pulsante permette al gestore di ottenere uno o più fogli di carta fisici stampati formati da un titolo "nome del corso" e 
+da una tabella composta dalle informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.
 Cliccando sul relativo bottone si chiederà di inserire il nome del corso. Una volta inserito il nome del corso
 si otterrà una schermata stampabile formata da: 
 * titolo del corso
