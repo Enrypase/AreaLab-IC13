@@ -76,4 +76,3 @@ Ad esempio importazione su chiavetta in un file sql le informazioni personale.
 * importare le informazioni personale
 
 garantisce la sorveglianza per quanto riguarda gli insegnanti ed  i corsi da essi svolti (formazione base/specifica).
-
