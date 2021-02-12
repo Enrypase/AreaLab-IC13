@@ -69,11 +69,6 @@ persona, per corso o per ricerca selettiva tramite l'inserimento di una o più p
 
 <hr>
 
-## OTTIENI BACKUP<br>
-Cliccando sul relativo bottone si otterrà un file di backup del database .sql.
-
-<hr>
-
 ## OTTIENI FOGLI FIRMA<br>
 Cliccando sul relativo bottone si chiederà di inserire il nome del corso. Una volta inserito il nome del corso
 si otterrà una schermata stampabile formata da: 
@@ -83,3 +78,10 @@ si otterrà una schermata stampabile formata da:
     - cognome della persona;
     - codice del corso;
     - spazio per la firma.
+    
+<hr>
+
+## OTTIENI BACKUP<br>
+Cliccando sul relativo bottone si otterrà un file di backup del database .sql.
+
+<hr>
