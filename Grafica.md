@@ -2,7 +2,7 @@
 
 # Indice:
 - [PAGINA LOGIN](#Pagina-di-login) :bust_in_silhouette:
-- [HOME PAGE](#Home-page)
+- [HOME PAGE](#Home-page) :house:	
 
 <hr>
 
