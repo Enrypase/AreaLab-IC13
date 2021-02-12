@@ -1,7 +1,7 @@
 
 ## **CASI D'USO**<br>
-In questo documento seguirà la descrizione relativa ai possibili usi da parte di un utente dell'applicazione.
-L'applicazione si occupa della gestione di tutti gli eventi riguardanti la formazione della sicurezza di docenti di varie scuole.
+In questo documento seguira la descrizione relativa ai possibili usi da parte di un utente dell'applicazione (Nome).
+L'applicazione si occupa della gestione di tutti gli eventi riguardanti la formazione di docenti di varie scuole.
 L'applicazione è di tipo User-friendly, quindi si presenta all'utente con una [grafica](Grafica.md), che permette l'interazione in modo semplice e dinamico, adatta appunto alle esigenze del consumatore.
 
 
@@ -12,7 +12,7 @@ L'utente tramite login si identifica e accede all'applicazione, in caso di login
 Il fruitore che interagisce è un dirigente scolastico, ed ha la visibilità completa dei dati relativa alla propri scuola.
 il dirigente scolastico potra cosi visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
 
-## **FUNZIONALITA'** :mag:<br>
+## ***FUNZIONALITA'*** :mag:<br>
 All'avvio dell'applicazione sara visibile la pagina di login, dove bisogna eseguire l'operazioe di login, l'utente dovra inserire `user name:       ` e `password:    ` nei riquadri appositi, se questi risulteranno essere corretti, e non si verifichera nessun messaggio di errore allora si avra accesso alla Home page.<br>
 L'home pagina è strutturata cosi, nell'hader della pagina son visibili diversi messagi prioritari che servono per visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che raggruppati per tipologia di corso, che devono a breve rinnovare la presenza.<br>
 Nel body della pagina sono presenti dei bottoni `AGGIORNA CORSI` `CONSULTA` `AGGIORNA ANAGRAFICA`<br>
@@ -26,28 +26,27 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 
 ## **CONSULTAZIONE**:book:
 la consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore dell'applicazione.
-L'operazione di consultazione dei dati, viene eseguita in modo approfondito qundo si schiaccia sull'apposito bottone `CONSULTA`, ciò che apparirà sarnno diversi bottoni
+L'operazione di consultazione dei dati, viene eseguita in modo approfondito qundo si schiaccia sull'apposito bottone `CONSULTA`, ciò che apparirà saranno diversi bottoni
 `ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA`.<br>
 * `ORDINA PER PERSONA`<br>
 * `ORDINA PER CORSO` <br>
 * `CERCA`<br>
 
-
-
 ## **AGGIORNAMENTO ANAGRAFICA**:calendar:
 Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pulsante apposito `AGGIORNAMENTO ANAGRAFICA`, si aprirà una Landing page, dove sarnno present altri due pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i reltivi dati anagrafii del personale.<br>
-* `AGGIUNGI PERSONA` inserimento di un nuva persona che lavorerà nell istituto <br>
+* `AGGIUNGI PERSONA` inserimento dei dati di un persona che lavorerà nell istituto <br>
 * `MODIFICA PERSONA` modifica dello stato della persona, ovvero in caso di periodi di aspettativa, cambio scuola... <br>
 
 ## **AGGIORNAMENTO CORSI**:arrows_clockwise:
 dopo aver cliccato sul pulsanrte `AGGIORNAMENTO CORSI` Nella paggina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
-* `AGGIUNGI CORSO` l'azione che consente di svolgere è creare un nuovo corso che verra aggiunto agli altri  <br>
-* `DISABILITA CORSO` in caso uno dei corsi ormai sia ritenuto sorpassato <br>
-* `MODIFICA CORSO` la modifica del corso fa si che l'utente possa cambiare la descrizione del corso, <br>
-
+* `AGGIUNGI CORSO` l'azione che consente di svolgere questo bottone è creare un nuovo corso che verra aggiunto agli altri. <br>
+* `MODIFICA CORSO` la modifica del corso fa si che l'utente possa cambiare la descrizione, l'id associato e il nome; ed in caso uno dei corsi sia ritenuto obsoleto viene disabilitato. <br>
+* `RICERCA CORSO` bottone con cui la tabella dei corsi viene visualizzata in ordine alfabetico rispetto ai cognomi del personale.  <br>
+* `VISUALIZZA CORSI` bottone con cui la tabella dei corsi viene visualizzata in ordine alfabetico rispetto ai corsi.<br>
 
 ## **BACKUP**:floppy_disk:
-Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovvero di ottenere una copia di quello che c’è sulla memoria del computer, che verrà salvata in un punto diverso della memoria del dispositivo stesso.
+Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovvero di ottenere una copia di quello che c’è sulla memoria del computer, che verrà salvata in un punto diverso della memoria del dispositivo stesso. Importare le informazioni personale
+
 <br>
 
 
