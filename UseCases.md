@@ -22,6 +22,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 :small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br>
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**) :calendar:<br>
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br>
+:small_orange_diamond:[OTTIENI FOGLI FIRMA](#**OTTIENI-FOGLI-FIRMA**):page:<br>
 :small_orange_diamond:[BACKUP](#**BACKUP**):floppy_disk:<br>
 
 ## **CONSULTAZIONE**:book:
@@ -44,6 +45,9 @@ Dopo aver cliccato sul pulsanrte `AGGIORNAMENTO CORSI` Nella paggina dove sono p
 * `MODIFICA CORSO` la modifica del corso fa si che l'utente possa cambiare la descrizione, l'id associato e il nome; ed in caso uno dei corsi sia ritenuto obsoleto viene disabilitato. <br>
 * `RICERCA CORSO` bottone con cui nella tabella dei corsi è possibbile effettuare la rcerca di uno specifico corso, in base al nome o all'id. <br>
 * `VISUALIZZA CORSI` bottone che permette di visualizzare tutti i corsi persenti aggiornati all'ultima modifica effettuata.<br>
+
+## **OTTIENI FOGLI FIRMA**:arrows_clockwise:
+
 
 ## **BACKUP**:floppy_disk:
 Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferira.<br>
