@@ -41,7 +41,7 @@ Effettuato il login si ìi ha accesso all'applicazione
 - [Modifica corso Button](#Modifica-corso)
 - [Ricerca corso Button](#Ricerca-corso)
 - [VIsualizza corsi](#Visualizza-corsi)
-
+![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/AggiornaCorsi.PNG)
 
 ##### Aggiungi corso
 - Questo bottone permette di aggiungere un corso all'elenco corsi e quindi alla tabella corsi nel database.
