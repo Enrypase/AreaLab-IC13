@@ -19,9 +19,9 @@ Il Web-Server ospiterà le seguenti pagine web:
 * Aggiorna corsi - Alla quale l'utente può accedere una volta schiacciato sul pulsante "AGGIORNA CORSI";
   * Questa pagina è formata da una colonna: ognuna delle quali contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa ai vari corsi;
 * Aggiorna anagrafica - Alla quale l'utente può accedere una volta schiacciato sul pulsante "AGGIORNA ANAGRAFICA";
-  * Questa pagina è formata da una colonna: ognuna delle quali contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa al personale;
+  * Questa pagina è formata da una colonna: contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa al personale;
 * Consulta - Alla quale l'utente può accedere una volta schiacciato sul pulsante "CONSULTA";
-  * Questa pagina è formata da una colonna: ognuna delle quali contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa a tutti i corsi di formazione effettuati dalle singole persone;
+  * Questa pagina è formata da una colonna: contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa a tutti i corsi di formazione effettuati dalle singole persone;
   * Ottieni fogli firma - Alla quale l'utente può accedere una volta schiacciato sul pulsante "OTTIENI FOGLI FIRMA";
  * Questa pagina è formata da una colonna: contenente il titolo "NOME DEL CORSO" (il quale verrà richiesto all'utente tramite label) e una tabella;
 
