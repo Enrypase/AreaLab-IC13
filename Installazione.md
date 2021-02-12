@@ -1,7 +1,7 @@
 # INSTALLAZIONE GUIDATA SQL SERVER 
 
 // 1 installazione sql
-   2 installazione jar
+// 2 installazione jar
    
 In questa guida seguiremo l’installazione SQL per la versione gratuita **SQL Server 2017 Express**.
 
