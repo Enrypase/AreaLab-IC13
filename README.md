@@ -1,4 +1,4 @@
-# README - AreaLab
+# README - AreaLab - IC13
 
 ### [Descrizione progetto](DescrizioneProgetto.md)
 - Descrizione generale sul progetto
