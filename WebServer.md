@@ -17,7 +17,7 @@ Il Web-Server ospiterà le seguenti pagine web:
 * Pagina iniziale - Alla quale l'utente viene portato una volta effettuato l'accesso correttamente;
   * La pagina sarà composta da tre colonne: come il numero dei pulsanti e due righe: la prima contenente il personale che deve effettuare dei corsi di aggiornamento e la seconda contenente i pulsanti;
 * Aggiorna corsi - Alla quale l'utente può accedere una volta schiacciato sul pulsante "AGGIORNA CORSI";
-  * Questa pagina è formata da una colonna: ognuna delle quali contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa ai vari corsi;
+  * Questa pagina è formata da una colonna: contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa ai vari corsi;
 * Aggiorna anagrafica - Alla quale l'utente può accedere una volta schiacciato sul pulsante "AGGIORNA ANAGRAFICA";
   * Questa pagina è formata da una colonna: contenente i pulsanti e la tabella dei corsi e due righe: la prima contenente i pulsanti e la seconda la tabella relativa al personale;
 * Consulta - Alla quale l'utente può accedere una volta schiacciato sul pulsante "CONSULTA";
