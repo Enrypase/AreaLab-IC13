@@ -23,6 +23,7 @@ i quattro comandi principali per la gestione del sistema:<br>
 [AGGIORNAMENTO CORSI](#AGGIORNAMENTO-CORSI) <br>
 [AGGIORNAMENTO ANAGRAFICA](#AGGIORNAMENTO-ANAGRAFICA) <br>
 [CONSULTAZIONE](#CONSULTAZIONE) <br>
+[OTTIENI FOGLI FIRMA](#OTTIENI-FOGLI-FIRMA) <br>
 [OTTIENI BACKUP](#OTTIENI-BACKUP) <br>
 
 <hr>
@@ -72,3 +73,13 @@ persona, per corso o per ricerca selettiva tramite l'inserimento di una o più p
 Cliccando sul relativo bottone si otterrà un file di backup del database .sql.
 
 <hr>
+
+## OTTIENI FOGLI FIRMA<br>
+Cliccando sul relativo bottone si chiederà di inserire il nome del corso. Una volta inserito il nome del corso
+si otterrà una schermata stampabile formata da: 
+* titolo del corso
+* tabella con: 
+    - nome della persona;
+    - cognome della persona;
+    - codice del corso;
+    - spazio per la firma.
