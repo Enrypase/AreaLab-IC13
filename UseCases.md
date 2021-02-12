@@ -32,13 +32,14 @@ L'operazione di consultazione dei dati, viene eseguita in modo approfondito qund
 * `ORDINA PER CORSO` bottone con cui in base al nome dei corsi, messi in ordine alfabetico, si visualizzano le tabelle dei corsi persenti. <br>
 * `CERCA` tramite questo bottone si pùo eseguire la ricerca nelle tabelle sottostanti precedentemente caricate, (avendo cliccato sui pulsanti superiori), e ordinate in base a corso o personale. <br>
 
-## **AGGIORNAMENTO ANAGRAFICA**:calendar:
-Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pulsante apposito `AGGIORNAMENTO ANAGRAFICA`, si aprirà una Landing page, dove sarnno present altri due pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i reltivi dati anagrafii del personale.<br>
+## **AGGIORNAMENTO ANAGRAFICA**:calendar: 
+la funzionalità aggiornamento anagrafico permette all'utente di aggiungere o modificare i dati anagrafici tramite l'applicazione.<br>
+Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pulsante apposito `AGGIORNAMENTO ANAGRAFICA`, si carichera nella page i pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i reltivi dati anagrafii del personale.<br>
 * `AGGIUNGI PERSONA` permette l'inserimento dei dati di un persona che lavorerà nell istituto. <br>
 * `MODIFICA PERSONA` modifica dello stato della persona, ovvero in caso di periodi di aspettativa, cambio scuola... <br>
 
 ## **AGGIORNAMENTO CORSI**:arrows_clockwise:
-dopo aver cliccato sul pulsanrte `AGGIORNAMENTO CORSI` Nella paggina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
+Dopo aver cliccato sul pulsanrte `AGGIORNAMENTO CORSI` Nella paggina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
 * `AGGIUNGI CORSO` l'azione che consente di svolgere questo bottone è creare un nuovo corso che verra aggiunto agli altri. <br>
 * `MODIFICA CORSO` la modifica del corso fa si che l'utente possa cambiare la descrizione, l'id associato e il nome; ed in caso uno dei corsi sia ritenuto obsoleto viene disabilitato. <br>
 * `RICERCA CORSO` bottone con cui nella tabella dei corsi è possibbile effettuare la rcerca di uno specifico corso, in base al nome o all'id. <br>
