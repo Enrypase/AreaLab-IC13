@@ -28,13 +28,13 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 La consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore dell'applicazione.
 L'operazione di consultazione dei dati, viene eseguita in modo approfondito qundo si schiaccia sull'apposito bottone `CONSULTA`, ciò che apparirà saranno diversi bottoni
 `ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA`.<br>
-* `ORDINA PER PERSONA`<br>
-* `ORDINA PER CORSO` <br>
-* `CERCA`<br>
+* `ORDINA PER PERSONA` bottone con cui in base al cognomi del personale, messi in ordine alfabetico, si visualizzano le tabelle dei corsi persenti.<br>
+* `ORDINA PER CORSO` bottone con cui in base al nome dei corsi, messi in ordine alfabetico, si visualizzano le tabelle dei corsi persenti. <br>
+* `CERCA` <br>
 
 ## **AGGIORNAMENTO ANAGRAFICA**:calendar:
 Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pulsante apposito `AGGIORNAMENTO ANAGRAFICA`, si aprirà una Landing page, dove sarnno present altri due pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i reltivi dati anagrafii del personale.<br>
-* `AGGIUNGI PERSONA` permette l'inserimento dei dati di un persona che lavorerà nell istituto <br>
+* `AGGIUNGI PERSONA` permette l'inserimento dei dati di un persona che lavorerà nell istituto. <br>
 * `MODIFICA PERSONA` modifica dello stato della persona, ovvero in caso di periodi di aspettativa, cambio scuola... <br>
 
 ## **AGGIORNAMENTO CORSI**:arrows_clockwise:
@@ -45,7 +45,8 @@ dopo aver cliccato sul pulsanrte `AGGIORNAMENTO CORSI` Nella paggina dove sono p
 * `VISUALIZZA CORSI` bottone che permette di visualizzare tutti i corsi persenti aggiornati all'ultima modifica effettuata.<br>
 
 ## **BACKUP**:floppy_disk:
-Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferira. ad esempio importazione su chiavetta in un file sql le informazioni personale
+Il pulsante di backup consente appunto di eseguire l'opreazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferira.<br>
+Ad esempio importazione su chiavetta in un file sql le informazioni personale.
 <br>
 
 
