@@ -29,6 +29,7 @@ Effettuato il login si ìi ha accesso all'applicazione.
 - [Aggiornamento anagrafica button](#Aggiornamento-anagrafica)
 - [Ottieni fogli firma button](#Ottieni-fogli-firma)
 - [Backup button](#Ottieni-backup)
+- [Foglio firme Button](#Ottieni-foglio-firme)
 
 ![a](/Immagini/Sito/PaginaIniziale.PNG)
 
@@ -113,3 +114,5 @@ si otterrà una schermata stampabile formata da:
 ### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
+### Ottieni foglio firme
+- Questo bottone permette di scaricare un file contenente una tabella 
