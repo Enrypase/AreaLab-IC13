@@ -40,7 +40,7 @@ Per aggiornare l'anagrafica all'utente non bastera far altro che cliccare sul pu
 * `MODIFICA PERSONA` modifica dello stato della persona, ovvero in caso di periodi di aspettativa, cambio scuola... <br>
 
 ## **AGGIORNAMENTO CORSI**:arrows_clockwise:
-Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella paggina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RIMUOVI CORSO` `MODIFICA CORSO` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
+Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella paggina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RICERCA CORSO` `MODIFICA CORSO` `VISUALIZZA CORSI` ed una tabella con i reltivi dati dei corsi, nome e descrizione e codice identificativo.<br>
 * `AGGIUNGI CORSO` l'azione che consente di svolgere questo bottone è creare un nuovo corso che verra aggiunto agli altri. <br>
 * `MODIFICA CORSO` la modifica del corso fa si che l'utente possa cambiare la descrizione, l'id associato e il nome; ed in caso uno dei corsi sia ritenuto obsoleto viene disabilitato. <br>
 * `RICERCA CORSO` bottone con cui nella tabella dei corsi è possibbile effettuare la rcerca di uno specifico corso, in base al nome o all'id. <br>
