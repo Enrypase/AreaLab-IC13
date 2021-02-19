@@ -114,5 +114,3 @@ si otterrà una schermata stampabile formata da:
 ### Ottieni backup
 - Questo bottone permette di scaricare un file sql per il backup del database
 
-### Ottieni foglio firme
-- Questo bottone permette di scaricare un file contenente una tabella per il foglio firme: cliccando sul bottone verrà chiesto di inserire il nome del corso e verrà visualizzata una tabella contenente le informazioni relative a quel corso.
