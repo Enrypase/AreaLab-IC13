@@ -4,20 +4,13 @@ In questo documento seguira la descrizione relativa ai possibili usi da parte di
 L'applicazione si occupa della gestione di tutti gli eventi riguardanti la formazione di docenti di varie scuole.
 L'applicazione è di tipo User-friendly, quindi si presenta all'utente con una [grafica](Grafica.md), che permette l'interazione in modo semplice e dinamico, adatta appunto alle esigenze del consumatore.
 
+
 ## **UTENTE**:bust_in_silhouette: :closed_lock_with_key:<br>
 L'utente tramite login si identifica e accede all'applicazione, in caso di login errato, l'accesso non sara consentito ed apparira un messaggio di errore, questa oerazion risulta essere necessaria in quanto i dati trattati sono personali e per politiche di privcy non possono essere diffusi.
 `Login errato, riprova`
 
-## GESTORE<br>
-I gestori sono tutti coloro che dispongono della passwrord e dello username per accedere all'applicazione.
-Gli utenti gestori del sistema disporranno **SOLAMENTE** dei seguenti privilegi:
-* DELETE (cancellare record)
-* INSERT (inserire record)
-* SELECT (selezionare record)
-* UPDATE (aggiornare record)
-
-Il fruitore che interagisce solitamente è un dirigente scolastico, ed ha la visibilità completa dei dati relativa alla propri scuola.
-il dirigente scolastico potra cosi visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
+Il fruitore che interagisce è chiunque sia in possesso di utente e password per il Login ed ha la visibilità completa dei dati relativa alla propri scuola.
+L'utente potrà cosi visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
 
 ## ***FUNZIONALITA'*** :mag:<br>
 All'avvio dell'applicazione sara visibile la pagina di login, dove bisogna eseguire l'operazioe di login, l'utente dovra inserire `user name:       ` e `password:    ` nei riquadri appositi, se questi risulteranno essere corretti, e non si verifichera nessun messaggio di errore allora si avra accesso alla Home page.<br>
