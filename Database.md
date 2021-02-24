@@ -5,6 +5,7 @@ La struttura del database prevederà 4 tabelle:
 * [CORSI](#CORSI)
 * [FREQUENTAZIONI](#FREQUENTAZIONI)
 * [UTENTI](#UTENTI)
+* [LOG](#LOG)
 
 ![ ](https://github.com/Enrypase/AreaLab/blob/main/Immagini/Database/Database.JPG)
 
@@ -21,6 +22,10 @@ corsi. Ogni lavoratore potrà essere collegato a più corsi.
 ## UTENTI
 Questa tabella conterrà le informazioni di accesso o recupero degli utenti gestori
 del sistema.
+
+## LOG
+Questa tabella conterrà le informazioni dei log degli utenti. Ogni volta che l'utente che effettuerà l'accesso
+sarà memorizzato su questa tabella il relativo username, la data e l'ora dell'accesso e le azioni che ha svolto.
 
 <br>
 <hr>
