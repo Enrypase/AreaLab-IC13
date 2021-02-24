@@ -6,7 +6,7 @@ La struttura del database prevederà 4 tabelle:
 * [FREQUENTAZIONI](#FREQUENTAZIONI)
 * [UTENTI](#UTENTI)
 
-![ ](https://github.com/Enrypase/AreaLab/blob/main/Immagini/Database/db.JPG)
+![ ](https://github.com/Enrypase/AreaLab/blob/main/Immagini/Database/database.JPG)
 
 ## PERSONALE
 Questa tabella conterrà le informazioni sul personale lavoratore.
