@@ -32,4 +32,3 @@ Gli utenti gestori del sistema disporranno **SOLAMENTE** dei seguenti privilegi:
 * INSERT (inserire record)
 * SELECT (selezionare record)
 * UPDATE (aggiornare record)
-
