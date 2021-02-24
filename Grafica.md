@@ -72,13 +72,13 @@ Effettuato il login si ìi ha accesso all'applicazione.
 ![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/Consulta.PNG)
 
 ##### Ordine per personale
-- Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa al personale.
+- Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa al personale, se clicchi nuovamente sul pulsante verrà rappresentato l'ordine delle persone in senso contrario all'alfabeto.
 
 ##### Ordine per corso
-- Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa ai corsi.
+- Questo bottone permette di visualizzare in ordine alfabetico la tabella relativa ai corsise clicchi nuovamente sul pulsante verrà rappresentato l'ordine dei corsi in senso contrario all'alfabeto.
 
 ##### Ricerca
-- Questo bottone permette di cercare un informazione all'interno della tabella (previa scelta della tabella tramite i bottoni precedenti)
+- Questo bottone permette di cercare un informazione( nome corso, nome persona o qualsiasi attributo della tabella), previa scelta della tabella tramite i bottoni precedenti.
     
 <hr>
 
