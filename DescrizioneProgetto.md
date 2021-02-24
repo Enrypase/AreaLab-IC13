@@ -36,6 +36,12 @@ da root.
 <hr>
 
 ## GESTORE<br>
+Gli utenti gestori del sistema disporranno **SOLAMENTE** dei seguenti privilegi:
+* DELETE (cancellare record)
+* INSERT (inserire record)
+* SELECT (selezionare record)
+* UPDATE (aggiornare record)
+
 :warning: Il gestore è colui che accede, aggiorna o revisiona la situazione dei corsi di sicurezza,
 primo soccorso, anticendio, ecc. svolti o meno dai lavoratori.<br>
 Il gestore può modificare, eliminare, aggiungere i record direttamente tramite applicazione.
