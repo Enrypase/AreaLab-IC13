@@ -19,7 +19,7 @@ L'utente potrà così visionare, e controllare i vari dipendenti e il loro stato
 
   
 
-## ***FUNZIONALITA'*** :mag:<br> 
+## *FUNZIONALITA'* :mag:<br> 
 
 All'avvio dell'applicazione sarà visibile la pagina di login, dove bisogna eseguire l'operazione di login, l'utente dovrà inserire `user name:       ` e `password:    ` nei riquadri appositi, se questi risulteranno essere corretti, e non si verificherà nessun messaggio di errore allora si avrà accesso alla Home page.<br> 
 L'home pagina è strutturata cosi, nell'header della pagina son visibili diversi messaggi prioritari che servono per visualizzare eventuali dipendenti (docenti/collaboratori) scolastici che raggruppati per tipologia di corso, che devono a breve rinnovare la presenza.<br> 
@@ -80,7 +80,7 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
                
 Ad esempio:<br> 
 
-                                                   Corso antiincendio
+                                                   Corso antincendio
                                                    
                 Mario            |   Rossi                   |     1234             |    __________________  <br> 
 
@@ -90,7 +90,6 @@ I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un
 
 Il pulsante di backup consente appunto di eseguire l'operazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferirà.<br> 
 Ad esempio importazione su chiavetta in un file sql le informazioni personale. 
-
 <br> 
 
  
