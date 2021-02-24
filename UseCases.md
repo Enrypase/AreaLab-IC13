@@ -9,7 +9,7 @@ L'applicazione è di tipo User-friendly, quindi si presenta all'utente con una [
 L'utente tramite login si identifica e accede all'applicazione, in caso di login errato, l'accesso non sara consentito ed apparira un messaggio di errore, questa oerazion risulta essere necessaria in quanto i dati trattati sono personali e per politiche di privcy non possono essere diffusi.
 `Login errato, riprova`
 
-Il fruitore che interagisce è un dirigente scolastico, ed ha la visibilità completa dei dati relativa alla propri scuola.
+Il fruitore che interagisce solitamente è un dirigente scolastico, ed ha la visibilità completa dei dati relativa alla propri scuola.
 il dirigente scolastico potra cosi visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
 
 ## ***FUNZIONALITA'*** :mag:<br>
