@@ -14,13 +14,8 @@ L'utente tramite login si identifica e accede all'applicazione, in caso di login
 `Login errato, riprova` 
 
  
-Il fruitore che interagisce è chiunque sia in possesso di utente e password per il Login ed ha la visibilità completa dei dati relativa alla propri scuola. 
-L'utente potrà così visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
-Gli utenti gestori del sistema disporranno **SOLAMENTE** dei seguenti privilegi:
-* DELETE (cancellare record)
-* INSERT (inserire record)
-* SELECT (selezionare record)
-* UPDATE (aggiornare record)
+Il fruitore o gestore che interagisce è chiunque sia in possesso di utente e password per il Login ed ha la visibilità completa dei dati relativa alla propri scuola. 
+L'utente potrà così visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...). 
 
   
 
@@ -75,19 +70,19 @@ Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella pagina dove sono pre
 
 ## **OTTIENI FOGLI FIRME**:page_facing_up::fountain_pen: 
 
-Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme relative ad un determinato corso specificato precedentemente dall'utente, nel momento in cui 'applicazione glielo chiederà.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br> 
+Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme relative ad un determinato corso, specificato precedentemente dall'utente, nel momento in cui 'applicazione lo chiederà.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br> 
 Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso ciò che si otterrà sarà una schermata stampabile formata da: 
 
 
                                                    titolo del corso 
 
-               nome della persona  |  cognome della persona   |  codice del corso  |  spazio per la firma    
+               nome della persona  |  cognome della persona   |  codice del corso  |  spazio per la firma  <br> 
                
 Ad esempio:<br> 
 
                                                    Corso antincendio
                                                    
-                Mario            |   Rossi                   |     1234             |    __________________   
+                Mario            |   Rossi                   |     1234             |    __________________  <br> 
 
 I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un corso, c'è bisogna di registrare la presenze dei dipendenti. 
 
