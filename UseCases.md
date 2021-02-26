@@ -39,7 +39,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 
   
 
-## CONSULTAZIONE :book:
+## CONSULTAZIONE 
 La consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore dell'applicazione. 
 L'operazione di consultazione dei dati, viene eseguita in modo approfondito quando si schiaccia sull'apposito bottone `CONSULTA`, ciò che apparirà saranno diversi bottoni 
 `ORDINA PER PERSONA` `ORDINA PER CORSO` `CERCA`.<br> 
@@ -79,6 +79,11 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
                                                    titolo del corso 
 
                nome della persona  |  cognome della persona   |  codice del corso  |  spazio per la firma  <br> 
+               
+               Prima intestazione | Seconda intestazione
+                     ------------ | -------------
+          Contenuta della cella 1 | Contenuta della cellal 2
+          Contenuto prima colonna | Contenuto seconda colonna
                
 Ad esempio:<br> 
 
