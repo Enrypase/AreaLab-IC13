@@ -83,8 +83,12 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
 Titolo del corso 
  ------------ | ------------- | ------------- | -------------
  nome della persona  | cognome della persona | codice del corso  | spazio per la firma
- 
 
+
+
+
+|  nome della persona   |   cognome della persona | codice del corso   | spazio per la firma
+|---|---|---|
                
 Ad esempio:<br> 
 
