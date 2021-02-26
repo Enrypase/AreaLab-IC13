@@ -75,27 +75,20 @@ Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella pagina dove sono pre
 Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme relative ad un determinato corso, specificato precedentemente dall'utente, nel momento in cui 'applicazione lo chiederà.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br> 
 Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso ciò che si otterrà sarà una schermata stampabile formata da: 
 
+>                                   Titolo del corso  
+>Nome della persona  | Cognome della persona | Codice del corso | Spazio per la firma
+>:------------ | :-------------: | :-------------: | -------------: 
 
-                                                   titolo del corso 
-
-               nome della persona  |  cognome della persona   |  codice del corso  |  spazio per la firma  <br> 
-               
-
-
-
-Prima intestazione | ....
------------- | ------------- | -------------
-Contenuta della cella 1 | Contenuta della cellal 2 | BB
-Contenuto prima colonna | Contenuto seconda colonna
 
 
 
 
 Ad esempio:<br> 
 
-                                                   Corso antincendio
-                                                   
-                Mario            |   Rossi                   |     1234             |    __________________  <br> 
+>          Corso antincendio 
+>Mario  | Rossi | 1234 |_____________
+>:------------ | :-------------: | :-------------: | -------------: 
+
 
 I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un corso, c'è bisogna di registrare la presenze dei dipendenti. 
 
