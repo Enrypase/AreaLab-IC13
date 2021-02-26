@@ -33,7 +33,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 :small_orange_diamond:[CONSULTAZIONE](#CONSULTAZIONE):book:<br> 
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#AGGIORNAMENTO-ANAGRAFICO)  :calendar:<br> 
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#AGGIORNAMENTO-CORSI):arrows_clockwise:<br> 
-[:small_orange_diamond: OTTIENI FOGLO FIRMA ):page_facing_up::fountain_pen:](#OTTIENI-FOGLI-FIRME<br> 
+[:small_orange_diamond: OTTIENI FOGLO FIRMA :page_facing_up::fountain_pen:](#OTTIENI-FOGLI-FIRME)<br> 
 [BACKUP](#BACKUP)<br> 
 :floppy_disk:
 
