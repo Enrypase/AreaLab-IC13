@@ -24,7 +24,7 @@ Questa tabella conterrà le informazioni di accesso o recupero degli utenti gest
 del sistema.
 
 ## LOG
-Questa tabella conterrà le informazioni dei log degli utenti. Ogni volta che l'utente che effettuerà l'accesso
+Questa tabella conterrà le informazioni dei log degli utenti. Ogni volta che l'utente effettuerà l'accesso,
 sarà memorizzato su questa tabella il relativo username, la data e l'ora dell'accesso e le azioni che ha svolto.
 
 <br>
