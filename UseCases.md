@@ -85,11 +85,14 @@ Titolo del corso
  nome della persona  | cognome della persona | codice del corso  | spazio per la firma
 
 
+| Tavoli | Sono | Cool |
+| ---------- |: -------------: | ------: |
+| col 1 è | allineato a sinistra | $ 1600 |
+| col 2 è | centrato | $ 12 |
+| col 3 è | allineato a destra | $ 1 |
 
 
-|  nome della persona   |   cognome della persona | codice del corso   | spazio per la firma
-|---|---|---|
-               
+
 Ad esempio:<br> 
 
                                                    Corso antincendio
