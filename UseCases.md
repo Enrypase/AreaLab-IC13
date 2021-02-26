@@ -87,7 +87,7 @@ Ad esempio:<br>
 
 I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un corso, c'è bisogna di registrare la presenze dei dipendenti. 
 
-## **BACKUP**  
+###**BACKUP**  
 
 Il pulsante di backup consente appunto di eseguire l'operazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferirà.<br> 
 Ad esempio importazione su chiavetta in un file sql le informazioni personale. 
