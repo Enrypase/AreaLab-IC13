@@ -31,7 +31,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 **Le diverse operazioni, che l'utente può svolgere durante l'utilizzo della applicazione sono principalmente:**<br> 
 
 :small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br> 
-:small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**) :calendar:<br> 
+:small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**)  :calendar:<br> 
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br> 
 :small_orange_diamond:[OTTIENI FOGLO FIRMA](#**OTTIENI-FOGLI-FIRME**):page_facing_up::fountain_pen:<br> 
 :small_orange_diamond:[BACKUP](#**BACKUP**):floppy_disk:<br> 
@@ -49,7 +49,7 @@ L'operazione di consultazione dei dati, viene eseguita in modo approfondito quan
 
   
 
-## **AGGIORNAMENTO ANAGRAFICA**:calendar:  
+## **AGGIORNAMENTO ANAGRAFICA** :calendar:  
 
 la funzionalità aggiornamento anagrafico permette all'utente di aggiungere o modificare i dati anagrafici tramite l'applicazione.<br> 
 Per aggiornare l'anagrafica all'utente non basterà far altro che cliccare sul pulsante apposito `AGGIORNAMENTO ANAGRAFICA`, si caricherà nella page i pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i relativi dati anagrafici del personale.<br> 
