@@ -30,16 +30,16 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 
 **Le diverse operazioni, che l'utente può svolgere durante l'utilizzo della applicazione sono principalmente:**<br> 
 
-:small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br> 
-:small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**)  :calendar:<br> 
-:small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br> 
-:small_orange_diamond:[OTTIENI FOGLO FIRMA](#**OTTIENI-FOGLI-FIRME**):page_facing_up::fountain_pen:<br> 
+:small_orange_diamond:[CONSULTAZIONE](#CONSULTAZIONE):book:<br> 
+:small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#AGGIORNAMENTO-ANAGRAFICO)  :calendar:<br> 
+:small_orange_diamond:[AGGIORNAMENTO CORSI](#AGGIORNAMENTO-CORSI):arrows_clockwise:<br> 
+:small_orange_diamond:[OTTIENI FOGLO FIRMA](#OTTIENI-FOGLI-FIRME):page_facing_up::fountain_pen:<br> 
 [BACKUP](#BACKUP)<br> 
 :floppy_disk:
 
   
 
-## **CONSULTAZIONE** 
+## CONSULTAZIONE 
 
 La consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore dell'applicazione. 
 L'operazione di consultazione dei dati, viene eseguita in modo approfondito quando si schiaccia sull'apposito bottone `CONSULTA`, ciò che apparirà saranno diversi bottoni 
@@ -50,7 +50,7 @@ L'operazione di consultazione dei dati, viene eseguita in modo approfondito quan
 
   
 
-## **AGGIORNAMENTO ANAGRAFICA** :calendar:  
+## AGGIORNAMENTO ANAGRAFICA :calendar:  
 
 la funzionalità aggiornamento anagrafico permette all'utente di aggiungere o modificare i dati anagrafici tramite l'applicazione.<br> 
 Per aggiornare l'anagrafica all'utente non basterà far altro che cliccare sul pulsante apposito `AGGIORNAMENTO ANAGRAFICA`, si caricherà nella page i pulsanti `AGGIUNGI PERSONA` `MODIFICA PERSONA` ed una tabella con i relativi dati anagrafici del personale.<br> 
@@ -59,7 +59,7 @@ Per aggiornare l'anagrafica all'utente non basterà far altro che cliccare sul p
 
   
 
-## **AGGIORNAMENTO CORSI**:arrows_clockwise: 
+## AGGIORNAMENTO CORSI :arrows_clockwise: 
 
 Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella pagina dove sono presenti i bottoni;`AGGIUNGI CORSO` `RICERCA CORSO` `MODIFICA CORSO` `VISUALIZZA CORSI` ed una tabella con i relativi dati dei corsi, nome e descrizione e codice identificativo.<br> 
 * `AGGIUNGI CORSO` l'azione che consente di svolgere questo bottone è creare un nuovo corso che verrà aggiunto agli altri. <br> 
@@ -69,7 +69,7 @@ Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella pagina dove sono pre
 
   
 
-## **OTTIENI FOGLI FIRME**:page_facing_up::fountain_pen: 
+## OTTIENI FOGLI FIRME :page_facing_up::fountain_pen: 
 
 Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme relative ad un determinato corso, specificato precedentemente dall'utente, nel momento in cui 'applicazione lo chiederà.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br> 
 Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso ciò che si otterrà sarà una schermata stampabile formata da: 
