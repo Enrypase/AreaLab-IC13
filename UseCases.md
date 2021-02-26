@@ -84,9 +84,9 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
 
 
 Prima intestazione | Seconda intestazione
-                     ------------ | -------------
-          Contenuta della cella 1 | Contenuta della cellal 2
-          Contenuto prima colonna | Contenuto seconda colonna
+------------ | -------------
+Contenuta della cella 1 | Contenuta della cellal 2
+Contenuto prima colonna | Contenuto seconda colonna
 
 
 
