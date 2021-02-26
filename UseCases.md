@@ -83,11 +83,11 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
 
 
 
-| Tavoli | Sono | Cool |
-| ---------- |: -------------: | ------: |
-| col 1 è | allineato a sinistra | $ 1600 |
-| col 2 è | centrato | $ 12 |
-| col 3 è | allineato a destra | $ 1 |
+Prima intestazione | Seconda intestazione
+                     ------------ | -------------
+          Contenuta della cella 1 | Contenuta della cellal 2
+          Contenuto prima colonna | Contenuto seconda colonna
+
 
 
 
