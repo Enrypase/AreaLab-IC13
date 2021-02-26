@@ -80,7 +80,7 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
 
                nome della persona  |  cognome della persona   |  codice del corso  |  spazio per la firma  <br> 
                
-               Prima intestazione | Seconda intestazione
+Prima intestazione | Seconda intestazione
                      ------------ | -------------
           Contenuta della cella 1 | Contenuta della cellal 2
           Contenuto prima colonna | Contenuto seconda colonna
