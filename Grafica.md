@@ -17,7 +17,7 @@ In questa casella di inserimento si inserisce il nome utente.
 ### Password
 In questa casella di inserimento si inserisce la password.
 
-Effettuato il login si ìi ha accesso all'applicazione.
+Effettuato il login si ha accesso all'applicazione.
 
 <hr>
 
