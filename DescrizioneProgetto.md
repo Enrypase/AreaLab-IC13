@@ -36,7 +36,7 @@ da root.
 <hr>
 
 ## GESTORE<br>
-I gestori sono tutti coloro che dispongono della passwrord e dello username per accedere all'applicazione.
+I gestori sono tutti coloro che dispongono della password e dello username per accedere all'applicazione.
 Gli utenti gestori del sistema disporranno **SOLAMENTE** dei seguenti privilegi:
 * DELETE (cancellare record)
 * INSERT (inserire record)
