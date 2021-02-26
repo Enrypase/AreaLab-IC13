@@ -76,13 +76,13 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
 
                                                    titolo del corso 
 
-               nome della persona  |  cognome della persona   |  codice del corso  |  spazio per la firma  <br> 
+               nome della persona  |  cognome della persona   |  codice del corso  |  spazio per la firma    
                
 Ad esempio:<br> 
 
                                                    Corso antincendio
                                                    
-                Mario            |   Rossi                   |     1234             |    __________________  <br> 
+                Mario            |   Rossi                   |     1234             |    __________________   
 
 I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un corso, c'è bisogna di registrare la presenze dei dipendenti. 
 
