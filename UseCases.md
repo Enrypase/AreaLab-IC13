@@ -30,7 +30,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 
 **Le diverse operazioni, che l'utente può svolgere durante l'utilizzo della applicazione sono principalmente:**<br> 
 
-:small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**):book:<br> 
+:small_orange_diamond:[CONSULTAZIONE](#**CONSULTAZIONE**)<br> 
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**)  :calendar:<br> 
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br> 
 :small_orange_diamond:[OTTIENI FOGLO FIRMA](#**OTTIENI-FOGLI-FIRME**):page_facing_up::fountain_pen:<br> 
@@ -38,7 +38,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 
   
 
-## **CONSULTAZIONE**:book: 
+## **CONSULTAZIONE** 
 
 La consultazione in modo immediato avviene tramite i messaggi prioritari posizionati nella fascia superiore dell'applicazione. 
 L'operazione di consultazione dei dati, viene eseguita in modo approfondito quando si schiaccia sull'apposito bottone `CONSULTA`, ciò che apparirà saranno diversi bottoni 
