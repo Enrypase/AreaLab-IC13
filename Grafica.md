@@ -23,13 +23,13 @@ Effettuato il login si ìi ha accesso all'applicazione.
 
 ## Home Page
 
-- [Priority box](#Priority-Box)
-- [Aggiornamento corsi button](#Aggiornamento-corsi)
-- [Consulta button](#Consulta)
-- [Aggiornamento anagrafica button](#Aggiornamento-anagrafica)
-- [Ottieni fogli firma button](#Ottieni-fogli-firma)
-- [Backup button](#Ottieni-backup)
-- [Foglio firme Button](#Ottieni-foglio-firme)
+- [`Priority box`](#Priority-Box)
+- [`Aggiornamento corsi` button](#Aggiornamento-corsi)
+- [`Consulta` button](#Consulta)
+- [`Aggiornamento anagrafica` button](#Aggiornamento-anagrafica)
+- [`Ottieni fogli firma` button](#Ottieni-fogli-firma)
+- [`Backup` button](#Ottieni-backup)
+- [`Foglio firme` button](#Ottieni-foglio-firme)
 
 ![a](/Immagini/Sito/PaginaIniziale.PNG)
 
@@ -42,10 +42,10 @@ Effettuato il login si ìi ha accesso all'applicazione.
 
 ### Aggiornamento corsi
 
-- [Aggiungi corso Button](#Aggiungi-corso)
-- [Modifica corso Button](#Modifica-corso)
-- [Ricerca corso Button](#Ricerca-corso)
-- [VIsualizza corsi](#Visualizza-corsi)
+- [`Aggiungi corso` button](#Aggiungi-corso)
+- [`Modifica corso` button](#Modifica-corso)
+- [`Ricerca corso` button](#Ricerca-corso)
+- [`VIsualizza corsi` button](#Visualizza-corsi)
 
 ![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/AggiornaCorsi.PNG)
 
