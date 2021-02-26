@@ -17,19 +17,19 @@ In questa casella di inserimento si inserisce il nome utente.
 ### Password
 In questa casella di inserimento si inserisce la password.
 
-Effettuato il login si ha accesso all'applicazione.
+Effettuato il login si ìi ha accesso all'applicazione.
 
 <hr>
 
 ## Home Page
 
 - [`Priority box`](#Priority-Box)
-- [`Aggiornamento corsi` button](#Aggiornamento-corsi)
-- [`Consulta` button](#Consulta)
-- [`Aggiornamento anagrafica` button](#Aggiornamento-anagrafica)
-- [`Ottieni fogli firma` button](#Ottieni-fogli-firma)
-- [`Backup` button](#Ottieni-backup)
-- [`Foglio firme` button](#Ottieni-foglio-firme)
+- [`Aggiornamento corsi`](#Aggiornamento-corsi)
+- [`Consulta`](#Consulta)
+- [`Aggiornamento anagrafica`](#Aggiornamento-anagrafica)
+- [`Ottieni fogli firma`](#Ottieni-fogli-firma)
+- [`Backup` ](#Ottieni-backup)
+- [`Foglio firme`](#Ottieni-foglio-firme)
 
 ![a](/Immagini/Sito/PaginaIniziale.PNG)
 
@@ -42,10 +42,10 @@ Effettuato il login si ha accesso all'applicazione.
 
 ### Aggiornamento corsi
 
-- [`Aggiungi corso` button](#Aggiungi-corso)
-- [`Modifica corso` button](#Modifica-corso)
-- [`Ricerca corso` button](#Ricerca-corso)
-- [`VIsualizza corsi` button](#Visualizza-corsi)
+- [`Aggiungi corso`](#Aggiungi-corso)
+- [`Modifica corso`](#Modifica-corso)
+- [`Ricerca corso`](#Ricerca-corso)
+- [`VIsualizza corsi`](#Visualizza-corsi)
 
 ![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/AggiornaCorsi.PNG)
 
@@ -65,9 +65,9 @@ Effettuato il login si ha accesso all'applicazione.
 
 ### Consulta
 
-- [Ordina per personale Button](#Ordine-per-personale)
-- [Ordina per corso Button](#Ordine-per-corso)
-- [Ricerca](#Ricerca)
+- [`Ordina per personale`](#Ordine-per-personale)
+- [`Ordina per corso`](#Ordine-per-corso)
+- [`Ricerca`](#Ricerca)
 
 ![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/Consulta.PNG)
 
@@ -84,8 +84,8 @@ Effettuato il login si ha accesso all'applicazione.
 
 ### Aggiornamento anagrafica
 
-- [Aggiungi personale Button](#Aggiungi-personale)  
-- [Modifica personale Button](#Modifica-personale)
+- [`Aggiungi personale`](#Aggiungi-personale)  
+- [`Modifica personale`](#Modifica-personale)
 
 ![a](https://github.com/Enrypase/AreaLab-IC13/blob/main/Immagini/Sito/AggiornaAnagrafica.PNG)
 
