@@ -15,7 +15,12 @@ L'utente tramite login si identifica e accede all'applicazione, in caso di login
 
  
 Il fruitore che interagisce è chiunque sia in possesso di utente e password per il Login ed ha la visibilità completa dei dati relativa alla propri scuola. 
-L'utente potrà così visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...). 
+L'utente potrà così visionare, e controllare i vari dipendenti e il loro stato in funzione dei corsi (svolti, da rinnovare a breve...).
+Gli utenti gestori del sistema disporranno **SOLAMENTE** dei seguenti privilegi:
+* DELETE (cancellare record)
+* INSERT (inserire record)
+* SELECT (selezionare record)
+* UPDATE (aggiornare record)
 
   
 
