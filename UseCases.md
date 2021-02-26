@@ -34,7 +34,8 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#**AGGIORNAMENTO-ANAGRAFICO**)  :calendar:<br> 
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#**AGGIORNAMENTO-CORSI**):arrows_clockwise:<br> 
 :small_orange_diamond:[OTTIENI FOGLO FIRMA](#**OTTIENI-FOGLI-FIRME**):page_facing_up::fountain_pen:<br> 
-:small_orange_diamond:[BACKUP](#**BACKUP**):floppy_disk:<br> 
+:small_orange_diamond:[BACKUP](#**BACKUP**)<br> 
+:floppy_disk:
 
   
 
@@ -86,7 +87,7 @@ Ad esempio:<br>
 
 I fogli firma vengono utilizzati solitamente quando durante lo svolgimento di un corso, c'è bisogna di registrare la presenze dei dipendenti. 
 
-## **BACKUP**:floppy_disk: 
+## **BACKUP**  
 
 Il pulsante di backup consente appunto di eseguire l'operazione di backup, ovvero di ottenere una copia in un file sql dei dati relativi al database, che verrà salvata dove l'utente preferirà.<br> 
 Ad esempio importazione su chiavetta in un file sql le informazioni personale. 
