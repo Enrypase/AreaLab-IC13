@@ -33,7 +33,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 :small_orange_diamond:[CONSULTAZIONE](#CONSULTAZIONE):book:<br> 
 :small_orange_diamond:[AGGIORNAMENTO ANAGRAFICO](#AGGIORNAMENTO-ANAGRAFICO)  :calendar:<br> 
 :small_orange_diamond:[AGGIORNAMENTO CORSI](#AGGIORNAMENTO-CORSI):arrows_clockwise:<br> 
-[:small_orange_diamond: OTTIENI FOGLO FIRMA :page_facing_up::fountain_pen:](#OTTIENI-FOGLI-FIRME-:page_facing_up::fountain_pen: )<br> 
+[:small_orange_diamond: OTTIENI FOGLO FIRMA :page_facing_up::fountain_pen:](#OTTIENI-FOGLI-FIRMA)<br> 
 [BACKUP](#BACKUP)<br> 
 :floppy_disk:
 
@@ -69,7 +69,7 @@ Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella pagina dove sono pre
 
   
 
-## OTTIENI FOGLI FIRME :page_facing_up::fountain_pen: 
+## OTTIENI FOGLI FIRMA 
 
 Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme relative ad un determinato corso, specificato precedentemente dall'utente, nel momento in cui 'applicazione lo chiederà.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br> 
 Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso ciò che si otterrà sarà una schermata stampabile formata da: 
