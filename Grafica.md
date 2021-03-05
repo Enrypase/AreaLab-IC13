@@ -27,9 +27,8 @@ Effettuato il login si ìi ha accesso all'applicazione.
 - [`Aggiornamento corsi`](#Aggiornamento-corsi)
 - [`Consulta`](#Consulta)
 - [`Aggiornamento anagrafica`](#Aggiornamento-anagrafica)
-- [`Ottieni foglio firma`](#Ottieni-fogli-firma)
+- [`Ottieni foglio firme`](#Ottieni-foglio-firme)
 - [`Backup` ](#Ottieni-backup)
-- [`Foglio firme`](#Ottieni-foglio-firme)
 
 ![a](/Immagini/Sito/PaginaIniziale.PNG)
 
