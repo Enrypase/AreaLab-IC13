@@ -2,19 +2,24 @@
 
 ## HTTP REQUEST
 
-### SELEZIONE CON RICERCA DALLA TABELLA DIPENDENTI
-Si vuole ricercare un dipendente con ID=37953:<br>
->     GET /research.html/dipendenti/id=37953
+### GET
+#### SELEZIONE CON RICERCA DALLA TABELLA DIPENDENTI
+Si vuole ricercare un dipendente con ID specifico:<br>
+>     GET /research.html/dipendenti/@id
 >
 
-### SELEZIONE DEGLI EVENTI ASSOCIATI AD UN DIPENDENTE
->     GET /research.html/dipendenti/id=37953/eventi
+#### SELEZIONE DEGLI EVENTI ASSOCIATI AD UN DIPENDENTE SPECIFICO
+>     GET /research.html/dipendenti/@id/eventi
 >
 
-### SELEZIONE DEGLI EVENTI
+#### SELEZIONE DEGLI EVENTI
 >     GET /research.html/eventi
 >
 
+### POST
+#### AGGIUNTA DI UN DIPENDENTE
+>     POST /dipendenti
+>
 <hr>
 
 ## HTTP RESPONSE
