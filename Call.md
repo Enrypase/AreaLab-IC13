@@ -35,6 +35,13 @@ Si vuole ricercare un dipendente con ID specifico:<br>
 >     
 
 ### PUT
+#### MODIFICARE DATI DI UN UTENTE
+>     PUT /dipendenti/@id
+>
+>body:
+>
+>     attributi
+>  
 
 ### DELETE
 
