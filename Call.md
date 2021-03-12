@@ -1,6 +1,9 @@
 # SYSTEM CALLS <br>
 In questo file vengono specificate le http request e le http response che verranno effettuate dal programma in esecuzione grazie al protocollo http e alle richieste poste dall'utente gestore.
 
+[:small_orange_diamond:HTTP REQUEST](#HTTP-REQUEST)<br> 
+[:small_orange_diamond:HTTP RESPONSE](#HTTP-RESPONSE) <br> 
+
 ## HTTP REQUEST
 
 ### GET
