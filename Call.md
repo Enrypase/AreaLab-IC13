@@ -4,7 +4,7 @@
 
 ### SELEZIONE CON RICERCA DALLA TABELLA DIPENDENTI
 Si vuole ricercare un dipendente con ID=37953:<br>
-*GET /research.html/dipendenti/id=37953
+>       GET /research.html/dipendenti/id=37953
 >
 
 ### SELEZIONE DEGLI EVENTI ASSOCIATI AD UN DIPENDENTE
