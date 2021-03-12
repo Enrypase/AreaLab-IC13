@@ -1,4 +1,4 @@
-# SYSTEM CALL <br>
+# SYSTEM CALLS <br>
 
 ## HTTP REQUEST
 
