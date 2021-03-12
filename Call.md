@@ -7,18 +7,15 @@ Si vuole ricercare un dipendente con ID=37953:<br>
 >GET /research.html/dipendenti/id=37953
 >
 
-<hr>
-
 ### SELEZIONE DEGLI EVENTI ASSOCIATI AD UN DIPENDENTE
 >GET /research.html/dipendenti/id=37953/eventi
 >
-
-<hr>
 
 ### SELEZIONE DEGLI EVENTI
 >GET /research.html/eventi
 >
 
+<hr>
 
 ## HTTP RESPONSE
 
@@ -26,13 +23,9 @@ Si vuole ricercare un dipendente con ID=37953:<br>
 >200 OK
 >
 
-<hr>
-
 ### RICHIESTA EFFETTUATA MALE
 >400 BAD REQUEST
 >
-
-<hr>
 
 ### LA RICHIESTA NON HA PORTATO AD ALCUN RISULTATO
 >404 NOT FOUND
