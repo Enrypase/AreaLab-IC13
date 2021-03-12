@@ -1,4 +1,5 @@
 # SYSTEM CALLS <br>
+In questo file vengono specificate le http request e le http response che verranno effettuate dal programma in esecuzione grazie al protocollo http.
 
 ## HTTP REQUEST
 
