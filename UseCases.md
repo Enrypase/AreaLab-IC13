@@ -30,7 +30,7 @@ In basso alla pagina c'è un bottone centrale `OTTIENI BACKUP` .<br>
 
 **Le diverse operazioni, che l'utente può svolgere durante l'utilizzo della applicazione sono principalmente:**<br> 
 
-[:small_orange_diamond:CONSULTAZIONE:book:](#CONSULTAZIONE-:book:)<br> 
+[:small_orange_diamond:CONSULTAZIONE:book:](#CONSULTAZIONE)<br> 
 [:small_orange_diamond:AGGIORNAMENTO ANAGRAFICO :calendar:](#AGGIORNAMENTO-ANAGRAFICO) <br> 
 [:small_orange_diamond:AGGIORNAMENTO CORSI:arrows_clockwise:](#AGGIORNAMENTO-CORSI)<br> 
 [:small_orange_diamond: OTTIENI FOGLO FIRMA :page_facing_up::fountain_pen:](#OTTIENI-FOGLI-FIRMA)<br> 
