@@ -56,6 +56,7 @@ Si vuole ricercare un dipendente con ID specifico:<br>
 >  
 
 ### DELETE
+Questo servizio non viene implementato dal programma.
 <hr>
 
 ## HTTP RESPONSE
