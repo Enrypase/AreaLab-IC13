@@ -66,7 +66,7 @@ Si vuole ricercare un dipendente con ID specifico:<br>
 >  
 
 ### DELETE
-Questo servizio non viene implementato dal programma.
+Questo servizio non viene implementato dal programma. La cancellazione di un dipendente non è contemplata da questo programma. Qualora un dipendente cambiasse istituto verrebbe modificata la voce "stato" dalla tabella dipendenti e posta a false.
 <hr>
 
 ## HTTP RESPONSE :calling:
