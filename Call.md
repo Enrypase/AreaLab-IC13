@@ -20,6 +20,18 @@ Si vuole ricercare un dipendente con ID specifico:<br>
 #### AGGIUNTA DI UN DIPENDENTE
 >     POST /dipendenti
 >
+
+#### AGGIUNTA DI UN EVENTO
+>     POST /eventi
+>
+
+#### AGGIUNTA DI UN EVENTO AI DIPENDENTI
+>     POST /eventi/@id/dipendenti
+>body: 
+>     @id (dipendenti che hanno partecipato)
+>     altri attributi
+>     
+
 <hr>
 
 ## HTTP RESPONSE
