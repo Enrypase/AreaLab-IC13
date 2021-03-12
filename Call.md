@@ -1,18 +1,18 @@
 # SYSTEM CALLS <br>
 In questo file vengono specificate le http request e le http response che verranno effettuate dal programma in esecuzione grazie al protocollo http e alle richieste poste dall'utente gestore.
 
-**HTTP REQUEST**<br>
+**HTTP REQUEST** :calling:<br>
 [GET](#GET)<br> 
 [POST](#POST)<br> 
 [PUT](#PUT)<br> 
 [DELETE](#DELETE)<br> 
 
-**HTTP RESPONSE**<br>
+**HTTP RESPONSE** :calling:<br>
 [200](#RICHIESTA-PROCESSATA-CON-SUCCESSO)<br> 
 [400](#RICHIESTA-MAL-EFFETTUATA)<br> 
 [404](#LA-RICHIESTA-NON-HA-PORTATO-AD-ALCUN-RISULTATO)<br> 
 
-## HTTP REQUEST
+## HTTP REQUEST :calling:
 
 ### GET
 #### SELEZIONE CON RICERCA DALLA TABELLA DIPENDENTI
@@ -69,7 +69,7 @@ Si vuole ricercare un dipendente con ID specifico:<br>
 Questo servizio non viene implementato dal programma.
 <hr>
 
-## HTTP RESPONSE
+## HTTP RESPONSE :calling:
 
 ### RICHIESTA PROCESSATA CON SUCCESSO
 >     200 OK
