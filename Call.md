@@ -10,7 +10,7 @@ In questo file vengono specificate le http request e le http response che verran
 **HTTP RESPONSE**<br>
 [200](#RICHIESTA-PROCESSATA-CON-SUCCESSO)<br> 
 [400](#RICHIESTA-MAL-EFFETTUATA)<br> 
-[404](#DELETE)<br> 
+[404](#LA-RICHIESTA-NON-HA-PORTATO-AD-ALCUN-RISULTATO)<br> 
 
 ## HTTP REQUEST
 
@@ -56,7 +56,6 @@ Si vuole ricercare un dipendente con ID specifico:<br>
 >  
 
 ### DELETE
-
 <hr>
 
 ## HTTP RESPONSE
