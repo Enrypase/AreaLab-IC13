@@ -32,10 +32,20 @@ Si vuole ricercare un dipendente con ID specifico:<br>
 #### AGGIUNTA DI UN DIPENDENTE
 >     POST /dipendenti
 >
+>body:
+>
+>     @id
+>     altri attributi
+> 
 
 #### AGGIUNTA DI UN EVENTO
 >     POST /eventi
 >
+>body:
+>
+>     @idEvento
+>     altri attributi
+>  
 
 #### AGGIUNTA DI UN EVENTO AI DIPENDENTI
 >     POST /eventi/@id/dipendenti
