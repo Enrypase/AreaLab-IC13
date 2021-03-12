@@ -1,1 +1,39 @@
+# SYSTEM CALL <br>
 
+## HTTP REQUEST
+
+### SELEZIONE CON RICERCA DALLA TABELLA DIPENDENTI
+Si vuole ricercare un dipendente con ID=37953:<br>
+>GET /research.html/dipendenti/id=37953
+>
+
+<hr>
+
+### SELEZIONE DEGLI EVENTI ASSOCIATI AD UN DIPENDENTE
+>GET /research.html/dipendenti/id=37953/eventi
+>
+
+<hr>
+
+### SELEZIONE DEGLI EVENTI
+>GET /research.html/eventi
+>
+
+
+## HTTP RESPONSE
+
+### RICHIESTA PROCESSATA CON SUCCESSO
+>200 OK
+>
+
+<hr>
+
+### RICHIESTA EFFETTUATA MALE
+>400 BAD REQUEST
+>
+
+<hr>
+
+### LA RICHIESTA NON HA PORTATO AD ALCUN RISULTATO
+>404 NOT FOUND
+>
