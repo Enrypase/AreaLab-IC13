@@ -4,15 +4,15 @@
 
 ### SELEZIONE CON RICERCA DALLA TABELLA DIPENDENTI
 Si vuole ricercare un dipendente con ID=37953:<br>
->       GET /research.html/dipendenti/id=37953
+>     GET /research.html/dipendenti/id=37953
 >
 
 ### SELEZIONE DEGLI EVENTI ASSOCIATI AD UN DIPENDENTE
->GET /research.html/dipendenti/id=37953/eventi
+>     GET /research.html/dipendenti/id=37953/eventi
 >
 
 ### SELEZIONE DEGLI EVENTI
->GET /research.html/eventi
+>     GET /research.html/eventi
 >
 
 <hr>
@@ -20,13 +20,13 @@ Si vuole ricercare un dipendente con ID=37953:<br>
 ## HTTP RESPONSE
 
 ### RICHIESTA PROCESSATA CON SUCCESSO
->200 OK
+>     200 OK
 >
 
 ### RICHIESTA EFFETTUATA MALE
->400 BAD REQUEST
+>     400 BAD REQUEST
 >
 
 ### LA RICHIESTA NON HA PORTATO AD ALCUN RISULTATO
->404 NOT FOUND
+>     404 NOT FOUND
 >
