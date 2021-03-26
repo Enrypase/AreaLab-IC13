@@ -1,0 +1,73 @@
+body{
+	background-color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1vw;
+}
+	.grid{
+		display: grid;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: 6vw auto 8.5vw;
+		grid-gap: 1vw;
+	}
+		.header{
+			padding: 0.5vw;
+			background-color: #eee;
+			grid-column: 2;
+			grid-row: 1;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.header img{
+			transition: transform 0.15s, filter 0.15s ease-in-out;
+			height: 100%;
+			transform: scale(0.7);
+		}
+		.header img:hover{
+			transform: scale(0.9);
+		}
+		.testo{
+			background-color: #eee;
+			grid-row: 2;
+			grid-column: 2;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 4vh;
+		}
+			.box{
+				padding: 1vw;
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: 1fr 1fr;
+				font-weight: bold;
+				text-decoration: none;
+				color: black;
+				grid-gap: 2.5%;
+				overflow: hidden;
+			}
+			.box:hover{
+				background-color: rgba(255,255,255,0.6);
+			}
+			.box img{
+				vertical-align: middle;
+				width: 100%;
+				grid-row: 1;
+			}
+			.box p{
+				grid-row: 2;
+			}
+			.box img{
+				padding-top: 5%;
+				transition: transform 0.15s, filter 0.15s ease-in-out;
+				transform: scale(0.8);
+			}
+			.box:hover img{
+				transform: scale(0.65);
+			}
+		.bottom{
+			padding: 1vw;
+			background-color: #eee;
+			text-align: center;
+			grid-column: 2;
+			grid-row: 3;
+			vertical-align: middle;
+		}
