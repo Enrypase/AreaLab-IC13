@@ -10,7 +10,7 @@ $pw=hash('sha256',$pw);
 print("1");
 try {
 		$query = "select * from utenti where username= ? and password= ?";
-		//$query = "hvjfdfbfdbdf";
+	
 		$stmt = $con->prepare( $query );
 	
 		$stmt->bindParam(1, $ut);
