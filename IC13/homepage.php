@@ -16,7 +16,7 @@ $id=getArr($_SESSION,'id');
 if ($user!="")
 	print("<H3> Ciao $user! </h3>");
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = " ";
+	$query = "select * from personale p join frequentazioni f o n f.codFiscPersona=p.codFiscPersona group by(f.idCorso)";
 	try{
 		$num=0;
 		$stmt = $con->prepare( $query );
