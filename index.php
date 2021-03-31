@@ -8,7 +8,7 @@ $id=getArr($_SESSION,'id');
 <!-- Quando si passa da HTML a PHP cambiare il .html in .php --> 
 <!-- Mettere una larghezza massima del testo -->
 <!-- Aumentare/diminuire le colonne ai lati in base alla grandezza vw -->
-<!-- coso dei cookies -->
+<!-- coso dei cookies CIAO MARY -->
 
 <?php 
 if($user == null || $user == "")

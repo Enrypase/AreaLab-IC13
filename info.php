@@ -5,7 +5,7 @@ $user=getArr($_SESSION,'username');
 $id=getArr($_SESSION,'id');
 ?>
 
-<?php  //CUAI
+<?php 
 if($user == null || $user == "")
 	include './pages/infoContent.php';
 else
