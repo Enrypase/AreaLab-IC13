@@ -4,8 +4,6 @@ include 'libs/util.php';
 $user=getArr($_SESSION,'username');
 $id=getArr($_SESSION,'id');
 ?>
-<?php
-if ($user="adminuser"){
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -18,7 +16,7 @@ if ($user="adminuser"){
 if ($user!="")
 	print("<H3> Ciao $user! </h3>");
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = "select * from personale p join frequentazioni f o n f.codFiscPersona=p.codFiscPersona where f.oreEffettuate<6 group by(f.idCorso)";
+	$query = " ";
 	try{
 		$num=0;
 		$stmt = $con->prepare( $query );
@@ -32,13 +30,13 @@ if ($user!="")
 	    echo "<tr>";
 	    echo "<th>nome</th>";
 	    echo "<th>cognome</th>";
-	    echo "<th>codice fiscale</th>";
+		echo "<th>codice fiscale</th>";
 	    echo "</tr>";
 	    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 	        echo "<tr>";
-	        echo "<td>".$row['p.nomePersona']."</td>";
-	        echo "<td>".$row['p.cognomePersona']."</td>";
-	        echo "<td>".$row['p.codFiscPersona']."</td>";
+	        echo "<td>".$row['nomePersona']."</td>";
+	        echo "<td>".$row['cognomePersona']."</td>";
+	        echo "<td>".$row['codFiscPersona']."</td>";
 			echo "</tr>";
 	        }
 	    echo "</table>";
@@ -58,4 +56,3 @@ if ($user!="")
 
 </body>
 </html>
-}?>

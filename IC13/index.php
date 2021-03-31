@@ -4,15 +4,20 @@ include 'libs/util.php';
 $user=getArr($_SESSION,'username');
 $id=getArr($_SESSION,'id');
 ?>
-<!-- PROTEGGERE LE FUNZIONALITA' DA LOGGATI -->
-<!-- Quando si passa da HTML a PHP cambiare il .html in .php --> 
-<!-- Mettere una larghezza massima del testo -->
-<!-- Aumentare/diminuire le colonne ai lati in base alla grandezza vw -->
-<!-- coso dei cookies -->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> POLDO </title>
+  
+    </head>
+<body>
+	
+<form action='doLogin.php' method='post' >
+            Username<input type='text' name='username' /><br>
+            Password <input type='password' name='password' /><br>
+			<input type ='submit' value='Login'>
+</form>
+</body>
+</html>
 
-<?php 
-if($user == null || $user == "")
-	include './pages/indexContent.php'; 
-else
-	include './pages/indexContentLogged.php'; 
-?>
+   
