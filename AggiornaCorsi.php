@@ -12,6 +12,7 @@ $id=getArr($_SESSION,'id');
   
     </head>
 <body>
+
 <?php
 if ($user!="" && $user="adminuser"){
 	print("<a href=\"homepage.php\">Home</a><br>");
