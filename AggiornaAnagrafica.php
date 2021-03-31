@@ -13,11 +13,13 @@ $id=getArr($_SESSION,'id');
     </head>
 <body>
 
-<a href="homepage.php">Home</a><br>
-<a href="AggiungiPersona.php"><button onClick="AggiungiPersona.php"> aggiungi persona</button></a><br>
-<a href="ModificaPersona.php"><button onClick="ModificaPersona.php"> modifica persona</button></a><br>
-
 <?php
+if ($user!="" && $user="adminuser"){
+	
+	print("<a href=\"homepage.php\">Home</a><br>");
+	print("<a href=\"AggiungiPersona.php\"><button onClick=\"AggiungiPersona.php\"> aggiungi persona</button></a><br>");
+	print("<a href=\"ModificaPersona.php\"><button onClick=\"ModificaPersona.php\"> modifica persona</button></a><br>");
+
 	//select all data
 	$query = "SELECT * FROM personale";
 	try {
@@ -61,7 +63,7 @@ $id=getArr($_SESSION,'id');
 	else{
 	    echo "No records found.";
 	}
-
+}
 ?> 
  
 </body>
