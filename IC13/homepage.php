@@ -4,6 +4,8 @@ include 'libs/util.php';
 $user=getArr($_SESSION,'username');
 $id=getArr($_SESSION,'id');
 ?>
+<?php
+if ($user="adminuser"){
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -56,3 +58,4 @@ if ($user!="")
 
 </body>
 </html>
+}?>
