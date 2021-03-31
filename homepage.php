@@ -11,7 +11,7 @@ $id=getArr($_SESSION,'id');
   
     </head>
 <body>
- 
+//php
 <?php
 if ($user!="" && $user="adminuser"){
 	print("<H3> Ciao $user! </h3>");
