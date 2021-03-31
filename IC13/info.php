@@ -5,7 +5,7 @@ $user=getArr($_SESSION,'username');
 $id=getArr($_SESSION,'id');
 ?>
 
-<?php 
+<?php //CIAOO GitHub
 if($user == null || $user == "")
 	include './pages/infoContent.php';
 else
