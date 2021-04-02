@@ -3,6 +3,7 @@ session_start();
 include 'libs/util.php';
 $user=getArr($_SESSION,'username');
 $id=getArr($_SESSION,'id');
+$_SESSION["currentPage"] = "info.php";
 ?>
 
 <?php 

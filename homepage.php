@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'libs/util.php';
+include 'libs/db_connect.php';
 $user=getArr($_SESSION,'username');
 $id=getArr($_SESSION,'id');
 ?>
@@ -16,7 +17,7 @@ $id=getArr($_SESSION,'id');
 if ($user!="")
 	print("<H3> Ciao $user! </h3>");
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = " ";
+	$query = "select * from personale;";
 	try{
 		$num=0;
 		$stmt = $con->prepare( $query );
