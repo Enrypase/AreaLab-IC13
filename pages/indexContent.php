@@ -5,7 +5,6 @@ include './Logica/security.php';
 <!DOCTYPE html>
 <head>
 	<link rel='stylesheet' type='text/css' href='./Stile/index.css'>
-
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -13,7 +12,7 @@ include './Logica/security.php';
 </head>
 <body>
 	<div class="grid">
-		<?php echo file_get_contents('./pages/header.html'); ?>
+		<?php include './pages/header.php'; ?>
 		<div class="testo">
 			<a href="info.php" class="box left">
 					<img src="./Immagini/info.png" alt="Infos">

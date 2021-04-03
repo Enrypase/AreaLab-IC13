@@ -12,9 +12,7 @@ include './Logica/security.php';
 </head>
 <body>
 	<div class="grid">
-		<?php		 
-		echo file_get_contents('./pages/header-logged.html');
-		?>
+		<?php include './pages/header-logged.php'; ?>
 		<div class="testo">
 			<a href="info.php" class="box left">
 					<img src="./Immagini/info.png" alt="Infos">

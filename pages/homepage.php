@@ -13,9 +13,7 @@ include './Logica/security.php';
 	</head>
 	<body>
 		<div class="grid">
-			<?php		 
-			echo file_get_contents('./pages/header-logged.html');
-			?>
+			<?php include './pages/header-logged.php'; ?>
 			<div class="testo">
 				<div class="elenco">
 					<?php
@@ -32,12 +30,11 @@ include './Logica/security.php';
 						    echo "Errore !".$ex->getMessage();
 						}
 						if($num>0){
-							
 						    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 						        echo "<p>".$row['nomePersona'].", ";
 						        echo "".$row['cognomePersona'].", ";
 						        echo "".$row['codFiscPersona'].";</p>";
-						        }
+						    }
 						}
 						else{
 						    echo "No results.";

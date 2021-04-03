@@ -12,7 +12,7 @@ include './Logica/security.php';
 </head>
 <body>
 	<div class="grid">
-		<?php echo file_get_contents('./pages/header-logged.html'); ?>
+		<?php include './pages/header-logged.php'; ?>
 		<div class="testo">
 			<p> Benvenuto! <br> Effettua l'accesso solamente se sei amministratore e hai a disposizione le credenziali. <br> Non provare a effettuare accessi se non hai a disposizione le credenziali! Viene tenuto traccia di tutto. ALREADY LOGGED!!</p>
 			<form action='./Logica/doLogin.php' method='post' >
