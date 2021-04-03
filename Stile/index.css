@@ -1,12 +1,12 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 1vw;
+	font-size: clamp(0.5vh, 1.75vh, 2.5vh);
 }
 	.grid{
 		display: grid;
 		grid-template-columns: 10% 80% 10%;
-		grid-template-rows: 6vw auto 8.5vw;
+		grid-template-rows: 10vh auto auto;
 		grid-gap: 1vw;
 	}
 		.header{
@@ -43,13 +43,15 @@ body{
 				color: black;
 				grid-gap: 2.5%;
 				overflow: hidden;
+				max-width: 30vw;
+				justify-items: center;
 			}
 			.box:hover{
 				background-color: rgba(255,255,255,0.6);
 			}
 			.box img{
 				vertical-align: middle;
-				width: 100%;
+				width: clamp(5vh, 30vh, 55vh);
 				grid-row: 1;
 			}
 			.box p{

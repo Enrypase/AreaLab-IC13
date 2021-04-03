@@ -1,7 +1,7 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 1vw;
+	font-size: clamp(1.75 rem, 3vw, 2.1rem);
 }
 	.grid{
 		display: grid;

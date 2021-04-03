@@ -1,10 +1,20 @@
 <?php 
 $_SESSION['secLevel'] = 0;
 include './Logica/security.php';
+include './libs/mobileDetect.php';
+$detect = new Mobile_Detect();
 ?>
 <!DOCTYPE html>
 <head>
-	<link rel='stylesheet' type='text/css' href='./Stile/index.css'>
+	<?php 
+	if($detect->isMobile()){
+		echo "<link rel='stylesheet' type='text/css' href='./Stile/indexMobile.css'>";
+		//DA AGGIUNGERE INDEX MOBILE
+	}
+	else{
+		echo "<link rel='stylesheet' type='text/css' href='./Stile/index.css'>";
+	}
+	?>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
