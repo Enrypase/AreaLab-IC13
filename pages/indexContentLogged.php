@@ -1,10 +1,19 @@
 <?php 
 $_SESSION['secLevel'] = 1;
 include './Logica/security.php';
+include './libs/mobileDetect.php';
+$detect = new Mobile_Detect();
 ?>
 <!DOCTYPE html>
 <head>
-	<link rel='stylesheet' type='text/css' href='./Stile/index-logged.css'>
+	<?php 
+	if($detect->isMobile()){
+		echo "<link rel='stylesheet' type='text/css' href='./Stile/index-loggedMobile.css'>";
+	}
+	else{
+		echo "<link rel='stylesheet' type='text/css' href='./Stile/index-logged.css'>";
+	}
+	?>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -24,7 +33,7 @@ include './Logica/security.php';
 			</a>
 			<a href="aboutUs.php" class="box right">
 				<img src="./Immagini/aboutUs.png" alt="AboutUs">
-				<p> Benvenuto! Clicca qui per essere rimandato alla pagina alla quale troverai tutti i nostri contatti. </p>
+				<p> Benvenuto! Clicca qui per essere rimandato alla pagina alla quale troverai tutti i nostri contatti. <br> Sia riguardante la scuola che gli sviluppatori che hanno partecipato al progetto.</p>
 			</a>
 		</div>
 		<?php echo file_get_contents('./pages/footer-logged.html');	?>

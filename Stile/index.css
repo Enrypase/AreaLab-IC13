@@ -51,7 +51,7 @@ body{
 			}
 			.box img{
 				vertical-align: middle;
-				width: clamp(5vh, 30vh, 55vh);
+				width: clamp(5vh, 25vh, 55vh);
 				grid-row: 1;
 			}
 			.box p{

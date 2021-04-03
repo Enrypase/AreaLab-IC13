@@ -9,7 +9,6 @@ $detect = new Mobile_Detect();
 	<?php 
 	if($detect->isMobile()){
 		echo "<link rel='stylesheet' type='text/css' href='./Stile/indexMobile.css'>";
-		//DA AGGIUNGERE INDEX MOBILE
 	}
 	else{
 		echo "<link rel='stylesheet' type='text/css' href='./Stile/index.css'>";
@@ -34,7 +33,7 @@ $detect = new Mobile_Detect();
 			</a>
 			<a href="aboutUs.php" class="box right">
 				<img src="./Immagini/aboutUs.png" alt="AboutUs">
-				<p> Benvenuto! Clicca qui per essere rimandato alla pagina alla quale troverai tutti i nostri contatti. </p>
+				<p> Benvenuto! Clicca qui per essere rimandato alla pagina alla quale troverai tutti i nostri contatti. <br> Sia riguardante la scuola che gli sviluppatori che hanno partecipato al progetto.</p>
 			</a>
 		</div>
 		<?php echo file_get_contents('./pages/footer.html'); ?>
