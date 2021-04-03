@@ -1,0 +1,81 @@
+body{
+	background-color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1vw;
+}
+	.grid{
+		display: grid;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-rows: 6vw auto 8.5vw;
+		grid-gap: 1vw;
+	}
+		.header{
+			padding: 0.5vw;
+			background-color: #eee;
+			grid-column: 2;
+			grid-row: 1;
+			text-align: center;
+			vertical-align: middle;
+
+			display: grid;
+			grid-template-rows: 100%;
+			grid-template-columns: 50% 50%;
+			grid-gap: 1vw;
+		}
+			.notLogged{
+				grid-column: 1;
+			}
+			.logged{
+				grid-column: 2;
+			}
+		.header img{
+			transition: transform 0.15s, filter 0.15s ease-in-out;
+			height: 100%;
+			transform: scale(0.7);
+		}
+		.header img:hover{
+			transform: scale(0.9);
+		}
+		.testo{
+			background-color: #eee;
+			grid-row: 2;
+			grid-column: 2;
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			font-weight: bold;
+			text-align: center;
+			align-items: center;
+		}
+			.elenco {
+				grid-row : 1;
+				padding: 1vw;
+			}
+			.pulsanti{
+				grid-row: 2;
+				padding: 1vw;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr;
+				align-items: center;
+			}
+			.pulsanti button{
+				width: 100%;
+				border-radius: 1em;
+				font-size: 1vw;
+				padding: 0.5vw;
+				font-weight: bold;
+			}
+			.pulsanti button:hover{
+				background-color: #FE9900;
+				color: white;
+				border-color: #CD7A00;
+			}
+			
+		.bottom{
+			padding: 1vw;
+			background-color: #eee;
+			text-align: center;
+			grid-column: 2;
+			grid-row: 3;
+			vertical-align: middle;
+		}
