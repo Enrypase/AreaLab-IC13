@@ -27,14 +27,11 @@ try {
 			$mail=$row['mail'];
 			$_SESSION['username']=$user;
 			$_SESSION['id']=$row['id'];
-			$error="";
 			
 			header('Location: ../homepage.php');
 		}
 		else{
 			if(username == '' || username == null){
-				$user="";
-				$error="password errata";
 				header('Location: ../index.php');
 				session_destroy();
 			}

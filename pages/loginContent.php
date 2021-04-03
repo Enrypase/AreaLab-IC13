@@ -1,3 +1,7 @@
+<?php 
+$_SESSION['secLevel'] = 0;
+include './Logica/security.php';
+?>
 <!DOCTYPE html>
 <head>
 	<link rel='stylesheet' type='text/css' href='./Stile/login.css'>

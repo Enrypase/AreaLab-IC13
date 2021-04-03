@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'libs/util.php';
+include './libs/util.php';
 $user= $_SESSION['username'];
 $id= $_SESSION['id'];
 $_SESSION["currentPage"] = "info.php";

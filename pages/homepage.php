@@ -1,3 +1,7 @@
+<?php 
+$_SESSION['secLevel'] = 1;
+include './Logica/security.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>
