@@ -2,52 +2,62 @@
 session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-$user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+$user= $_SESSION['username'];
+$id= $_SESSION['id'];
 ?>
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title> IC13 </title>
-  
-    </head>
+<!DOCTYPE html>
+<head>
+	<link rel='stylesheet' type='text/css' href='./Stile/index-logged.css'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<title>Home</title>
+</head>
 <body>
+	<div class="grid">
+		<?php		 
+		echo file_get_contents('./pages/header-logged.html');
+		?>
+		<div class="testo">
 
-<?php
-if ($user!="")
-	print("<H3> Ciao $user! </h3>");
-	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = "select * from personale;";
-	try{
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		$num = $stmt->rowCount();
-	}catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
-	}
-	if($num>0){
-		echo "<table border='1'>";
-	    echo "<tr>";
-	    echo "<th>nome</th>";
-	    echo "<th>cognome</th>";
-		echo "<th>codice fiscale</th>";
-	    echo "</tr>";
-	    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-	        echo "<tr>";
-	        echo "<td>".$row['nomePersona']."</td>";
-	        echo "<td>".$row['cognomePersona']."</td>";
-	        echo "<td>".$row['codFiscPersona']."</td>";
-			echo "</tr>";
-	        }
-	    echo "</table>";
-	}
-	else{
-	    echo "No results.";
-	}
-?>
+			<?php
+			if ($user!="")
+				print("<H3> Ciao $user! </h3>");
+				echo "<b>Persone che devono svolgere dei corsi:</b>";
+				$query = "select * from personale p left join frequentazioni f on (p.codFiscPersona = f.codFiscPersona) where f.codFiscPersona IS NULL;";// VANNO AGGIUNTI ANCHE I CASI DELLA SOMMA DELLE ORE INFERIORE A QUELLA VOLUTA E CONDIZIONE SULLA DATA
+				try{
+					$num=0;
+					$stmt = $con->prepare( $query );
+					$stmt->execute();
+					$num = $stmt->rowCount();
+				}catch(PDOException $ex) {
+				    echo "Errore !".$ex->getMessage();
+				}
+				if($num>0){
+					echo "<table border='1'>";
+				    echo "<tr>";
+				    echo "<th>nome</th>";
+				    echo "<th>cognome</th>";
+					echo "<th>codice fiscale</th>";
+				    echo "</tr>";
+				    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+				        echo "<tr>";
+				        echo "<td>".$row['nomePersona']."</td>";
+				        echo "<td>".$row['cognomePersona']."</td>";
+				        echo "<td>".$row['codFiscPersona']."</td>";
+						echo "</tr>";
+				        }
+				    echo "</table>";
+				}
+				else{
+				    echo "No results.";
+				}
+			?>
+		</div>
+		<?php echo file_get_contents('./pages/footer-logged.html');	?>
+	</div>
+</body>
 
-<a href="index.php"><button onClick="index.php"> logout</button></a><br>
 <a href="AggiornaCorsi.php"><button onClick="AggiornaCorsi.php"> aggiorna corsi</button></a><br>
 <a href="Consulta.php"><button onClick="index.php"> consulta</button></a><br>
 <a href="AggiornaAnagrafica.php"><button onClick="AggiornaAnagrafica.php"> aggiorna anagrafica</button></a><br>

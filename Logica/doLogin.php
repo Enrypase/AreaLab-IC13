@@ -8,6 +8,7 @@ $ut=getArr($_POST,"username");
 $pw=getArr($_POST,"password");
 $pw=hash('sha256',$pw);
 $_SESSION["currentPage"] = "doLogin.php";
+$user = $_SESSION['username'];
 try {
 		//prepare query
 		$query = "select * from utenti where username= ? and password= ?";
@@ -31,10 +32,16 @@ try {
 			header('Location: ../homepage.php');
 		}
 		else{
-			$user="";
-			$error="password errata";
-			header('Location: ../index.php');
-			session_destroy();
+			if(username == '' || username == null){
+				$user="";
+				$error="password errata";
+				header('Location: ../index.php');
+				session_destroy();
+			}
+			else{
+				header('Location: ../index.php');
+			}
+			
 		}
 	
 

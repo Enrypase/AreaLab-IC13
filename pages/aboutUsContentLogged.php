@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<link rel='stylesheet' type='text/css' href='./Stile/aboutUs.css'>
+	<link rel='stylesheet' type='text/css' href='./Stile/aboutUs-logged.css'>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="grid">
-		<?php echo file_get_contents('./pages/header.html'); ?>
+		<?php echo file_get_contents('./pages/header-logged.html'); ?>
 		<div class="testo">
 			<div class="box mid">
 				<h1> About us </h1>

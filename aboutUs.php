@@ -1,8 +1,9 @@
 <?php
 session_start();
 include 'libs/util.php';
-$user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+$user= $_SESSION['username'];
+$id= $_SESSION['id'];
+$_SESSION['currentPage'] = 'aboutUs.php';
 ?>
 
 <?php

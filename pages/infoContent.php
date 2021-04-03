@@ -19,6 +19,8 @@
 				<p> Il programma è piuttosto semplice da utilizzare. <br> Il tutto si basa su interfaccia grafica. Per andare nello specifico puoi consultare la <b> documentazione </b> relativa al progetto <a href="https://github.com/Enrypase/AreaLab-IC13"> qui </a>. <br> <b> Attenzione! Per esercitare qualsiasi operiazione è necessario disporre del nome utente e password relative al portale </b></p>
 			</div>
 		</div>
-		<?php echo file_get_contents('./pages/footer.html'); ?>
+		<?php 
+		echo file_get_contents('./pages/footer.html'); 
+		?>
 	</div>
 </body>

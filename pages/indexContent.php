@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
 	<link rel='stylesheet' type='text/css' href='./Stile/index.css'>

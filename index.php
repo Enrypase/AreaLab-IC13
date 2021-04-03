@@ -11,7 +11,7 @@ $_SESSION["currentPage"] = "index.php";
 <!-- Aumentare/diminuire le colonne ai lati in base alla grandezza vw -->
 <!-- coso dei cookies CIAO MARY -->
 <!-- IL DATABASE DEL LOGIN, ATTUALMENTE è FITTIZIO -->
-
+<!-- Trovare una soluzione per il testo perchè deve essere zoommabile -->
 <?php 
 if($user == null || $user == "")
 	include './pages/indexContent.php'; 
