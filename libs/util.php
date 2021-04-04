@@ -1,5 +1,7 @@
 <?php
-// legge da un array Associativo senza errori, al limite stringa vuota 
+if (!isset($_SESSION['username'])){
+	$_SESSION['username'] = '';
+}
 function getArr($A,$index){
 	$ret="";
    if( isset( $A[$index] ) ) $ret=$A[$index];
