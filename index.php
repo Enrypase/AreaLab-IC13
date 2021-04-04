@@ -2,12 +2,12 @@
 session_start();
 include 'libs/util.php';
 $user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+$con = new PDO("sqlite:C:\xampp\htdocs\IC13\sicurezza.db");
 ?>
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title> POLDO </title>
+        <title> IC13 </title>
   
     </head>
 <body>

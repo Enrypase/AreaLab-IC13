@@ -7,10 +7,9 @@ include 'libs/db_connect.php';
 $ut=getArr($_POST,"username");
 $pw=getArr($_POST,"password");
 $pw=hash('sha256',$pw);
-print("1");
 try {
 		//prepare query
-		$query = "select * from utenti where username= ? and password= ?";
+		$query = "select * from Utenti where username= ? and password= ?";
 		$stmt = $con->prepare( $query );
 
 		$stmt->bindParam(1, $ut);
@@ -23,9 +22,8 @@ try {
 		
 		if ($row){  // password coincide 
 			$user=$row['username'];
-			$mail=$row['mail'];
+			$mail=$row['mailUtenti'];
 			$_SESSION['username']=$user;
-			$_SESSION['id']=$row['id'];
 			$error="";
 			
 			header('Location: homepage.php');
