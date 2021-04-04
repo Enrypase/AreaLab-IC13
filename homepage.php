@@ -2,7 +2,7 @@
 session_start();
 include 'libs/util.php';
 $user=getArr($_SESSION,'username');
-$con = new PDO("sqlite:C:\xampp\\htdocs\\IC13\\sicurezza.db");
+$con = new PDO("sqlite:C:\xampp\htdocs\IC13\sicurezza.db");
 ?>
 <!DOCTYPE HTML>
 <html>
