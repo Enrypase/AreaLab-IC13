@@ -3,6 +3,7 @@ session_start();
 //Gestisce il login
 include "libs/util.php";
 include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
 
 $ut=getArr($_POST,"username");
 $pw=getArr($_POST,"password");
@@ -31,7 +32,7 @@ try {
 		else{
 			$user="";
 			$error="password errata";
-			header('Location: index.php');
+			//header('Location: index.php');
 			session_destroy();
 		}
 	
