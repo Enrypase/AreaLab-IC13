@@ -4,6 +4,8 @@ include 'libs/util.php';
 $user=$_SESSION["username"];
 $_SESSION["currentPage"] = "index.php";
 ?>
+<!-- MODIFICARE L'INDEX css Perchè è stato tolto AboutUs e unito in info -->
+<!-- Fare le info strutturate decentemente -->
 <!-- IL DATABASE DEL LOGIN, ATTUALMENTE è FITTIZIO -->
 <!-- Trovare una soluzione per il testo perchè deve essere zoommabile -->
 <!-- Mettere tutte le pagine in un'unica cartella e sistemare le referenze alle librerie, altrimenti c'è problema di sicurezza -->

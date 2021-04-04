@@ -1,7 +1,7 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(0.5vh, 1.25vh, 2.25vh);
+	font-size: clamp(1vw, 1.258vw, 3vw);
 }
 	.grid{
 		display: grid;
@@ -9,16 +9,25 @@ body{
 		grid-template-rows: auto auto;
 	}
 		.header{
-			padding: 0.5vw;
+			overflow: hidden;
+			position: fixed;
+
+		    top: 0;
+		    left: 0;
+		    z-index: 999;
+		    height: 100%;
+		    width: 25%;
+		    max-width: 25vw;
+
 			background-color: #eee;
-			grid-column: 2;
-			grid-row: 1;
+			grid-column: 1;
+			grid-row: 1/2;
 			text-align: center;
 			vertical-align: middle;
 		}
 		.header img{
 			transition: transform 0.15s, filter 0.15s ease-in-out;
-			height: 100%;
+			width: 100%;
 			transform: scale(0.7);
 		}
 		.header img:hover{
@@ -26,50 +35,58 @@ body{
 		}
 		.testo{
 			background-color: #eee;
-			grid-row: 2;
+			grid-row: 1;
 			grid-column: 2;
 			display: grid;
-			grid-template-rows: 1fr 1fr;
+
 			font-weight: bold;
-			text-align: center;
+			padding: 2vw;
+			grid-row-gap: 5vw;
+			grid-template-rows:1fr 1fr;
+			justify-content: center;
+			
 		}
 			.testo p{
 				grid-row: 1;
 			}
 			.testo form{
 				grid-row: 2;
+				width: 100%;
+				text-align: center;
+			}
+			input{
+				width: 80%;
+				height: 20%;
+				font-size: 250%;
 			}
 			input[type=text], select, textarea {
-				width: 40%;
-				padding: 1vh;
+				margin: 1vw;
+				padding: 1vw;
 				border: 0.1vw solid #ccc;
 				border-radius: 0.5vw;
-				resize: vertical;
 			}
 			input[type=password], select, textarea {
-				width: 40%;
-				padding: 1vh;
+				margin: 1vw;
+				padding: 1vw;
 				border: 0.1vw solid #ccc;
 				border-radius: 0.5vw;
-				resize: vertical;
 			}
 			input[type=submit] {
-				width: 20%;
+				margin: 1vw;
 				background-color: #048BF9;
 				color: white;
-				padding: 1vh;
+				padding: 1vw;
 				border: none;
 				border-radius: 0.5vw;
-				cursor: pointer;
 			}
 			input[type=submit]:hover {
 				background-color: #2E3033;
 			}
 		.bottom{
-			padding: 1vw;
+			margin: 1vh;
 			background-color: #eee;
 			text-align: center;
 			grid-column: 2;
-			grid-row: 3;
+			grid-row: 2;
 			vertical-align: middle;
 		}

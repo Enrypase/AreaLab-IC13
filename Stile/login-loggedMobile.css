@@ -1,7 +1,7 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(0.5vh, 0.7vh, 2.25vh);
+	font-size: clamp(1vw, 1.25vw, 3vw);
 }
 	.grid{
 		display: grid;
@@ -17,7 +17,7 @@ body{
 		    z-index: 999;
 		    height: 100%;
 		    width: 25%;
-		    max-width: 16.5vh;
+		    max-width: 25vw;
 
 			background-color: #eee;
 			grid-column: 1;
@@ -50,8 +50,8 @@ body{
 			display: grid;
 
 			font-weight: bold;
-			padding: 2vh;
-			grid-row-gap: 5vh;
+			padding: 2vw;
+			grid-row-gap: 5vw;
 			grid-template-rows:1fr 1fr;
 			justify-content: center;
 			
@@ -67,25 +67,25 @@ body{
 			input{
 				width: 80%;
 				height: 20%;
-				font-size: 300%;
+				font-size: 250%;
 			}
 			input[type=text], select, textarea {
-				margin: 1vh;
-				padding: 1vh;
+				margin: 1vw;
+				padding: 1vw;
 				border: 0.1vw solid #ccc;
 				border-radius: 0.5vw;
 			}
 			input[type=password], select, textarea {
-				margin: 1vh;
-				padding: 1vh;
+				margin: 1vw;
+				padding: 1vw;
 				border: 0.1vw solid #ccc;
 				border-radius: 0.5vw;
 			}
 			input[type=submit] {
-				margin: 1vh;
+				margin: 1vw;
 				background-color: #048BF9;
 				color: white;
-				padding: 1vh;
+				padding: 1vw;
 				border: none;
 				border-radius: 0.5vw;
 			}

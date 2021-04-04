@@ -1,7 +1,7 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 1vw;
+	font-size: clamp(0.5vh, 1.75vh, 2.5vh);
 }
 	.grid{
 		display: grid;
@@ -43,6 +43,7 @@ body{
 			grid-template-rows: 1fr 1fr;
 			font-weight: bold;
 			text-align: center;
+			padding: 2vh;
 		}
 			.testo p{
 				grid-row: 1;
@@ -51,7 +52,7 @@ body{
 				grid-row: 2;
 			}
 			input[type=text], select, textarea {
-				width: 40%;
+				width: 80%;
 				margin-bottom: 1vh;
 				padding: 1.5vh;
 				border: 0.2vh solid #ccc;
@@ -59,7 +60,7 @@ body{
 				resize: vertical;
 			}
 			input[type=password], select, textarea {
-				width: 40%;
+				width: 80%;
 				margin-bottom: 1vh;
 				padding: 1.5vh;
 				border: 0.2vh solid #ccc;
@@ -67,7 +68,7 @@ body{
 				resize: vertical;
 			}
 			input[type=submit] {
-				width: 20%;
+				width: 40%;
 				margin-bottom: 1vh;
 				padding: 1.5vh;
 				background-color: #048BF9;

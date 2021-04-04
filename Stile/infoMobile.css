@@ -26,7 +26,7 @@ body{
 			transform: scale(0.9);
 		}
 		.testo{
-			background-color: #EEE;
+			background-color: #eee;
 			grid-row: 2;
 			grid-column: 2;
 			display: grid;
@@ -34,22 +34,17 @@ body{
 		}
 			.box{
 				padding: 1vw;
+				display: grid;
+				grid-template-columns: auto;
 				font-weight: bold;
+				text-decoration: none;
 				color: black;
+				grid-gap: 2.5%;
 				overflow: hidden;
-			}
-			.box img{
-				width: 4vw;
-				transform: scale(1);
-				transition: transform 0.15s, filter 0.15s ease-in-out;
-				padding-left: 1vw;
-			}
-			.box img:hover{
-				transform: scale(0.85);
 			}
 		.bottom{
 			padding: 1vw;
-			background-color: #EEE;
+			background-color: #eee;
 			text-align: center;
 			grid-column: 2;
 			grid-row: 3;

@@ -31,10 +31,6 @@ $detect = new Mobile_Detect();
 				<img src="./Immagini/login.png" alt="Login">
 				<p>Benvenuto! Se sei un amministratore e vuoi accedere al programma entra in questa sezione. <br> Altrimenti, per più informazioni, consultare la sezione apposita.</p>
 			</a>
-			<a href="aboutUs.php" class="box right">
-				<img src="./Immagini/aboutUs.png" alt="AboutUs">
-				<p> Benvenuto! Clicca qui per essere rimandato alla pagina alla quale troverai tutti i nostri contatti. <br> Sia riguardante la scuola che gli sviluppatori che hanno partecipato al progetto.</p>
-			</a>
 		</div>
 		<?php echo file_get_contents('./pages/footer.html'); ?>
 	</div>
