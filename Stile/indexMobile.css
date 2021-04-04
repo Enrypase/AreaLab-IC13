@@ -4,7 +4,6 @@ body{
 	font-size: clamp(0.5vh, 1.25vh, 2.25vh);
 }
 	.grid{
-		margin-top: 0em;
 		display: grid;
 		grid-template-columns: 25% 75%;
 		grid-template-rows: auto auto;
@@ -12,13 +11,16 @@ body{
 		.header{
 			overflow: hidden;
 			position: fixed;
+
 		    top: 0;
 		    left: 0;
 		    z-index: 999;
 		    height: 100%;
 		    width: 25%;
-		    
+		    max-width: 25vh;
+
 			background-color: #eee;
+
 			grid-column: 1;
 			grid-row: 1/2;
 			text-align: center;
@@ -34,23 +36,22 @@ body{
 		}
 		.testo{
 			background-color: #eee;
-			grid-row: 2;
+			grid-row: 1;
 			grid-column: 2;
 			display: grid;
+
+			padding: 2vh;
 			grid-template-rows: auto auto auto;
-			grid-gap: 2vh;
-			padding: 2vw;
 			justify-content: center;
 		}
 			.box{
-				padding: 1vw;
 				display: grid;
 				grid-template-columns: auto;
 				grid-template-rows: 1fr 1fr;
+
 				font-weight: bold;
 				text-decoration: none;
 				color: black;
-				grid-gap: 2.5%;
 				overflow: hidden;
 				justify-items: center;
 			}
@@ -58,16 +59,15 @@ body{
 				background-color: rgba(255,255,255,0.6);
 			}
 			.box img{
+				grid-row: 1;
 				vertical-align: middle;
 				width: clamp(5vh, 20vh, 35vh);
-				grid-row: 1;
 			}
 			.box p{
 				grid-row: 2;
 				font-size: clamp(0.5vh, 1.25vh, 2.25vh);
 			}
 			.box img{
-				padding-top: 5%;
 				transition: transform 0.15s, filter 0.15s ease-in-out;
 				transform: scale(0.8);
 			}
@@ -75,10 +75,11 @@ body{
 				transform: scale(0.65);
 			}
 		.bottom{
-			padding: 1vw;
+			margin: 1vh;
 			background-color: #eee;
-			text-align: center;
 			grid-column: 2;
-			grid-row: 3;
+			grid-row: 2;
+
+			text-align: center;
 			vertical-align: middle;
 		}

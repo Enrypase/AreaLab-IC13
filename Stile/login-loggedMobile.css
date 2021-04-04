@@ -1,7 +1,7 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(0.5vh, 1.5vh, 2.25vh);
+	font-size: clamp(0.5vh, 0.7vh, 2.25vh);
 }
 	.grid{
 		display: grid;
@@ -51,37 +51,46 @@ body{
 
 			font-weight: bold;
 			padding: 2vh;
-			grid-template-rows: auto auto auto;
+			grid-row-gap: 5vh;
+			grid-template-rows:1fr 1fr;
 			justify-content: center;
+			
 		}
-			.box{
-				display: grid;
-				grid-template-columns: auto;
-				grid-template-rows: 1fr 1fr;
-
-				text-decoration: none;
-				color: black;
-				overflow: hidden;
-				justify-items: center;
-			}
-			.box:hover{
-				background-color: rgba(255,255,255,0.6);
-			}
-			.box img{
+			.testo p{
 				grid-row: 1;
-				vertical-align: middle;
-				width: clamp(5vh, 20vh, 35vh);
 			}
-			.box p{
+			.testo form{
 				grid-row: 2;
-				font-size: clamp(0.5vh, 1.25vh, 2.25vh);
+				width: 100%;
+				text-align: center;
 			}
-			.box img{
-				transition: transform 0.15s, filter 0.15s ease-in-out;
-				transform: scale(0.8);
+			input{
+				width: 80%;
+				height: 20%;
+				font-size: 300%;
 			}
-			.box:hover img{
-				transform: scale(0.65);
+			input[type=text], select, textarea {
+				margin: 1vh;
+				padding: 1vh;
+				border: 0.1vw solid #ccc;
+				border-radius: 0.5vw;
+			}
+			input[type=password], select, textarea {
+				margin: 1vh;
+				padding: 1vh;
+				border: 0.1vw solid #ccc;
+				border-radius: 0.5vw;
+			}
+			input[type=submit] {
+				margin: 1vh;
+				background-color: #048BF9;
+				color: white;
+				padding: 1vh;
+				border: none;
+				border-radius: 0.5vw;
+			}
+			input[type=submit]:hover {
+				background-color: #2E3033;
 			}
 		.bottom{
 			margin: 1vh;

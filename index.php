@@ -7,6 +7,8 @@ $_SESSION["currentPage"] = "index.php";
 <!-- IL DATABASE DEL LOGIN, ATTUALMENTE è FITTIZIO -->
 <!-- Trovare una soluzione per il testo perchè deve essere zoommabile -->
 <!-- Mettere tutte le pagine in un'unica cartella e sistemare le referenze alle librerie, altrimenti c'è problema di sicurezza -->
+<!-- Aggiornare i file a livello di logica (QUELLI DI MARCONI) -->
+<!-- METTERE IN SEQUENZA HOME LOGIN INFO(contenente info + AboutAss) -->
 <?php 
 if($user == null || $user == "")
 	include './pages/indexContent.php'; 

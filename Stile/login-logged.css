@@ -6,28 +6,21 @@ body{
 	.grid{
 		display: grid;
 		grid-template-columns: 10% 80% 10%;
-		grid-template-rows: 6vw auto 8.5vw;
-		grid-gap: 1vw;
+		grid-template-rows: 10vh auto auto;
+		grid-gap: 2vh;
 	}
 		.header{
-			padding: 0.5vw;
 			background-color: #eee;
 			grid-column: 2;
 			grid-row: 1;
+
 			text-align: center;
 			vertical-align: middle;
 
 			display: grid;
-			grid-template-rows: 100%;
 			grid-template-columns: 50% 50%;
-			grid-gap: 1vw;
+			grid-template-rows: 100%;
 		}
-			.notLogged{
-				grid-column: 1;
-			}
-			.logged{
-				grid-column: 2;
-			}
 		.header img{
 			transition: transform 0.15s, filter 0.15s ease-in-out;
 			height: 100%;
@@ -36,6 +29,12 @@ body{
 		.header img:hover{
 			transform: scale(0.9);
 		}
+			.notLogged{
+				grid-column: 1;
+			}
+			.logged{
+				grid-column: 2;
+			}
 		.testo{
 			background-color: #eee;
 			grid-row: 2;
@@ -53,35 +52,37 @@ body{
 			}
 			input[type=text], select, textarea {
 				width: 40%;
-				padding: 1vh;
-				border: 0.1vw solid #ccc;
-				border-radius: 0.5vw;
+				margin-bottom: 1vh;
+				padding: 1.5vh;
+				border: 0.2vh solid #ccc;
+				border-radius: 0.5vh;
 				resize: vertical;
 			}
 			input[type=password], select, textarea {
 				width: 40%;
-				padding: 1vh;
-				border: 0.1vw solid #ccc;
-				border-radius: 0.5vw;
+				margin-bottom: 1vh;
+				padding: 1.5vh;
+				border: 0.2vh solid #ccc;
+				border-radius: 0.5vh;
 				resize: vertical;
 			}
 			input[type=submit] {
-				width: 10%;
+				width: 20%;
+				margin-bottom: 1vh;
+				padding: 1.5vh;
 				background-color: #048BF9;
 				color: white;
-				padding: 1vh;
 				border: none;
-				border-radius: 0.5vw;
+				border-radius: 0.5vh;
 				cursor: pointer;
 			}
 			input[type=submit]:hover {
 				background-color: #2E3033;
 			}
 		.bottom{
-			padding: 1vw;
 			background-color: #eee;
 			text-align: center;
 			grid-column: 2;
 			grid-row: 3;
 			vertical-align: middle;
-		}
+		}		
