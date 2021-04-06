@@ -1,7 +1,7 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(0.5vh, 1.5vh, 2.25vh);
+	font-size: clamp(1vw, 1.45vw, 3vw);
 }
 	.grid{
 		display: grid;
@@ -17,7 +17,7 @@ body{
 		    z-index: 999;
 		    height: 100%;
 		    width: 25%;
-		    max-width: 16.5vh;
+		    max-width: 25vw;
 
 			background-color: #eee;
 			grid-column: 1;
@@ -37,6 +37,7 @@ body{
 			}
 		.header img{
 			transition: transform 0.15s, filter 0.15s ease-in-out;
+			max-width: 20vh;
 			width: 100%;
 			transform: scale(0.7);
 		}
@@ -49,16 +50,16 @@ body{
 			grid-column: 2;
 			display: grid;
 
-			font-weight: bold;
-			padding: 2vh;
+			padding: 2vw;
 			grid-template-rows: auto auto auto;
 			justify-content: center;
 		}
 			.box{
 				display: grid;
 				grid-template-columns: auto;
-				grid-template-rows: 1fr 1fr;
+				grid-template-rows: auto auto;
 
+				font-weight: bold;
 				text-decoration: none;
 				color: black;
 				overflow: hidden;
@@ -70,11 +71,10 @@ body{
 			.box img{
 				grid-row: 1;
 				vertical-align: middle;
-				width: clamp(5vh, 20vh, 35vh);
+				width: clamp(5vw, 30vw, 45vw);
 			}
 			.box p{
 				grid-row: 2;
-				font-size: clamp(0.5vh, 1.25vh, 2.25vh);
 			}
 			.box img{
 				transition: transform 0.15s, filter 0.15s ease-in-out;
@@ -84,10 +84,11 @@ body{
 				transform: scale(0.65);
 			}
 		.bottom{
-			margin: 1vh;
+			margin: 1vw;
 			background-color: #eee;
-			text-align: center;
 			grid-column: 2;
 			grid-row: 2;
+
+			text-align: center;
 			vertical-align: middle;
 		}

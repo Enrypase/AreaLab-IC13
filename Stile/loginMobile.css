@@ -1,7 +1,7 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(1vw, 1.258vw, 3vw);
+	font-size: clamp(1vw, 1.45vw, 3vw);
 }
 	.grid{
 		display: grid;
@@ -28,6 +28,7 @@ body{
 		.header img{
 			transition: transform 0.15s, filter 0.15s ease-in-out;
 			width: 100%;
+			max-width: 33vh;
 			transform: scale(0.7);
 		}
 		.header img:hover{
@@ -57,17 +58,17 @@ body{
 			input{
 				width: 80%;
 				height: 20%;
-				font-size: 250%;
+				font-size: 200%;
 			}
 			input[type=text], select, textarea {
 				margin: 1vw;
-				padding: 1vw;
+				padding: 0.75vw;
 				border: 0.1vw solid #ccc;
 				border-radius: 0.5vw;
 			}
 			input[type=password], select, textarea {
 				margin: 1vw;
-				padding: 1vw;
+				padding: 0.75vw;
 				border: 0.1vw solid #ccc;
 				border-radius: 0.5vw;
 			}
@@ -75,7 +76,7 @@ body{
 				margin: 1vw;
 				background-color: #048BF9;
 				color: white;
-				padding: 1vw;
+				padding: 0.75vw;
 				border: none;
 				border-radius: 0.5vw;
 			}

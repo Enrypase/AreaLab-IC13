@@ -1,9 +1,11 @@
 <?php
 session_start();
 include 'libs/util.php';
+
 $user=$_SESSION["username"];
 $_SESSION["currentPage"] = "index.php";
 ?>
+<!-- DA TELEFONO vw DA PC vh -->
 <!-- MODIFICARE L'INDEX css Perchè è stato tolto AboutUs e unito in info -->
 <!-- Fare le info strutturate decentemente -->
 <!-- IL DATABASE DEL LOGIN, ATTUALMENTE è FITTIZIO -->

@@ -23,13 +23,17 @@ $detect = new Mobile_Detect();
 	<div class="grid">
 		<?php include './pages/header-logged.php'; ?>
 		<div class="testo">
-			<a href="info.php" class="box left">
-					<img src="./Immagini/info.png" alt="Infos">
-					<p>Benvenuto! Clicca per visualizzare la pagina relativa al funzionamento del programma. <br> Troverai informazioni utili sul funzionamento di quest'ultimo, nonchè potrai visualizzare la documentazione completa del programma.</p>
-			</a>
-			<a href="login.php" class="box mid">
+			<a href="login.php" class="box left">
 				<img src="./Immagini/login.png" alt="Login">
-				<p>Benvenuto! Se sei un amministratore e vuoi accedere al programma entra in questa sezione. <br> Altrimenti, per più informazioni, consultare la sezione apposita.</p>
+				<p>Premere su questo pulsante oppure sullo stesso presente nel menù per accedere alla sezione della pagina riguardante il login.<br> Una volta effettuato l'accesso, se in possesso delle credenziali corrette, sarà possibile accedere all'area di gestione del personale.</p>
+			</a>
+			<a href="info.php" class="box mid">
+					<img src="./Immagini/info.png" alt="Infos">
+					<p>Premere su questo pulsante oppure sullo stesso presente nel menù per accedere alla sezione contenente tutte le informazioni sulla scuola, oppure per avere più informazioni riguardo al progetto e alle persone che hanno partecipato alla realizzazione di quest'ultimo.</p>
+			</a>
+			<a href="homepage.php" class="box right">
+					<img src="./Immagini/homepage.png" alt="Infos">
+					<p>Premere su questo pulsante oppure sullo stesso presente nel menù per accedere alla sezione della pagina riguardante la gestione del personale.<br> Qui sarà possibile effettuare tutte le operazioni supportate dal programma per elaborare i dati di quest'ultimo.<br> Nota: Questa pagina sarà visualizzabile e accessibile solamente una volta eseguito il login.</p>
 			</a>
 		</div>
 		<?php echo file_get_contents('./pages/footer-logged.html');	?>
