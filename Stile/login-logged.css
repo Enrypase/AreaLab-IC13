@@ -40,10 +40,11 @@ body{
 			grid-row: 2;
 			grid-column: 2;
 			display: grid;
-			grid-template-rows: 1fr 1fr;
+			grid-template-rows: auto auto;
 			font-weight: bold;
 			text-align: center;
 			padding: 2vh;
+			grid-gap: 5.5%;
 		}
 			.testo p{
 				grid-row: 1;
@@ -51,26 +52,30 @@ body{
 			.testo form{
 				grid-row: 2;
 			}
+			input {
+			    font-size: clamp(0.5vh, 1.75vh, 2.5vh);
+			    line-height: 3;
+			}
 			input[type=text], select, textarea {
-				width: 80%;
+				width: 50vh;
 				margin-bottom: 1vh;
-				padding: 1.5vh;
+				padding: 0.5vh;
 				border: 0.2vh solid #ccc;
 				border-radius: 0.5vh;
 				resize: vertical;
 			}
 			input[type=password], select, textarea {
-				width: 80%;
+				width: 50vh;
 				margin-bottom: 1vh;
-				padding: 1.5vh;
+				padding: 0.5vh;
 				border: 0.2vh solid #ccc;
 				border-radius: 0.5vh;
 				resize: vertical;
 			}
 			input[type=submit] {
-				width: 40%;
+				width: 30vh;
 				margin-bottom: 1vh;
-				padding: 1.5vh;
+				padding: 0.5vh;
 				background-color: #048BF9;
 				color: white;
 				border: none;

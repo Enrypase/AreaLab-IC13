@@ -37,7 +37,6 @@ $detect = new Mobile_Detect();
 				<h1> IC13 </h1>
 				<p> Istituto Comprensivo 13 "Primo Levi" di Verona, scuola primaria e secondaria di primo grado. <br><br><br> Puoi trovarci qui: <br><br> <a href="https://www.ic13verona.edu.it/"><img src="./Immagini/browser.png" alt="Browser Ico"> </a> </p>
 				<h1> Sviluppatori </h1>
-				<ul>
 					Alberto Mondino - Lato Backend <br><a href="https://github.com/Alberto225"><img src="./Immagini/github.png"></a><br>
 					Enrico Pasetto - Lato Frontend <br><a href="https://www.linkedin.com/in/enrico-pasetto-6a48a5193/"><img src="./Immagini/linkedin.png"></a><a href="https://github.com/Enrypase/"><img src="./Immagini/github.png"></a><a href="https://www.instagram.com/enrico_pasetto/"><img src="./Immagini/instagram.png"></a><br>
 					Jacopo Mattia Marconi - Lato Backend <br><a href="https://www.linkedin.com/in/jacopo-mattia-marconi-a5a44a204/"><img src="./Immagini/linkedin.png"></a><a href="https://github.com/JacopoMattiaMarconi"><img src="./Immagini/github.png"></a><a href="https://www.instagram.com/jackymattia.coni/"><img src="./Immagini/instagram.png"></a><br>
