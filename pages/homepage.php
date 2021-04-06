@@ -1,6 +1,7 @@
 <?php 
 $_SESSION['secLevel'] = 1;
 include './Logica/security.php';
+$con = new PDO("sqlite:../sicurezza.db");
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +21,7 @@ include './Logica/security.php';
 					if ($user!="")
 						print("<H3> Ciao $user! </h3>");
 						echo "<b>Persone che devono svolgere dei corsi:</b>";
-						$query = "select nomePersona, cognomePersona, p.codFiscPersona from personale p left join frequentazioni f on (p.codFiscPersona = f.codFiscPersona) where f.codFiscPersona IS NULL;";// VANNO AGGIUNTI ANCHE I CASI DELLA SOMMA DELLE ORE INFERIORE A QUELLA VOLUTA E CONDIZIONE SULLA DATA
+						$query = "select * from Personale;";// VANNO AGGIUNTI ANCHE I CASI DELLA SOMMA DELLE ORE INFERIORE A QUELLA VOLUTA E CONDIZIONE SULLA DATA
 						try{
 							$num=0;
 							$stmt = $con->prepare( $query );
