@@ -1,8 +1,8 @@
 <?php 
-session_start();
-include 'libs/db_connect.php';
-$user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -13,11 +13,11 @@ $id=getArr($_SESSION,'id');
     </head>
 <body>
 
-<a href="Consulta.php">Home</a><br>
+<a href="Consulta.php">back</a><br>
 
 <?php
 	//select all data
-	$query = " ";
+	$query = "select * from corsi";
 	try {
 		$num=0;
 		$stmt = $con->prepare( $query );

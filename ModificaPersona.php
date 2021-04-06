@@ -1,6 +1,8 @@
 <?php 
-include 'libs/db_connect.php';
 include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -10,7 +12,7 @@ include 'libs/util.php';
     </head>
 <body>
 
-<a href="homepage.php">Home</a>
+<a href="AggiornaAnagrafica.php">back</a>
 
 <form method="POST">
 	codice fiscale: <input type="text" name="codFiscPersona"/> <br>
@@ -34,7 +36,7 @@ include 'libs/util.php';
         $mailPersona= getArr($_POST, "mailPersona");
 
         if ($codFiscPersona!="" && $nomePersona!="" && $cognomePersona!="" && $ruoloPersona!="" && $dataNascitaPersona!="" && $mailPersona!=""){
-			$query="update persone set (nomePersona,cognomePersona,ruoloPersona,dataNascitaPersona,servizio,mailPersona) VALUES (?,?,?) where codFiscPersona='$codFiscPersona'";
+			$query="update persone set (nomePersona,cognomePersona,ruoloPersona,dataNascitaPersona,servizio,mailPersona) VALUES (?,?,?,?,?,?) where codFiscPersona='$codFiscPersona'";
 			try{
 				$stmt=$con->prepare($query);
 				$stmt->execute(array($codFiscPersona, $nomePersona, $cognomePersona, $ruoloPersona, $dataNascitaPersona, $servizio, $mailPersona));
@@ -48,6 +50,5 @@ include 'libs/util.php';
 		}
 	}
 ?>
-        
-    </body>
+</body>
 </html>

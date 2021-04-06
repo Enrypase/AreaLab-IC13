@@ -1,8 +1,8 @@
 <?php 
-session_start();
-include 'libs/db_connect.php';
-$user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -15,9 +15,16 @@ $id=getArr($_SESSION,'id');
 
 <a href="homepage.php">Home</a><br>
 
+<form action='FoglioFirme.php' method='post' >
+    inserisci corso<input type='text' name='corso' /><br>
+	<input type ='submit' value='submit'>
+</form>
+
 <?php
-	//select all data
-	$query = " ";
+if ($_POST) {
+	$corso=getArr($_POST,"corso");
+	
+	$query = "select * from personale";
 	try {
 		$num=0;
 		$stmt = $con->prepare( $query );
@@ -46,7 +53,7 @@ $id=getArr($_SESSION,'id');
 	            echo "<tr>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
-					echo "<td>".$row['nomeCorso']."</td>";
+					echo "<td>".$corso."</td>";
 					echo "<td>".$data."</td>";
 	                echo "<td>".$firma."</td>";
 	            echo "</tr>";
@@ -56,7 +63,7 @@ $id=getArr($_SESSION,'id');
 	else{
 	    echo "No records found.";
 	}
-
+}
 ?> 
  
 </body>

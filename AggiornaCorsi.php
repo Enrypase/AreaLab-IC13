@@ -1,8 +1,8 @@
-<?php 
-session_start();
-include 'libs/db_connect.php';
-$user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+<?php
+include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -14,7 +14,7 @@ $id=getArr($_SESSION,'id');
 <body>
 
 <?php
-if ($user!="" && $user="adminuser"){
+//if ($user!="" && $user="adminuser"){
 	print("<a href=\"homepage.php\">Home</a><br>");
 	print("<a href=\"AggiungiCorso.php\"><button onClick=\"AggiungiCorso.php\"> aggiungi corso</button></a><br>");
 	print("<a href=\"ModificaCorso.php\"><button onClick=\"ModificaCorso.php\"> modifica corso</button></a><br>");
@@ -24,14 +24,12 @@ if ($user!="" && $user="adminuser"){
 	try {
 		$num=0;
 		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
+		$stmt->execute(); 
 		$num = $stmt->rowCount();
-	  
 	} catch(PDOException $ex) {
 	    echo "Errore !".$ex->getMessage();
 	}
-	//se num > 0 recordset vuoto o errore 
+	
 	if($num>0){
 	  
 	    echo "<table border='1'>";
@@ -56,7 +54,7 @@ if ($user!="" && $user="adminuser"){
 	else{
 	    echo "No records found.";
 	}
-}
+//}
 ?> 
  
 </body>

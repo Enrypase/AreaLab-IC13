@@ -1,6 +1,8 @@
 <?php 
-include 'libs/db_connect.php';
 include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -25,7 +27,7 @@ include 'libs/util.php';
         $descrizioneCorso= getArr($_POST, "descrizioneCorso");
         $durataOreCorso= getArr($_POST, "durataOreCorso");
 
-        if ($nome!="" && $descr!="" && $prezzo!=""){
+        if ($nomeCorso!="" && $descrizioneCorso!="" && $prezzo!=""){
 			$query="INSERT INTO corsi (nomeCorso,descrizioneCorso,durataOreCorso) VALUES (?,?,?)";
 			try{
 				$stmt=$con->prepare($query);

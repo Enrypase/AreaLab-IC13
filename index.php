@@ -1,8 +1,6 @@
 <?php
-session_start();
+//session_destroy();
 include 'libs/util.php';
-$user=getArr($_SESSION,'username');
-$con = new PDO("sqlite:sicurezza.db");
 ?>
 <!DOCTYPE HTML>
 <html>

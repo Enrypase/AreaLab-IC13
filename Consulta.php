@@ -1,8 +1,8 @@
 <?php 
-session_start();
-include 'libs/db_connect.php';
-$user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -14,62 +14,25 @@ $id=getArr($_SESSION,'id');
 <body>
 
 <a href="homepage.php">Home</a><br>
-<a href="AggiungiCorso.php"><button onClick="Persone.php"> ordina per persona</button></a><br>
-<a href="ModificaCorso.php"><button onClick="Corsi.php"> ordina per corso</button></a><br>
+<a href="Persona.php"><button onClick="Persona.php"> ordina per persona</button></a><br>
+<a href="Corso.php"><button onClick="Corso.php"> ordina per corso</button></a><br><br>
 
-<form method="GET"> 
-    <input type="text" name="parametro"/> <br>
-    <input type="submit" value="cerca"/>
+<form action='Consulta.php' method='post' >
+            find<input type='text' name='word' /><br>
+			<input type ='submit' value='search'>
 </form>
 
 <?php
-	//select all data
-	$query = " ";
+if ($_POST) {
+	$word=getArr($_POST,"word");
+	$query = "select * from personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona where p.nomePersona= ? or p.cognomePersona= ? or f.nomeCorso=?";
 	try {
 		$num=0;
 		$stmt = $con->prepare( $query );
+		$stmt->bindParam(1, $word);
+		$stmt->bindParam(2, $word);
+		$stmt->bindParam(3, $word); 		
 		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
-	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
-	    echo "<table border='1'>";
-	        echo "<tr>";
-	            echo "<th>ID</th>";
-	            echo "<th>nome</th>";
-	            echo "<th>descrizione</th>";
-				echo "<th>durata ore</th>";
-	        echo "</tr>";
-	  
-	
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-	            echo "<tr>";
-	                echo "<td>".$row['idCorso']."</td>";
-	                echo "<td>".$row['nomeCorso']."</td>";
-	                echo "<td>".$row['descrizioneCorso']."</td>";
-					echo "<td>".$row['durataOreCorso']."</td>";
-	            echo "</tr>";
-	        }
-	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
-
-
-	if ($_POST) {
-        $parametro= getArr($_POST, "parametro");
-		$query = " ";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
 		$num = $stmt->rowCount();
 	  
 	} catch(PDOException $ex) {
@@ -90,7 +53,7 @@ $id=getArr($_SESSION,'id');
 	
 	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 	            echo "<tr>";
-	                echo "<td>"..$row['idCorso']."</td>";
+	                echo "<td>".$row['idCorso']."</td>";
 	                echo "<td>".$row['nomeCorso']."</td>";
 	                echo "<td>".$row['descrizioneCorso']."</td>";
 					echo "<td>".$row['durataOreCorso']."</td>";
@@ -101,7 +64,7 @@ $id=getArr($_SESSION,'id');
 	else{
 	    echo "No records found.";
 	}
-	}
+}
 ?> 
  
 </body>

@@ -1,6 +1,8 @@
 <?php 
-include 'libs/db_connect.php';
 include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -10,7 +12,7 @@ include 'libs/util.php';
     </head>
 <body>
 
-<a href="homepage.php">Home</a>
+<a href="AggiornaAnagrafica.php">back</a>
 
 <form method="POST">
 	codice fiscale: <input type="text" name="codFiscPersona"/> <br>
@@ -18,7 +20,8 @@ include 'libs/util.php';
     cognome: <input type="text" name="cognomePersona"/> <br>
     ruolo: <input type="text" name="ruoloPersona"/> <br>
     data di nascita: <input type="date" name="dataNascitaPersona"/> <br>
-    mail: <input type="text" name="mailPersona"/> <br>
+    servizio: <input type="text" name="servizio"/> <br>
+	mail: <input type="mail" name="mailPersona"/> <br>
     <input type="submit" value="Aggiungi"/>
 </form>
 
@@ -29,14 +32,15 @@ include 'libs/util.php';
         $cognomePersona= getArr($_POST, "cognomePersona");
 		$ruoloPersona= getArr($_POST, "ruoloPersona");
         $dataNascitaPersona= getArr($_POST, "dataNascitaPersona");
-        $mailPersona= getArr($_POST, "mailPersona");
+        $servizio= getArr($_POST, "servizio");
+		$mailPersona= getArr($_POST, "mailPersona");
 
-        if ($codFiscPersona!="" && $nomePersona!="" && $cognomePersona!="" && $ruoloPersona!="" && $dataNascitaPersona!="" && $mailPersona!=""){
+        if ($codFiscPersona!="" && $servizio!="" && $nomePersona!="" && $cognomePersona!="" && $ruoloPersona!="" && $dataNascitaPersona!="" && $mailPersona!=""){
 			$servizio=true;
-			$query="INSERT INTO personale(codFiscPersona,nomePersona,cognomePersona,ruoloPersona,dataNascitaPersona,servizio,mailPersona) VALUES (?,?,?,?,?,?,?)";
+			$query="INSERT INTO personale(codFiscPersona,nomePersona,cognomePersona,ruoloPersona,dataNascitaPersona,servizio,servizio,mailPersona) VALUES (?,?,?,?,?,?,?,?)";
 			try{
 				$stmt=$con->prepare($query);
-				$stmt->execute(array($codFiscPersona, $nomePersona, $cognomePersona, $ruoloPersona, $dataNascitaPersona, $servizio, $mailPersona));
+				$stmt->execute(array($codFiscPersona, $nomePersona, $cognomePersona, $ruoloPersona, $dataNascitaPersona, $servizio, $servizio, $mailPersona));
 				header('Location: AggiornaAnagrafica.php');
 			} catch (Exception $ex) {
                 print("Errore!" . $ex);
@@ -47,7 +51,6 @@ include 'libs/util.php';
 		}
 	}
 ?>
-        
-    </body>
+</body>
 </html>
 

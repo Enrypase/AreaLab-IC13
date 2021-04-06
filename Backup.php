@@ -1,8 +1,8 @@
 <?php 
-session_start();
-include 'libs/db_connect.php';
-$user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
+include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -15,26 +15,9 @@ $id=getArr($_SESSION,'id');
 
 <a href="homepage.php">Home</a><br>
 <?php
-	//select all data
-	$query = " ";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
-	    print(" <b> backup non riuscito </b>");
-	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-		print(" <b> backup avvenuto con successo </b>");
-	}
-	else{
-	    print(" <b> backup non riuscito </b>");
-	}
-
+	$results=$con->exec('.dump');
+	$content=$results->fetchArray();
+	exec('sqlite3 backup.db .dump', $output);
 ?> 
  
 </body>

@@ -1,22 +1,21 @@
 <?php
-session_start();
 include 'libs/util.php';
-$user=getArr($_SESSION,'username');
+//include 'libs/db_connect.php';
 $con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
     <head>
         <title> IC13 </title>
-  
     </head>
 <body>
 
 <?php
 //if ($user!="" && $user="adminuser"){
-	print("<H3> Ciao $user! </h3>");
+	//print("<H3> Ciao $user! </h3>");
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = "select * from Personale p join frequentazioni f o n f.codFiscPersona=p.codFiscPersona where f.oreEffettuate<6 group by(f.idCorso)";
+	$query = "select * from Personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona where f.oreEffettuate<6 group by(f.idCorso)";
 	try{
 		$num=0;
 		$stmt=$con->prepare($query);
@@ -53,6 +52,5 @@ $con = new PDO("sqlite:sicurezza.db");
 	print("<a href=\"FoglioFirme.php\"><button onClick=\"FoglioFirme.php\"> ottieni foglio firme</button></a><br>");
 //}
 ?>
-
 </body>
 </html>

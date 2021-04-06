@@ -1,6 +1,8 @@
 <?php 
-include 'libs/db_connect.php';
 include 'libs/util.php';
+//include 'libs/db_connect.php';
+$con = new PDO("sqlite:sicurezza.db");
+//$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -27,7 +29,7 @@ include 'libs/util.php';
         $descrizioneCorso= getArr($_POST, "descrizioneCorso");
         $durataOreCorso= getArr($_POST, "durataOreCorso");
 
-        if ($id!="" && $nome!="" && $descr!="" && $prezzo!=""){
+        if ($idCorso!="" && $nomeCorso!="" && $descrizioneCorso!="" && $durataOreCorso!=""){
 			$query="update corsi set (nomeCorso,descrizioneCorso) VALUES (?,?,?) where idCorso='$idCorso'";
 			try{
 				$stmt=$con->prepare($query);
