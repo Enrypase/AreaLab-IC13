@@ -11,7 +11,7 @@ include 'libs/db_connect.php';
     </head>
 <body>
 
-<a href="homepage.php">Home</a>
+<a href="AggiornaCorsi.php">back</a>
 
 <form method="POST">
 	id: <input type="text" name="id"/> <br>

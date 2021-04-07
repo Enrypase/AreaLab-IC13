@@ -1,5 +1,4 @@
 <?php
-//session_destroy();
 include 'libs/util.php';
 ?>
 <!DOCTYPE HTML>

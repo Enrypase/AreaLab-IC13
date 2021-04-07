@@ -1,7 +1,6 @@
 <?php 
 include 'libs/util.php';
-//include 'libs/db_connect.php';
-$con = new PDO("sqlite:sicurezza.db");
+include 'libs/db_connect.php';
 //$user=getArr($_SESSION,'username');
 ?>
 
@@ -13,12 +12,9 @@ $con = new PDO("sqlite:sicurezza.db");
     </head>
 <body>
 
-<a href="homepage.php">Home</a><br>
-<?php
-	$results=$con->exec('.dump');
-	$content=$results->fetchArray();
-	exec('sqlite3 backup.db .dump', $output);
-?> 
+<a href="homepage.php">Home</a><br><br>
+<a href="sicurezza.db" download><button>download</a>
+ 
  
 </body>
 </html>

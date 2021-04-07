@@ -13,58 +13,41 @@ $con = new PDO("sqlite:sicurezza.db");
     </head>
 <body>
 
-<a href="homepage.php">Home</a><br>
-
-<form action='FoglioFirme.php' method='post' >
-    inserisci corso<input type='text' name='corso' /><br>
-	<input type ='submit' value='submit'>
-</form>
+<a href="homepage.php">Home</a><br><br>
+<b>corsi disponibili<b>
 
 <?php
-if ($_POST) {
 	$corso=getArr($_POST,"corso");
 	
-	$query = "select * from personale";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
+	
+	$query = "select distinct nomeCorso, idCorso from corsi";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
 	    echo "Errore !".$ex->getMessage();
-	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
+	} 
 	    echo "<table border='1'>";
 	        echo "<tr>";
+	            echo "<th>id</th>";
 	            echo "<th>nome</th>";
-	            echo "<th>cognome</th>";
-				echo "<th>corso</th>";
-				echo "<th>data</th>";
-				echo "<th>firma</th>";
 	        echo "</tr>";
-	  
-			$data=date("d/m/Y");
-			$firma="                    ";
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+			
+	        foreach ($res as $row) {
 	            echo "<tr>";
-	                echo "<td>".$row['nomePersona']."</td>";
-	                echo "<td>".$row['cognomePersona']."</td>";
-					echo "<td>".$corso."</td>";
-					echo "<td>".$data."</td>";
-	                echo "<td>".$firma."</td>";
+	                echo "<td>".$row['idCorso']."</td>";
+	                echo "<td>".$row['nomeCorso']."</td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
-}
-?> 
+?>
+
+<br><form action='Stampa.php' method='post' >
+    inserisci corso<input type='text' name='corso' /><br>
+	ruolo personale<input type='text' name='ruolo' /><br>
+	ora di inizio<input type='time' name='oraI' /><br>
+	ora di fine<input type='time' name='oraF' /><br>
+	<input type ='submit' value='submit'>
+</form>
  
 </body>
 </html>

@@ -16,7 +16,7 @@ include 'libs/db_connect.php';
 
 <?php
 	//select all data
-	$query = "select * from corsi";
+	$query = "select * from frequentazioni f join personale p on p.codFiscPersona=f.codFiscPersona join corsi c on c.idCorso=f.idCorso group by f.idCorso";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
@@ -24,19 +24,19 @@ include 'libs/db_connect.php';
 	} 
 	    echo "<table border='1'>";
 	        echo "<tr>";
-	            echo "<th>id</th>";
+	            echo "<th>corso</th>";
 	            echo "<th>nome</th>";
-	            echo "<th>descrizione</th>";
-				echo "<th>durata</th>";
+	            echo "<th>cognome</th>";
+				echo "<th>ore effettuate</th>";
 	        echo "</tr>";
 	  
 	
 	        foreach ($res as $row) {
 	            echo "<tr>";
-	                echo "<td>".$row['idCorso']."</td>";
 	                echo "<td>".$row['nomeCorso']."</td>";
-	                echo "<td>".$row['descrizioneCorso']."</td>";
-					echo "<td>".$row['durataOraCorso']."</td>";
+	                echo "<td>".$row['nomePersona']."</td>";
+	                echo "<td>".$row['cognomePersona']."</td>";
+					echo "<td>".$row['oreEffettuate']."</td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";

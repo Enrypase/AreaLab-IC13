@@ -1,9 +1,6 @@
 <?php
-//session_start();
 include 'libs/util.php';
-//include 'libs/db_connect.php';
-$con = new PDO("sqlite:sicurezza.db");
-//$user=getArr($_SESSION,'username');
+include 'libs/db_connect.php';
 
 $ut=getArr($_POST,"username");
 $pw=getArr($_POST,"password");

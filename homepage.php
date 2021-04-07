@@ -1,7 +1,6 @@
 <?php
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -11,10 +10,8 @@ include 'libs/db_connect.php';
 <body>
 
 <?php
-//if ($user!="" && $user="adminuser"){
-	//print("<H3> Ciao $user! </h3>");
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = "select * from Personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona where f.oreEffettuate<6 group by(f.idCorso)";
+	$query = "select p.nomePersona, p.cognomePersona, p.codFiscPersona, c.nomeCorso, f.oreEffettuate from Personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona join corsi c on c.idCorso=f.idCorso where f.oreEffettuate<6 group by(f.idCorso)";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
@@ -25,24 +22,29 @@ include 'libs/db_connect.php';
 	    echo "<th>nome</th>";
 	    echo "<th>cognome</th>";
 	    echo "<th>codice fiscale</th>";
+		echo "<th>corso</th>";
+		echo "<th>ore mancanti</th>";
 	    echo "</tr>";
 	    foreach ($res as $row) {
 	        echo "<tr>";
 	        echo "<td>".$row['nomePersona']."</td>";
 	        echo "<td>".$row['cognomePersona']."</td>";
 	        echo "<td>".$row['codFiscPersona']."</td>";
+			echo "<td>".$row['nomeCorso']."</td>";
+			$oreMancanti=$row['oreEffettuate']-2;
+			echo "<td>".$oreMancanti."</td>";
 			echo "</tr><br>";
 	        }
-	    echo "</table>";
+	    echo "</table><br>";
 
 	
 	print("<a href=\"index.php\"><button onClick=\"index.php\"> logout</button></a><br>");
 	print("<a href=\"AggiornaCorsi.php\"><button onClick=\"AggiornaCorsi.php\"> aggiorna corsi</button></a><br>");
-	print("<a href=\"Consulta.php\"><button onClick=\"index.php\"> consulta</button></a><br>");
 	print("<a href=\"AggiornaAnagrafica.php\"><button onClick=\"AggiornaAnagrafica.php\"> aggiorna anagrafica</button></a><br>");
+	print("<a href=\"AggiornaFrequentazioni.php\"><button onClick=\"AggiornaFrequentazioni.php\"> aggiorna frequentazioni</button></a><br>");
+	print("<a href=\"Consulta.php\"><button onClick=\"index.php\"> consulta</button></a><br>");
 	print("<a href=\"Backup.php\"><button onClick=\"Backup.php\"> ottieni backup</button></a><br>");
 	print("<a href=\"FoglioFirme.php\"><button onClick=\"FoglioFirme.php\"> ottieni foglio firme</button></a><br>");
-//}
 ?>
 </body>
 </html>

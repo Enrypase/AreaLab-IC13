@@ -1,7 +1,6 @@
 <?php 
 include 'libs/util.php';
-//include 'libs/db_connect.php';
-$con = new PDO("sqlite:sicurezza.db");
+include 'libs/db_connect.php';
 //$user=getArr($_SESSION,'username');
 ?>
 
@@ -18,20 +17,12 @@ $con = new PDO("sqlite:sicurezza.db");
 <?php
 	//select all data
 	$query = "select * from personale";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
 	    echo "Errore !".$ex->getMessage();
 	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
-	    echo "<table border='1'>";
+	echo "<table border='1'>";
 	        echo "<tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
@@ -43,7 +34,7 @@ $con = new PDO("sqlite:sicurezza.db");
 	        echo "</tr>";
 	  
 	
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	        foreach ($res as $row) {
 	            echo "<tr>";
 	                echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
@@ -55,10 +46,6 @@ $con = new PDO("sqlite:sicurezza.db");
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
 
 ?> 
  
