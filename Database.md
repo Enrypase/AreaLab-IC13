@@ -11,17 +11,17 @@ La struttura del database prevederà 4 tabelle:
 
 ## PERSONALE
 Questa tabella conterrà le informazioni sul personale lavoratore.
-E' composto da: CodFiscPersona text PK,nomePersona text, cognmePersona text, ruoloPersona text, dataNascitaPersona text, servizio text, mailPersona text.
+E' composto da: CodFiscPersona text PK,nomePersona text, cognmePersona text, ruoloPersona text, dataNascitaPersona text, servizio integer, mailPersona text.
 
 ## CORSI
 Questa tabella conterrà le informazioni relative ai corsi.
-E' composto da: idCorso text PK, nomeCorso text PK, descrizioneCorso text, durataOreCorso text.
+E' composto da: idCorso text PK, nomeCorso text PK, descrizioneCorso text, durataOreCorso integer.
 
 
 ## FREQUENTAZIONI
 Questa tabella conterrà le informazioni sulle frequentazioni del personale nei relativi
 corsi. Ogni lavoratore potrà essere collegato a più corsi.
-E' composto da: idCorso text PK e Foreing Key, CodFiscPersona text PK e Foreing Key, data text PK, oreEffettuate text.
+E' composto da: idCorso text PK e Foreing Key, CodFiscPersona text PK e Foreing Key, data text PK, oreEffettuate integer.
 
 ## UTENTI
 Questa tabella conterrà le informazioni di accesso o recupero degli utenti gestori
