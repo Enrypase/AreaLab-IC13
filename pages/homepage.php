@@ -1,12 +1,21 @@
 <?php 
 $_SESSION['secLevel'] = 1;
+include './libs/db_connect.php';
 include './Logica/security.php';
-$con = new PDO("sqlite:../sicurezza.db");
+include './libs/mobileDetect.php';
+$detect = new Mobile_Detect();
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel='stylesheet' type='text/css' href='./Stile/homepage.css'>
+		<?php 
+	if($detect->isMobile()){
+		echo "<link rel='stylesheet' type='text/css' href='./Stile/homepageMobile.css'>";
+	}
+	else{
+		echo "<link rel='stylesheet' type='text/css' href='./Stile/homepage.css'>";
+	}
+	?>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -17,37 +26,31 @@ $con = new PDO("sqlite:../sicurezza.db");
 			<?php include './pages/header-logged.php'; ?>
 			<div class="testo">
 				<div class="elenco">
-					<?php
-					if ($user!="")
-						print("<H3> Ciao $user! </h3>");
-						echo "<b>Persone che devono svolgere dei corsi:</b>";
-						$query = "select * from Personale;";// VANNO AGGIUNTI ANCHE I CASI DELLA SOMMA DELLE ORE INFERIORE A QUELLA VOLUTA E CONDIZIONE SULLA DATA
+					<div class="titolo">
+						<b>Persone che devono svolgere dei corsi:</b>
+					</div>
+					<div class="persone">
+						<?php
+						$query = "select * from Personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona where f.oreEffettuate<6 group by(f.idCorso)";
 						try{
-							$num=0;
-							$stmt = $con->prepare( $query );
-							$stmt->execute();
-							$num = $stmt->rowCount();
+							$res=$con->query($query);
 						}catch(PDOException $ex) {
-						    echo "Errore !".$ex->getMessage();
+							    echo "Errore !".$ex->getMessage();
 						}
-						if($num>0){
-						    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-						        echo "<p>".$row['nomePersona'].", ";
-						        echo "".$row['cognomePersona'].", ";
-						        echo "".$row['codFiscPersona'].";</p>";
-						    }
+						foreach ($res as $row) {
+							echo $row['nomePersona']."   " ;
+							echo $row['cognomePersona']."   ";
+							echo $row['codFiscPersona']."<br>";
 						}
-						else{
-						    echo "No results.";
-						}
-					?>
+						?>
+					</div>
 				</div>
 				<div class="pulsanti">
 					<a href="AggiornaCorsi.php"><button onClick="AggiornaCorsi.php">Aggiorna corsi</button></a>
 					<a href="Consulta.php"><button onClick="index.php">Consulta</button></a>
 					<a href="AggiornaAnagrafica.php"><button onClick="AggiornaAnagrafica.php">Aggiorna anagrafica</button></a>
 					<a href="Backup.php"><button onClick="Backup.php">Ottieni backup</button></a>
-					<a href="FoglioFirme.php"><button onClick="FoglioFirme.php">Ottieni foglio firme</button></a>
+					<a href="FoglioFirme.php"><button onClick="FoglioFirme.php">Ottieni firme</button></a>
 				</div>
 			</div>
 			<?php echo file_get_contents('./pages/footer-logged.html');	?>

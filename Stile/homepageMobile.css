@@ -1,43 +1,44 @@
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(0.5vh, 1.75vh, 2.5vh);
+	font-size: clamp(1vw, 1.45vw, 3vw);
 }
 	.grid{
 		display: grid;
-		grid-template-columns: 10% 80% 10%;
-		grid-template-rows: 10vh auto auto;
-		grid-gap: 2vh;
+		grid-template-columns: 25% 75%;
+		grid-template-rows: auto auto;
 	}
 		.header{
-			background-color: #eee;
-			grid-column: 2;
-			grid-row: 1;
+			overflow: hidden;
+			position: fixed;
 
+		    top: 0;
+		    left: 0;
+		    z-index: 999;
+		    height: 100%;
+		    width: 25%;
+		    max-width: 25vw;
+
+			background-color: #eee;
+			grid-column: 1;
+			grid-row: 1/2;
 			text-align: center;
 			vertical-align: middle;
 
 			display: grid;
-			grid-template-columns: 50% 50%;
-			grid-template-rows: 100%;
-		}
-		.header img{
-			transition: transform 0.15s, filter 0.15s ease-in-out;
-			height: 100%;
-			transform: scale(0.7);
-		}
-		.header img:hover{
-			transform: scale(0.9);
+			grid-template-rows:2fr 1fr;
+			grid-template-columns: 100%;
 		}
 			.notLogged{
-				grid-column: 1;
+				grid-row: 1;
 			}
 			.logged{
-				grid-column: 2;
+				grid-row: 2;
 			}
 		.header img{
 			transition: transform 0.15s, filter 0.15s ease-in-out;
-			height: 100%;
+			max-width: 20vh;
+			width: 100%;
 			transform: scale(0.7);
 		}
 		.header img:hover{
@@ -45,8 +46,9 @@ body{
 		}
 		.testo{
 			background-color: #eee;
-			grid-row: 2;
+			grid-row: 1;
 			grid-column: 2;
+
 			display: grid;
 			grid-template-rows: auto auto;
 			font-weight: bold;
@@ -69,15 +71,15 @@ body{
 			.pulsanti{
 				grid-row: 2;
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-				grid-template-rows: 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 				align-items: center;
 			}
 			.pulsanti button{
-				width: 100%;
+				width: 75%;
 				border-radius: 1vh;
-				font-size: 1.5vh;
+				font-size: 200%;
 				padding: 0.5vh;
+				margin: 0.5vh;
 				font-weight: bold;
 			}
 			.pulsanti button:hover{
@@ -87,9 +89,11 @@ body{
 			}
 			
 		.bottom{
+			margin: 1vw;
 			background-color: #eee;
-			text-align: center;
 			grid-column: 2;
-			grid-row: 3;
+			grid-row: 2;
+
+			text-align: center;
 			vertical-align: middle;
-		}		
+		}	
