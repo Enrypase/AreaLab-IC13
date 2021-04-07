@@ -74,7 +74,7 @@ Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più
 Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso ciò che si otterrà sarà una schermata stampabile formata da: 
 
 >                                   Titolo del corso  
->Nome della persona  | Cognome della persona |Ora |Spazio per la firma
+>Nome della persona  | Cognome della persona |Durata |Spazio per la firma
 >:------------ | :-------------: | :-------------: |-------------: 
 
 
@@ -83,7 +83,7 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
 Ad esempio:<br> 
 
 >                                 Corso antincendio 
->Mario  | Rossi | --|_____________
+>Mario  | Rossi | 2h |_____________
 >:------------ | :-------------: | :-------------: | -------------: 
 
 
