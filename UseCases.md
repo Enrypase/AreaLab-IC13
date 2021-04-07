@@ -82,7 +82,7 @@ Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire
 
 Ad esempio:<br> 
 
->          Corso antincendio 
+>                                 Corso antincendio 
 >Mario  | Rossi | 1234 |_____________
 >:------------ | :-------------: | :-------------: | -------------: 
 
