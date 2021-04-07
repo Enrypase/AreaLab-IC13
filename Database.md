@@ -1,4 +1,4 @@
-# STRUTTURA DEL DATABASE
+# STRUTTURA DEL DATABASE SQlite
 
 La struttura del database prevederà 4 tabelle:
 * [PERSONALE](#PERSONALE)
