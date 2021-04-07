@@ -1,7 +1,6 @@
 <?php 
 include 'libs/util.php';
-//include 'libs/db_connect.php';
-$con = new PDO("sqlite:sicurezza.db");
+include 'libs/db_connect.php';
 //$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
@@ -15,25 +14,25 @@ $con = new PDO("sqlite:sicurezza.db");
 <a href="homepage.php">Home</a>
 
 <form method="POST">
-	id: <input type="text" name="idCorso"/> <br>
-    nome: <input type="text" name="nomeCorso"/> <br>
-    descr: <input type="text" name="descrizioneCorso"/> <br>
-    durata: <input type="decimal" name="durataOreCorso"/> <br>
+	id: <input type="text" name="id"/> <br>
+    nome: <input type="text" name="nome"/> <br>
+    descr: <input type="text" name="descrizione"/> <br>
+    durata: <input type="decimal" name="durata"/> <br>
     <input type="submit" value="Aggiungi"/>
 </form>
 
 <?php
 	if ($_POST) {
-		$idCorso= getArr($_POST, "idCorso");
-        $nomeCorso= getArr($_POST, "nomeCorso");
-        $descrizioneCorso= getArr($_POST, "descrizioneCorso");
-        $durataOreCorso= getArr($_POST, "durataOreCorso");
+		$idCorso= getArr($_POST, "id");
+        $nomeCorso= getArr($_POST, "nome");
+        $descrizioneCorso= getArr($_POST, "descrizione");
+        $durataOraCorso= getArr($_POST, "durata");
 
-        if ($idCorso!="" && $nomeCorso!="" && $descrizioneCorso!="" && $durataOreCorso!=""){
-			$query="update corsi set (nomeCorso,descrizioneCorso) VALUES (?,?,?) where idCorso='$idCorso'";
+        if ($idCorso!="" && $nomeCorso!="" && $descrizioneCorso!="" && $durataOraCorso!=""){
+			$query="update corsi set nomeCorso='$nomeCorso', descrizioneCorso='$descrizioneCorso', durataOraCorso='$durataOraCorso' where idCorso='$idCorso'";
 			try{
 				$stmt=$con->prepare($query);
-				$stmt->execute(array($nomeCorso, $descrizioneCorso, $durataOreCorso));
+				$stmt->execute();
 				header('Location: AggiornaCorsi.php');
 			} catch (Exception $ex) {
                 print("Errore!" . $ex);

@@ -1,6 +1,7 @@
 <?php
 include 'libs/util.php';
 include 'libs/db_connect.php';
+//$con = new PDO("sqlite:sicurezza.db");
 //$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
@@ -14,27 +15,36 @@ include 'libs/db_connect.php';
 //if ($user!="" && $user="adminuser"){
 	//print("<H3> Ciao $user! </h3>");
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = "select * from Personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona where f.oreEffettuate<6 group by(f.idCorso)";
+	//$query = "select * from Personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona where f.oreEffettuate<6 group by(f.idCorso)";
+	$query = "select * from personale";
 	try{
-		$res=$con->query($query);
+		$num=0;
+		$stmt=$con->prepare($query);
+		$stmt->execute(array());
+		$num = $stmt->rowCount();
+		$num=10;
 	}catch(PDOException $ex) {
 	    echo "Errore !".$ex->getMessage();
 	}
+	if($num>0){
 		echo "<table border='1'>";
 	    echo "<tr>";
 	    echo "<th>nome</th>";
 	    echo "<th>cognome</th>";
 	    echo "<th>codice fiscale</th>";
 	    echo "</tr>";
-	    foreach ($res as $row) {
+	    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 	        echo "<tr>";
-	        echo "<td>".$row['nomePersona']."</td>";
-	        echo "<td>".$row['cognomePersona']."</td>";
-	        echo "<td>".$row['codFiscPersona']."</td>";
+	        echo "<td>".$row['p.nomePersona']."</td>";
+	        echo "<td>".$row['p.cognomePersona']."</td>";
+	        echo "<td>".$row['p.codFiscPersona']."</td>";
 			echo "</tr><br>";
 	        }
 	    echo "</table>";
-
+	}
+	else{
+	    echo "No results.<br>";
+	}
 	
 	print("<a href=\"index.php\"><button onClick=\"index.php\"> logout</button></a><br>");
 	print("<a href=\"AggiornaCorsi.php\"><button onClick=\"AggiornaCorsi.php\"> aggiorna corsi</button></a><br>");

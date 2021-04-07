@@ -1,7 +1,6 @@
 <?php
 include 'libs/util.php';
-//include 'libs/db_connect.php';
-$con = new PDO("sqlite:sicurezza.db");
+include 'libs/db_connect.php';
 //$user=getArr($_SESSION,'username');
 ?>
 
@@ -21,17 +20,11 @@ $con = new PDO("sqlite:sicurezza.db");
 
 	//select all data
 	$query = "SELECT * FROM corsi";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute(); 
-		$num = $stmt->rowCount();
-	} catch(PDOException $ex) {
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
 	    echo "Errore !".$ex->getMessage();
 	}
-	
-	if($num>0){
-	  
 	    echo "<table border='1'>";
 	        echo "<tr>";
 	            echo "<th>ID</th>";
@@ -41,19 +34,16 @@ $con = new PDO("sqlite:sicurezza.db");
 	        echo "</tr>";
 	  
 	
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	        foreach ($res as $row){
 	            echo "<tr>";
 	                echo "<td>".$row['idCorso']."</td>";
 	                echo "<td>".$row['nomeCorso']."</td>";
 	                echo "<td>".$row['descrizioneCorso']."</td>";
-					echo "<td>".$row['durataOreCorso']."</td>";
+					echo "<td>".$row['durataOraCorso']."</td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
+	
 //}
 ?> 
  
