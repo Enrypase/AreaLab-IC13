@@ -36,6 +36,7 @@ $id=getArr($_SESSION,'id');
 	}
 
 ?> 
+<a href="/" download>	
  
 </body>
 </html>
