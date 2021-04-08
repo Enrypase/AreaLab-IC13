@@ -12,48 +12,39 @@ include 'libs/db_connect.php';
     </head>
 <body>
 
-<a href="Consulta.php">back</a><br>
-
 <?php
+//if ($user!="" && $user="adminuser"){
+	print("<a href=\"AggiornaFrequentazioni.php\">back</a><br>");
+	
 	//select all data
-	$query = "select * from personale";
+	$query = "select p.nomePersona, p.codFiscPersona, p.cognomePersona from personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
 	    echo "Errore !".$ex->getMessage();
-	}
-	echo "<table border='1'>";
+	} 
+	
+	    echo "<table border='1'>";
 	        echo "<tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
-	            echo "<th>cognome</th>";
-				echo "<th>ruolo</th>";
-				echo "<th>data nascita</th>";
-				echo "<th>servizio</th>";
-				echo "<th>mail</th>";
+				echo "<th>cognome</th>";
+				echo "<th></th>";
 	        echo "</tr>";
-	  
-	
+			
 	        foreach ($res as $row) {
-				$servizio=$row['servizio'];
-				if ($servizio=='1'){
-					$servizio="in servizio";
-				}
-				else{
-					$servizio="no";
-				}
+				$codFiscPersona=$row['codFiscPersona'];
 	            echo "<tr>";
 	                echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
-					echo "<td>".$row['ruoloPersona']."</td>";
-					echo "<td>".$row['dataNascitaPersona']."</td>";
-	                echo "<td>".$servizio."</td>";
-					echo "<td>".$row['mailPersona']."</td>";
-	            echo "</tr>";
+					echo "<td><form method=\"POST\" action=\"AggiungiFrequentazione.php\"><input type=\"checkbox\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
+				echo "</tr>";
 	        }
 	    echo "</table>";
 
+		
+//}
 ?> 
  
 </body>

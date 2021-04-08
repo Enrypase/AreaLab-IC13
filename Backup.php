@@ -13,8 +13,7 @@ include 'libs/db_connect.php';
 <body>
 
 <a href="homepage.php">Home</a><br><br>
-<a href="sicurezza.db" download><button>download</a>
- 
+<a href="sicurezza.db" download="backup.db"><button>download</a>
  
 </body>
 </html>

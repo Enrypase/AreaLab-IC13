@@ -33,7 +33,7 @@ if ($_POST) {
 	
 	if ($nomeCorso!="" && $ruoloPersona!="" && in_array($nomeCorso, $arrayCorsi) && in_array($ruoloPersona, $arrayRuoli)){
 	
-	$query = "select * from personale where ruoloPersona='$ruoloPersona'";
+	$query = "select * from personale where ruoloPersona='$ruoloPersona' and servizio='1'";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {

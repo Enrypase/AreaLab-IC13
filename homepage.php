@@ -10,8 +10,33 @@ include 'libs/db_connect.php';
 <body>
 
 <?php
+	echo "<b>Persone che non hanno svolto alcun corso:</b>";	
+	$query = "select * from personale where codFiscPersona not in (select codFiscPersona from frequentazioni)";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    echo "Errore !".$ex->getMessage();
+	} 
+	    echo "<table border='1'>";
+	        echo "<tr>";
+	            echo "<th>codice fiscale</th>";
+	            echo "<th>nome</th>";
+	            echo "<th>cognome</th>";
+	        echo "</tr>";
+	  
+	
+	        foreach ($res as $row) {
+	            echo "<tr>";
+					echo "<td>".$row['codFiscPersona']."</td>";
+	                echo "<td>".$row['nomePersona']."</td>";
+	                echo "<td>".$row['cognomePersona']."</td>";
+	            echo "</tr>";
+	        }
+	    echo "</table><br>";
+
+
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = "select p.nomePersona, p.cognomePersona, p.codFiscPersona, c.nomeCorso, f.oreEffettuate from Personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona join corsi c on c.idCorso=f.idCorso where f.oreEffettuate<6 group by(f.idCorso)";
+	$query = "select sum(f.oreEffettuate), c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso HAVING sum(f.oreEffettuate)<6";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
@@ -31,9 +56,9 @@ include 'libs/db_connect.php';
 	        echo "<td>".$row['cognomePersona']."</td>";
 	        echo "<td>".$row['codFiscPersona']."</td>";
 			echo "<td>".$row['nomeCorso']."</td>";
-			$oreMancanti=$row['oreEffettuate']-2;
+			$oreMancanti=6-$row['sum(f.oreEffettuate)'];
 			echo "<td>".$oreMancanti."</td>";
-			echo "</tr><br>";
+			echo "</tr>";
 	        }
 	    echo "</table><br>";
 

@@ -24,13 +24,13 @@ include 'libs/db_connect.php';
 	if ($_POST) {
         $nomeCorso= getArr($_POST, "nomeCorso");
         $descrizioneCorso= getArr($_POST, "descrizioneCorso");
-        $durataOreCorso= getArr($_POST, "durataOreCorso");
+        $durataOraCorso= getArr($_POST, "durataOreCorso");
 
-        if ($nomeCorso!="" && $descrizioneCorso!="" && $prezzo!=""){
-			$query="INSERT INTO corsi (nomeCorso,descrizioneCorso,durataOreCorso) VALUES (?,?,?)";
+        if ($nomeCorso!="" && $descrizioneCorso!="" && $durataOraCorso!=""){
+			$query="INSERT INTO corsi (nomeCorso,descrizioneCorso,durataOraCorso) VALUES (?,?,?)";
 			try{
 				$stmt=$con->prepare($query);
-				$stmt->execute(array($nomeCorso, $descrizioneCorso, $durataOreCorso));
+				$stmt->execute(array($nomeCorso, $descrizioneCorso, $durataOraCorso));
 				header('Location: AggiornaCorsi.php');
 			} catch (Exception $ex) {
                 print("Errore!" . $ex);
