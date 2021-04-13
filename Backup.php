@@ -1,7 +1,8 @@
 <?php 
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
+$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -12,8 +13,24 @@ include 'libs/db_connect.php';
     </head>
 <body>
 
-<a href="homepage.php">Home</a><br><br>
-<a href="sicurezza.db" download="backup.db"><button>download</a>
- 
+<?php
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+echo" <a href=\"homepage.php\">Home</a><br><br>";
+echo" <a href=\"sicurezza.db\" download=\"backup.db\"><button>download</a>";
+}
+else{
+	include 'erroreaccesso.php';
+}
+?>
 </body>
 </html>

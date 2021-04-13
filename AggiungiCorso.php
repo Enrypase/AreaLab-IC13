@@ -1,7 +1,8 @@
 <?php 
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
+$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -11,16 +12,28 @@ include 'libs/db_connect.php';
     </head>
 <body>
 
-<a href="AggiornaCorsi.php">back</a>
-
-<form method="POST"> 
-    nome: <input type="text" name="nomeCorso"/> <br>
-    descr: <input type="text" name="descrizioneCorso"/> <br>
-    durata: <input type="decimal" name="durataOreCorso"/> <br>
-    <input type="submit" value="Aggiungi"/>
-</form>
-
 <?php
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+	
+echo"	<a href=\"aggiornacorsi.php\">back</a>";
+	
+echo"	<form method=\"POST\"> ";
+echo"    nome: <input type=\"text\" name=\"nomeCorso\"/> <br>";
+echo"    descr: <input type=\"text\" name=\"descrizioneCorso\"/> <br>";
+echo"    durata: <input type=\"decimal\" name=\"durataOreCorso\"/> <br>";
+echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
+echo"	</form>";
+	
 	if ($_POST) {
         $nomeCorso= getArr($_POST, "nomeCorso");
         $descrizioneCorso= getArr($_POST, "descrizioneCorso");
@@ -31,15 +44,19 @@ include 'libs/db_connect.php';
 			try{
 				$stmt=$con->prepare($query);
 				$stmt->execute(array($nomeCorso, $descrizioneCorso, $durataOraCorso));
-				header('Location: AggiornaCorsi.php');
+				header('Location: aggiornacorsi.php');
 			} catch (Exception $ex) {
-                print("Errore!" . $ex);
+                include 'errore.php';
             }
 		}else
 		{
 			print(" <b> parametri non inseriti </b>");
 		}
 	}
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?>
         
     </body>

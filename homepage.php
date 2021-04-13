@@ -1,6 +1,8 @@
 <?php
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
+$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -10,12 +12,23 @@ include 'libs/db_connect.php';
 <body>
 
 <?php
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
 	echo "<b>Persone che non hanno svolto alcun corso:</b>";	
 	$query = "select * from personale where codFiscPersona not in (select codFiscPersona from frequentazioni)";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	    include 'errore.php';
 	} 
 	    echo "<table border='1'>";
 	        echo "<tr>";
@@ -40,7 +53,7 @@ include 'libs/db_connect.php';
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	    include 'errore.php';
 	}
 		echo "<table border='1'>";
 	    echo "<tr>";
@@ -64,12 +77,16 @@ include 'libs/db_connect.php';
 
 	
 	print("<a href=\"index.php\"><button onClick=\"index.php\"> logout</button></a><br>");
-	print("<a href=\"AggiornaCorsi.php\"><button onClick=\"AggiornaCorsi.php\"> aggiorna corsi</button></a><br>");
-	print("<a href=\"AggiornaAnagrafica.php\"><button onClick=\"AggiornaAnagrafica.php\"> aggiorna anagrafica</button></a><br>");
-	print("<a href=\"AggiornaFrequentazioni.php\"><button onClick=\"AggiornaFrequentazioni.php\"> aggiorna frequentazioni</button></a><br>");
-	print("<a href=\"Consulta.php\"><button onClick=\"index.php\"> consulta</button></a><br>");
-	print("<a href=\"Backup.php\"><button onClick=\"Backup.php\"> ottieni backup</button></a><br>");
-	print("<a href=\"FoglioFirme.php\"><button onClick=\"FoglioFirme.php\"> ottieni foglio firme</button></a><br>");
+	print("<a href=\"aggiornacorsi.php\"><button onClick=\"AggiornaCorsi.php\"> aggiorna corsi</button></a><br>");
+	print("<a href=\"aggiornaanagrafica.php\"><button onClick=\"aggiornaanagrafica.php\"> aggiorna anagrafica</button></a><br>");
+	print("<a href=\"aggiornafrequentazioni.php\"><button onClick=\"aggiornafrequentazioni.php\"> aggiorna frequentazioni</button></a><br>");
+	print("<a href=\"consulta.php\"><button onClick=\"consulta.php\"> consulta</button></a><br>");
+	print("<a href=\"backup.php\"><button onClick=\"backup.php\"> ottieni backup</button></a><br>");
+	print("<a href=\"fogliofirme.php\"><button onClick=\"fogliofirme.php\"> ottieni foglio firme</button></a><br>");
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?>
 </body>
 </html>

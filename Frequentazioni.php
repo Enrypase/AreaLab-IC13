@@ -1,7 +1,8 @@
 <?php 
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
+$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -12,17 +13,28 @@ include 'libs/db_connect.php';
     </head>
 <body>
 
-<a href="Consulta.php">back</a><br>
-
-<a href="AggiornaFrequentazioni.php"><button onClick="AggiornaFrequentazioni.php">modifica frequentazioni</button></a><br>
-
 <?php
-	//select all data
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+	
+echo"	<a href=\"consulta.php\">back</a><br>";
+
+echo"	<a href=\"aggiornafrequentazioni.php\"><button onClick=\"aggiornafrequentazioni.php\">modifica frequentazioni</button></a><br>";
+
 	$query = "select * from frequentazioni f join personale p on p.codFiscPersona=f.codFiscPersona join corsi c on c.idCorso=f.idCorso order by f.idCorso";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	    include 'errore.php';
 	} 
 	    echo "<table border='1'>";
 	        echo "<tr>";
@@ -44,7 +56,10 @@ include 'libs/db_connect.php';
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?> 
  
 </body>

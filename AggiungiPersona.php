@@ -1,7 +1,8 @@
 <?php 
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
+$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -11,20 +12,32 @@ include 'libs/db_connect.php';
     </head>
 <body>
 
-<a href="AggiornaAnagrafica.php">back</a>
-
-<form method="POST">
-	codice fiscale: <input type="text" name="codFiscPersona"/> <br>
-    nome: <input type="decimal" name="nomePersona"/> <br>
-    cognome: <input type="text" name="cognomePersona"/> <br>
-    ruolo: <input type="text" name="ruoloPersona"/> <br>
-    data di nascita: <input type="date" name="dataNascitaPersona"/> <br>
-    servizio: <input type="text" name="servizio"/> <br>
-	mail: <input type="mail" name="mailPersona"/> <br>
-    <input type="submit" value="Aggiungi"/>
-</form>
-
 <?php
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+	
+echo"<a href=\"aggiornaanagrafica.php\">back</a>";
+
+echo"	<form method=\"POST\">";
+echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\"/> <br>";
+echo"    nome: <input type=\"decimal\" name=\"nomePersona\"/> <br>";
+echo"    cognome: <input type=\"text\" name=\"cognomePersona\"/> <br>";
+echo"   ruolo: <input type=\"text\" name=\"ruoloPersona\"/> <br>";
+echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
+echo"    servizio: <input type=\"text\" name=\"servizio\"/> <br>";
+echo"	mail: <input type=\"mail\" name=\"mailPersona\"/> <br>";
+echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
+echo"	</form>";
+
 	if ($_POST) {
         $codFiscPersona= getArr($_POST, "codFiscPersona");
         $nomePersona= getArr($_POST, "nomePersona");
@@ -40,15 +53,19 @@ include 'libs/db_connect.php';
 			try{
 				$stmt=$con->prepare($query);
 				$stmt->execute(array($codFiscPersona, $nomePersona, $cognomePersona, $ruoloPersona, $dataNascitaPersona, $servizio, $servizio, $mailPersona));
-				header('Location: AggiornaAnagrafica.php');
+				header('Location: aggiornaanagrafica.php');
 			} catch (Exception $ex) {
-                print("Errore!" . $ex);
+                include 'errore.php';
             }
 		}else
 		{
 			print(" <b> parametri non inseriti </b>");
 		}
 	}
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?>
 </body>
 </html>

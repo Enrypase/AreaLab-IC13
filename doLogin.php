@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
 
@@ -30,8 +31,7 @@ try {
 	}catch(PDOException $exception){ //to handle error
 		$user="";
 		session_destroy();
-		$errore=$exception->getMessage();
-		print($exception);
+		include 'errore.php';
 	}
 ?>
 

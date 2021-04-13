@@ -1,7 +1,8 @@
 <?php 
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
+$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -13,15 +14,25 @@ include 'libs/db_connect.php';
 <body>
 
 <?php
-//if ($user!="" && $user="adminuser"){
-	print("<a href=\"AggiornaFrequentazioni.php\">back</a><br>");
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+	print("<a href=\"aggiornafrequentazioni.php\">back</a><br>");
 	
 	//select all data
 	$query = "select p.nomePersona, p.codFiscPersona, p.cognomePersona from personale p join frequentazioni f on f.codFiscPersona=p.codFiscPersona";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	    include 'errore.php';
 	} 
 	
 	    echo "<table border='1'>";
@@ -38,13 +49,14 @@ include 'libs/db_connect.php';
 	                echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
-					echo "<td><form method=\"POST\" action=\"AggiungiFrequentazione.php\"><input type=\"checkbox\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
+					echo "<td><form method=\"POST\" action=\"aggiungifrequentazione.php\"><input type=\"checkbox\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
 				echo "</tr>";
 	        }
 	    echo "</table>";
-
-		
-//}
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?> 
  
 </body>

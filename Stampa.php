@@ -1,6 +1,8 @@
 <?php
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
+$user=getArr($_SESSION,'username');
 ?>
 
 <!DOCTYPE HTML>
@@ -11,25 +13,45 @@ include 'libs/db_connect.php';
 <body>
 
 <?php
-if ($_POST) {
-	
-	$query = "select distinct c.nomeCorso, p.ruoloPersona from corsi c join frequentazioni f on f.idCorso=c.idCorso join personale p on p.codFiscPersona=f.codFiscPersona";
+$query = "select distinct username from utenti";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	    include 'errore.php';
 	} 
-			$i=0;
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+if ($_POST) {
+	
+	$query = "select distinct nomeCorso from corsi";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	
 	        foreach ($res as $row) {
-				$arrayCorsi= [$i => $row['nomeCorso'],];
-				$arrayRuoli= [$i => $row['ruoloPersona'],];
-				$i=$i+1;
+				$arrayCorsi[]=$row['nomeCorso'];
 	        }
+			
+			
+	$query = "select distinct ruoloPersona from personale";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	        foreach ($res as $row) {
+				$arrayRuoli[]=$row['ruoloPersona'];
+	        }
+			
 	$nomeCorso=getArr($_POST,"corso");
 	$ruoloPersona=getArr($_POST,"ruolo");
 	$oraI=getArr($_POST,"oraI");
 	$oraF=getArr($_POST,"oraF");
-	
 	
 	if ($nomeCorso!="" && $ruoloPersona!="" && in_array($nomeCorso, $arrayCorsi) && in_array($ruoloPersona, $arrayRuoli)){
 	
@@ -37,7 +59,7 @@ if ($_POST) {
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	    include 'errore.php';
 	}
 	
 	$data=date("d/m/Y");
@@ -65,6 +87,10 @@ if ($_POST) {
 	else{
 		echo ("Input non valido");
 	}
+}
+}
+else{
+	include 'erroreaccesso.php';
 }
 ?> 
 </body>

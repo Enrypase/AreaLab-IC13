@@ -1,8 +1,19 @@
 <?php 
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
-
+$user=getArr($_SESSION,'username');
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
 	if ($_POST) {
 		$idCorso= getArr($_POST, "id");
         $nomeCorso= getArr($_POST, "nome");
@@ -14,13 +25,17 @@ include 'libs/db_connect.php';
 			try{
 				$stmt=$con->prepare($query);
 				$stmt->execute();
-				header('Location: AggiornaCorsi.php');
+				header('Location: aggiornacorsi.php');
 			} catch (Exception $ex) {
-                print("Errore!" . $ex);
+                include 'errore.php';
             }
 		}else
 		{
 			print(" <b> parametri non inseriti </b>");
 		}
 	}
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?>

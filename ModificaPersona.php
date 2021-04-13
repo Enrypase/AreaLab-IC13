@@ -1,7 +1,8 @@
 <?php 
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-//$user=getArr($_SESSION,'username');
+$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -11,15 +12,25 @@ include 'libs/db_connect.php';
     </head>
 <body>
 
-<a href="AggiornaAnagrafica.php">back</a>
-
 <?php
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+	echo"<a href=\"aggiornaanagrafica.php\">back</a>";
 	$codFiscPersona="";
 	if ($_POST) {
         $codFiscPersona= getArr($_POST, "codFiscPersona");
 	}
 
-echo"<form action='doModificaPersona.php' method=\"POST\">";
+echo"<form action='domodificapersona.php' method=\"POST\">";
 echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
 echo"    nome: <input type=\"decimal\" name=\"nomePersona\"/> <br>";
 echo"    cognome: <input type=\"text\" name=\"cognomePersona\"/> <br>";
@@ -29,6 +40,10 @@ echo"	in servizio: <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>
 echo"    mail: <input type=\"mail\" name=\"mailPersona\"/> <br>";
 echo"    <input type=\"submit\" value=\"modifica\"/>";
 echo"</form>";
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?>
 
 </body>

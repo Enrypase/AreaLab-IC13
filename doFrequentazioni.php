@@ -1,7 +1,19 @@
 <?php
+session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-
+$user=getArr($_SESSION,'username');
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
 if ($_POST) {
 		$codFiscPersona=getArr($_POST,"codFiscPersona");
 		$nomeCorso= getArr($_POST, "corso");
@@ -13,7 +25,7 @@ if ($_POST) {
 			try{
 				$res=$con->query($query);
 			}catch(PDOException $ex) {
-				echo "Errore !".$ex->getMessage();
+				include 'errore.php';
 			} 
 			$i=0;
 	        foreach ($res as $row) {
@@ -31,11 +43,15 @@ if ($_POST) {
 				$stmt->execute(array($idCorso, $codFiscPersona, $data, $oreEffettuate));
 				header('Location: AggiornaFrequentazioni.php');
 			} catch (Exception $ex) {
-                print("Errore!" . $ex);
+                include 'errore.php';
             }
 		}else
 		{
 			print(" <b> parametri non inseriti </b>");
 		}
+}
+}
+else{
+	include 'erroreaccesso.php';
 }
 ?>
