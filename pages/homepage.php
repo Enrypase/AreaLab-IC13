@@ -9,20 +9,16 @@ $detect = new Mobile_Detect();
 <html>
 	<head>
 		<?php 
-	if($detect->isMobile()){
-		echo "<link rel='stylesheet' type='text/css' href='./Stile/homepageMobile.css'>";
-	}
-	else{
-		echo "<link rel='stylesheet' type='text/css' href='./Stile/homepage.css'>";
-	}
-	?>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-
-		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-		<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script> 
+			include './pages/defS.html';
+			if($detect->isMobile()){
+				echo "<link rel='stylesheet' type='text/css' href='./Stile/homepageMobile.css'>";
+			}
+			else{
+				echo "<link rel='stylesheet' type='text/css' href='./Stile/homepage.css'>";
+			}
+		?>
+		<script type="text/javascript" charset="utf8" src="./JS/jquery.js"></script>
+  		<script type="text/javascript" charset="utf8" src="./JS/jqueryDataTables.js"></script> 
 
 		<title>Home</title>
 	</head>

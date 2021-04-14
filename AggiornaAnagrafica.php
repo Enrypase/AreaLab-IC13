@@ -1,8 +1,8 @@
 <?php 
 session_start();
+include 'libs/util.php';
 include 'libs/db_connect.php';
 $user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
 ?>
 
 <!DOCTYPE HTML>
@@ -13,26 +13,30 @@ $id=getArr($_SESSION,'id');
     </head>
 <body>
 
-<a href="homepage.php">Home</a><br>
-<a href="AggiungiPersona.php"><button onClick="AggiungiPersona.php"> aggiungi persona</button></a><br>
-<a href="ModificaPersona.php"><button onClick="ModificaPersona.php"> modifica persona</button></a><br>
-
 <?php
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+	
+	print("<a href=\"homepage.php\">Home</a><br>");
+	print("<a href=\"aggiungipersona.php\"><button onClick=\"aggiungipersona.php\"> aggiungi persona</button></a><br>");
+	
 	//select all data
 	$query = "SELECT * FROM personale";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
 	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
+	
 	    echo "<table border='1'>";
 	        echo "<tr>";
 	            echo "<th>codice fiscale</th>";
@@ -42,26 +46,35 @@ $id=getArr($_SESSION,'id');
 				echo "<th>data nascita</th>";
 				echo "<th>servizio</th>";
 				echo "<th>mail</th>";
+				echo "<th></th>";
 	        echo "</tr>";
 	  
-	
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	        foreach ($res as $row) {
+				$codFiscPersona=$row['codFiscPersona'];
+				$servizio=$row['servizio'];
+				if ($servizio=='1'){
+					$servizio="in servizio";
+				}
+				else{
+					$servizio="no";
+				}
 	            echo "<tr>";
-	                echo "<td>".$row['codFiscPersona']."</td>";
+	                echo "<td>".$codFiscPersona."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
 					echo "<td>".$row['ruoloPersona']."</td>";
 					echo "<td>".$row['dataNascitaPersona']."</td>";
-	                echo "<td>".$row['servizio']."</td>";
+	                echo "<td>".$servizio."</td>";
 					echo "<td>".$row['mailPersona']."</td>";
+					echo "<td><form method=\"POST\" action=\"modificapersona.php\"><input type=\"hidden\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
 
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?> 
  
 </body>

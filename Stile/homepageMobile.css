@@ -67,9 +67,11 @@ table {
 			}
 			.tabella1{
 				grid-row: 2;
+				padding: 2vw 0vw 2vw 0vw;
 			}
 			.tabella2{
 				grid-row: 3;
+				padding: 2vw 0vw 2vw 0vw;
 			}
 			.pulsanti{
 				grid-row: 4;

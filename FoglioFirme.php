@@ -1,8 +1,8 @@
 <?php 
 session_start();
+include 'libs/util.php';
 include 'libs/db_connect.php';
 $user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
 ?>
 
 <!DOCTYPE HTML>
@@ -13,51 +13,54 @@ $id=getArr($_SESSION,'id');
     </head>
 <body>
 
-<a href="homepage.php">Home</a><br>
-
 <?php
-	//select all data
-	$query = " ";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
 	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
+	
+if (in_array($user, $arrayUtenti)){
+	
+echo"	<a href=\"homepage.php\">Home</a><br><br>";
+echo"	<b>corsi disponibili<b>";
+	$corso=getArr($_POST,"corso");
+	
+	$query = "select distinct nomeCorso, idCorso from corsi";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
 	    echo "<table border='1'>";
 	        echo "<tr>";
+	            echo "<th>id</th>";
 	            echo "<th>nome</th>";
-	            echo "<th>cognome</th>";
-				echo "<th>corso</th>";
-				echo "<th>data</th>";
-				echo "<th>firma</th>";
 	        echo "</tr>";
-	  
-			$data=date("d/m/Y");
-			$firma="                    ";
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+			
+	        foreach ($res as $row) {
 	            echo "<tr>";
-	                echo "<td>".$row['nomePersona']."</td>";
-	                echo "<td>".$row['cognomePersona']."</td>";
-					echo "<td>".$row['nomeCorso']."</td>";
-					echo "<td>".$data."</td>";
-	                echo "<td>".$firma."</td>";
+	                echo "<td>".$row['idCorso']."</td>";
+	                echo "<td>".$row['nomeCorso']."</td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
 
-?> 
- 
+echo" <br><form action=\"stampa.php\" method=\"post\" >";
+echo"    inserisci corso<input type=\"text\" name=\"corso\" /><br>";
+echo"	ruolo personale<input type=\"text\" name=\"ruolo\" /><br>";
+echo"	ora di inizio<input type=\"time\" name=\"oraI\" /><br>";
+echo"	ora di fine<input type=\"time\" name=\"oraF\" /><br>";
+echo"	<input type =\"submit\" value=\"submit\">";
+echo" </form>";
+}
+else{
+	include 'erroreaccesso.php';
+}
+?>
 </body>
 </html>

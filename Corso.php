@@ -1,8 +1,8 @@
 <?php 
 session_start();
+include 'libs/util.php';
 include 'libs/db_connect.php';
 $user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
 ?>
 
 <!DOCTYPE HTML>
@@ -13,24 +13,26 @@ $id=getArr($_SESSION,'id');
     </head>
 <body>
 
-<a href="Consulta.php">Home</a><br>
-
 <?php
-	//select all data
-	$query = " ";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
 	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
+	
+if (in_array($user, $arrayUtenti)){
+	
+echo"	<a href=\"consulta.php\">back</a><br>";
+	$query = "select * from corsi";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
 	    echo "<table border='1'>";
 	        echo "<tr>";
 	            echo "<th>id</th>";
@@ -40,20 +42,19 @@ $id=getArr($_SESSION,'id');
 	        echo "</tr>";
 	  
 	
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	        foreach ($res as $row) {
 	            echo "<tr>";
 	                echo "<td>".$row['idCorso']."</td>";
 	                echo "<td>".$row['nomeCorso']."</td>";
 	                echo "<td>".$row['descrizioneCorso']."</td>";
-					echo "<td>".$row['durataOreCorso']."</td>";
+					echo "<td>".$row['durataOraCorso']."</td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
-
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?> 
  
 </body>

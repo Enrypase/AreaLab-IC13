@@ -1,6 +1,8 @@
 <?php 
-include 'libs/db_connect.php';
+session_start();
 include 'libs/util.php';
+include 'libs/db_connect.php';
+$user=getArr($_SESSION,'username');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -10,38 +12,36 @@ include 'libs/util.php';
     </head>
 <body>
 
-<a href="homepage.php">Home</a>
-
-<form method="POST">
-	id: <input type="text" name="idCorso"/> <br>
-    nome: <input type="text" name="nomeCorso"/> <br>
-    descr: <input type="text" name="descrizioneCorso"/> <br>
-    durata: <input type="decimal" name="durataOreCorso"/> <br>
-    <input type="submit" value="Aggiungi"/>
-</form>
-
 <?php
-	if ($_POST) {
-		$idCorso= getArr($_POST, "idCorso");
-        $nomeCorso= getArr($_POST, "nomeCorso");
-        $descrizioneCorso= getArr($_POST, "descrizioneCorso");
-        $durataOreCorso= getArr($_POST, "durataOreCorso");
-
-        if ($id!="" && $nome!="" && $descr!="" && $prezzo!=""){
-			$query="update corsi set (nomeCorso,descrizioneCorso) VALUES (?,?,?) where idCorso='$idCorso'";
-			try{
-				$stmt=$con->prepare($query);
-				$stmt->execute(array($nomeCorso, $descrizioneCorso, $durataOreCorso));
-				header('Location: AggiornaCorsi.php');
-			} catch (Exception $ex) {
-                print("Errore!" . $ex);
-            }
-		}else
-		{
-			print(" <b> parametri non inseriti </b>");
-		}
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
 	}
+	
+if (in_array($user, $arrayUtenti)){
+	echo"<a href=\"aggiornacorsi.php\">back</a>";
+	$idCorso="";
+	if ($_POST) {
+        $idCorso= getArr($_POST, "id");
+	}
+	
+echo"<form action=\"domodificacorso.php\" method=\"POST\">";
+echo"	id: <input type=\"text\" name=\"id\" value=\"$idCorso\"/> <br>";
+echo"    nome: <input type=\"text\" name=\"nome\"/> <br>";
+echo"    descr: <input type=\"text\" name=\"descrizione\"/> <br>";
+echo"    durata: <input type=\"decimal\" name=\"durata\"/> <br>";
+echo"    <input type=\"submit\" value=\"Modifica\"/>";
+echo"</form>";
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?>
-        
-    </body>
+
+</body>
 </html>

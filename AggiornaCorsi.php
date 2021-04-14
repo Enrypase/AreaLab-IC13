@@ -1,8 +1,8 @@
-<?php 
+<?php
 session_start();
+include 'libs/util.php';
 include 'libs/db_connect.php';
 $user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
 ?>
 
 <!DOCTYPE HTML>
@@ -13,26 +13,28 @@ $id=getArr($_SESSION,'id');
     </head>
 <body>
 
-<a href="homepage.php">Home</a><br>
-<a href="AggiungiCorso.php"><button onClick="AggiungiCorso.php"> aggiungi corso</button></a><br>
-<a href="ModificaCorso.php"><button onClick="ModificaCorso.php"> modifica corso</button></a><br>
-
 <?php
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    echo "Errore !".$ex->getMessage();
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
+	}
+	
+if (in_array($user, $arrayUtenti)){
+	print("<a href=\"homepage.php\">Home</a><br>");
+	print("<a href=\"aggiungicorso.php\"><button onClick=\"aggiungicorso.php\"> aggiungi corso</button></a><br>");
+
 	//select all data
 	$query = "SELECT * FROM corsi";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
 	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
 	    echo "<table border='1'>";
 	        echo "<tr>";
 	            echo "<th>ID</th>";
@@ -42,20 +44,21 @@ $id=getArr($_SESSION,'id');
 	        echo "</tr>";
 	  
 	
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	        foreach ($res as $row){
+				$idCorso=$row['idCorso'];
 	            echo "<tr>";
-	                echo "<td>".$row['idCorso']."</td>";
+	                echo "<td>".$idCorso."</td>";
 	                echo "<td>".$row['nomeCorso']."</td>";
 	                echo "<td>".$row['descrizioneCorso']."</td>";
-					echo "<td>".$row['durataOreCorso']."</td>";
+					echo "<td>".$row['durataOraCorso']."</td>";
+					echo "<td><form method=\"POST\" action=\"modificacorso.php\"><input type=\"hidden\" name=\"id\" value=\"$idCorso\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
-
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?> 
  
 </body>

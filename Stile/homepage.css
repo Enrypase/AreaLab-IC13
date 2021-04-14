@@ -65,14 +65,18 @@ table {
 			}
 			.tabella1{
 				grid-row: 2;
+				padding: 2vh 0vh 2vh 0vh;
 			}
 			.tabella2{
 				grid-row: 3;
+				padding: 2vh 0vh 2vh 0vh;
 			}
 			.pulsanti{
 				grid-row: 4;
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
+				grid-column-gap: 1vh;
+				grid-row-gap: 1vh;
 				grid-template-rows: 1fr 1fr;
 				align-items: center;
 			}

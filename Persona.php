@@ -1,8 +1,10 @@
 <?php 
 session_start();
+include 'libs/util.php';
 include 'libs/db_connect.php';
+include 'cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css';
+include 'cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js';
 $user=getArr($_SESSION,'username');
-$id=getArr($_SESSION,'id');
 ?>
 
 <!DOCTYPE HTML>
@@ -13,25 +15,26 @@ $id=getArr($_SESSION,'id');
     </head>
 <body>
 
-<a href="Consulta.php">Home</a><br>
-
 <?php
-	//select all data
-	$query = " ";
-	try {
-		$num=0;
-		$stmt = $con->prepare( $query );
-		$stmt->execute();
-		//Lettura numero righe risultato 
-		$num = $stmt->rowCount();
-	  
-	} catch(PDOException $ex) {
-	    echo "Errore !".$ex->getMessage();
+$query = "select distinct username from utenti";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	foreach ($res as $row) {
+		$arrayUtenti[]=$row['username'];
 	}
-	//se num > 0 recordset vuoto o errore 
-	if($num>0){
-	  
-	    echo "<table border='1'>";
+	
+if (in_array($user, $arrayUtenti)){
+	echo"<a href=\"consulta.php\">back</a><br>";
+	$query = "select * from personale";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	}
+	echo "<table id=\"table_id\" class=\"display\" border='1'>";
 	        echo "<tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
@@ -43,24 +46,30 @@ $id=getArr($_SESSION,'id');
 	        echo "</tr>";
 	  
 	
-	        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	        foreach ($res as $row) {
+				$servizio=$row['servizio'];
+				if ($servizio=='1'){
+					$servizio="in servizio";
+				}
+				else{
+					$servizio="no";
+				}
 	            echo "<tr>";
 	                echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
 					echo "<td>".$row['ruoloPersona']."</td>";
 					echo "<td>".$row['dataNascitaPersona']."</td>";
-	                echo "<td>".$row['servizio']."</td>";
+	                echo "<td>".$servizio."</td>";
 					echo "<td>".$row['mailPersona']."</td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
-	}
-	else{
-	    echo "No records found.";
-	}
-
+}
+else{
+	include 'erroreaccesso.php';
+}
 ?> 
- 
+
 </body>
 </html>

@@ -8,16 +8,14 @@ $detect = new Mobile_Detect();
 <html>
 <head>
 	<?php 
-	if($detect->isMobile()){
-		echo "<link rel='stylesheet' type='text/css' href='./Stile/loginMobile.css'>";
-	}
-	else{
-		echo "<link rel='stylesheet' type='text/css' href='./Stile/login.css'>";
-	}
+		include './pages/defS.html';
+		if($detect->isMobile()){
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/loginMobile.css'>";
+		}
+		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/login.css'>";
+		}
 	?>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<title>Login</title>
 </head>
 <body>

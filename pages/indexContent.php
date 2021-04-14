@@ -7,18 +7,14 @@ $detect = new Mobile_Detect();
 <!DOCTYPE html>
 <head>
 	<?php 
-	if($detect->isMobile()){
-		echo "<link rel='stylesheet' type='text/css' href='./Stile/indexMobile.css'>";
-	}
-	else{
-		echo "<link rel='stylesheet' type='text/css' href='./Stile/index.css'>";
-	}
+		include './pages/defS.html';
+		if($detect->isMobile()){
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/indexMobile.css'>";
+		}
+		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/index.css'>";
+		}
 	?>
-	<link rel="shortcut icon" type="image/jpg" href="./Immagini/Logo.png"/>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-
 	<title>Home</title>
 </head>
 <body>
