@@ -1,7 +1,14 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(1vw, 1.45vw, 3vw);
+	font-size: clamp(1vw, 1.30vw, 3vw);
+}
+table { 
+	width: 100%;
+  	font-size: 150%;
 }
 	.grid{
 		display: grid;
@@ -50,30 +57,24 @@ body{
 			grid-column: 2;
 
 			display: grid;
-			grid-template-rows: auto auto;
+			grid-template-rows: auto auto auto auto;
 			font-weight: bold;
 			text-align: center;
 			padding: 2vh;
-			grid-gap: 20.5%;
-
-			min-height: 100%;
 		}
-			.elenco {
-				grid-row : 1;
-				display: grid;
-				grid-template-rows: auto auto;
-				grid-gap: 12.5%;
+			.paragrafo{
+				grid-row: 1;
 			}
-				.titolo{
-					grid-row: 1;
-				}
-				.persone{
-					grid-row: 2;
-				}
-			.pulsanti{
+			.tabella1{
 				grid-row: 2;
+			}
+			.tabella2{
+				grid-row: 3;
+			}
+			.pulsanti{
+				grid-row: 4;
 				display: grid;
-				grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr;
 				align-items: center;
 			}
 			.pulsanti button{
@@ -91,7 +92,6 @@ body{
 			}
 			
 		.bottom{
-			margin-top: 5vh;
 			background-color: #eee;
 			grid-column: 2;
 			grid-row: 2;
