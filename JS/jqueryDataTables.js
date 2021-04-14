@@ -11363,7 +11363,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sSortAscending": ": activate to sort column ascending",
+				"sSortAscending": ": attiva per ordinare le colonne",
 	
 				/**
 				 * ARIA label that is added to the table headers when the column may be
@@ -11386,7 +11386,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sSortDescending": ": activate to sort column descending"
+				"sSortDescending": ": attiva per ordinare le colonne al contrario"
 			},
 	
 			/**
@@ -11416,7 +11416,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sFirst": "First",
+				"sFirst": "Primo",
 	
 	
 				/**
@@ -11439,7 +11439,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sLast": "Last",
+				"sLast": "Ultimo",
 	
 	
 				/**
@@ -11462,7 +11462,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Next",
+				"sNext": "Successivo",
 	
 	
 				/**
@@ -11485,7 +11485,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "Precedente"
 			},
 	
 			/**
@@ -11508,7 +11508,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sEmptyTable": "No data available in table",
+			"sEmptyTable": "Non sono presenti dati in tabella",
 	
 	
 			/**
@@ -11540,7 +11540,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfo": "Mostrando _START_ di _END_ dei _TOTAL_ oggetti",
 	
 	
 			/**
@@ -11561,7 +11561,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+			"sInfoEmpty": "Mostrando 0 di 0 degli 0 oggetti",
 	
 	
 			/**
@@ -11583,7 +11583,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoFiltered": "(filtered from _MAX_ total entries)",
+			"sInfoFiltered": "(filtrato da _MAX_ oggetti)",
 	
 	
 			/**
@@ -11701,7 +11701,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Mostra _MENU_ oggetti",
 	
 	
 			/**
@@ -11725,7 +11725,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLoadingRecords": "Loading...",
+			"sLoadingRecords": "Caricamento...",
 	
 	
 			/**
@@ -11746,7 +11746,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sProcessing": "Processing...",
+			"sProcessing": "Processando...",
 	
 	
 			/**
@@ -11781,7 +11781,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Search:",
+			"sSearch": "Cerca:",
 	
 	
 			/**
@@ -11839,7 +11839,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sZeroRecords": "No matching records found"
+			"sZeroRecords": "Nessun oggetto da parametro inserito trovato"
 		},
 	
 	
@@ -11885,7 +11885,7 @@
 		 *
 		 *  @deprecated 1.10. Please use `ajax` for this functionality now.
 		 */
-		"sAjaxDataProp": "data",
+		"sAjaxDataProp": "dati",
 	
 	
 		/**
