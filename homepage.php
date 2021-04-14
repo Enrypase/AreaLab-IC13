@@ -8,6 +8,9 @@ $user=getArr($_SESSION,'username');
 <html>
     <head>
         <title> IC13 </title>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+		<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
     </head>
 <body>
 
@@ -30,12 +33,12 @@ if (in_array($user, $arrayUtenti)){
 	}catch(PDOException $ex) {
 	    include 'errore.php';
 	} 
-	    echo "<table border='1'>";
-	        echo "<tr>";
+	    echo "<table id=\"example1\" class=\"display\" style=\"width:100%\">";
+	        echo "<thead><tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
 	            echo "<th>cognome</th>";
-	        echo "</tr>";
+	        echo "</tr></thead><tbody>";
 	  
 	
 	        foreach ($res as $row) {
@@ -43,7 +46,7 @@ if (in_array($user, $arrayUtenti)){
 					echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
-	            echo "</tr>";
+	            echo "</tr></tbody>";
 	        }
 	    echo "</table><br>";
 
@@ -55,14 +58,14 @@ if (in_array($user, $arrayUtenti)){
 	}catch(PDOException $ex) {
 	    include 'errore.php';
 	}
-		echo "<table border='1'>";
-	    echo "<tr>";
+		echo "<table id=\"example\" class=\"display\" style=\"width:100%\">";
+	    echo "<thead><tr>";
 	    echo "<th>nome</th>";
 	    echo "<th>cognome</th>";
 	    echo "<th>codice fiscale</th>";
 		echo "<th>corso</th>";
 		echo "<th>ore mancanti</th>";
-	    echo "</tr>";
+	    echo "</tr><thead><tbody>";
 	    foreach ($res as $row) {
 	        echo "<tr>";
 	        echo "<td>".$row['nomePersona']."</td>";
@@ -71,7 +74,7 @@ if (in_array($user, $arrayUtenti)){
 			echo "<td>".$row['nomeCorso']."</td>";
 			$oreMancanti=6-$row['sum(f.oreEffettuate)'];
 			echo "<td>".$oreMancanti."</td>";
-			echo "</tr>";
+			echo "</tr></tbody>";
 	        }
 	    echo "</table><br>";
 
@@ -88,5 +91,20 @@ else{
 	include 'erroreaccesso.php';
 }
 ?>
+<script>
+
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "paging":   true,
+        "ordering": true,
+        "info":     false
+    } );
+	$('#example1').DataTable( {
+        "paging":   true,
+        "ordering": true,
+        "info":     false
+    } );
+} );
+</script>
 </body>
 </html>

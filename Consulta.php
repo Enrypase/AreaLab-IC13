@@ -9,7 +9,9 @@ $user=getArr($_SESSION,'username');
 <html>
     <head>
         <title> IC13 </title>
-  
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+		<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
     </head>
 <body>
 
@@ -39,19 +41,19 @@ if ($_POST) {
 	}catch(PDOException $ex) {
 	    include 'errore.php';
 	}
-    echo "<table border='1'>";
-	        echo "<tr>";
+    echo "<table id=\"example\" class=\"display\" style=\"width:100%\">";
+	        echo "<thead><tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome persona</th>";
 	            echo "<th>cognome persona</th>";
-	        echo "</tr>";
+	        echo "</tr></thead><tbody>";
 
 	        foreach ($res as $row){
 	            echo "<tr>";
 	                echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
-	            echo "</tr>";
+	            echo "</tr></tbody>";
 	        }
 	    echo "</table>";
 }
@@ -60,6 +62,15 @@ else{
 	include 'erroreaccesso.php';
 }
 ?> 
- 
+<script>
+
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "paging":   true,
+        "ordering": true,
+        "info":     false
+    } );
+} );
+</script>
 </body>
 </html>

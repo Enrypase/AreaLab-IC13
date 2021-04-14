@@ -25,16 +25,18 @@ $query = "select distinct username from utenti";
 	
 if (in_array($user, $arrayUtenti)){
 	
-	echo"<a href=\"modificafrequentazioni.php\">back</a>";
+	echo"<a href=\"aggiornafrequentazioni.php\">back</a>";
 	$codFiscPersona="";
+	$nomeCorso="";
 	if ($_POST) {
         $codFiscPersona= getArr($_POST, "codFiscPersona");
+		$nomeCorso= getArr($_POST, "nomeCorso");
 	}
-
+	
 echo"<form action='dofrequentazioni.php' method=\"POST\">";
 echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
 echo"    ore effettuate: <input type=\"text\" name=\"oreEffettuate\"/> <br>";
-echo"    corso: <input type=\"text\" name=\"corso\"/> <br>";
+echo"    corso: <input type=\"text\" name=\"corso\" value=\"$nomeCorso\"/> <br>";
 echo"	data: <input type=\"date\" name=\"data\"/> <br>";
 echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
 echo"</form>";

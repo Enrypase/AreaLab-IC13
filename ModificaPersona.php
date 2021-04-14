@@ -8,7 +8,6 @@ $user=getArr($_SESSION,'username');
 <html>
     <head>
         <title> IC13 </title>
-  
     </head>
 <body>
 
@@ -26,18 +25,30 @@ $query = "select distinct username from utenti";
 if (in_array($user, $arrayUtenti)){
 	echo"<a href=\"aggiornaanagrafica.php\">back</a>";
 	$codFiscPersona="";
+	$nomePersona="";
+	$cognomePersona="";
+	$ruoloPersona="";
+	$dataNascitaPersona="";
+	$servizio="";
+	$mailPersona="";
 	if ($_POST) {
         $codFiscPersona= getArr($_POST, "codFiscPersona");
+		$nomePersona= getArr($_POST, "nome");
+		$cognomePersona= getArr($_POST, "cognome");
+		$ruoloPersona= getArr($_POST, "ruolo");
+		$dataNascitaPersona= getArr($_POST, "datan");
+		$servizio= getArr($_POST, "servizio");
+		$mailPersona= getArr($_POST, "mail");
 	}
 
 echo"<form action='domodificapersona.php' method=\"POST\">";
 echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
-echo"    nome: <input type=\"decimal\" name=\"nomePersona\"/> <br>";
-echo"    cognome: <input type=\"text\" name=\"cognomePersona\"/> <br>";
-echo"    ruolo: <input type=\"text\" name=\"ruoloPersona\"/> <br>";
-echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
+echo"    nome: <input type=\"decimal\" name=\"nomePersona\" value=\"$nomePersona\"/> <br>";
+echo"    cognome: <input type=\"text\" name=\"cognomePersona\" value=\"$cognomePersona\"/> <br>";
+echo"    ruolo: <input type=\"text\" name=\"ruoloPersona\" value=\"$ruoloPersona\"/> <br>";
+echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\" value=\"$dataNascitaPersona\"/> <br>";
 echo"	in servizio: <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
-echo"    mail: <input type=\"mail\" name=\"mailPersona\"/> <br>";
+echo"    mail: <input type=\"mail\" name=\"mailPersona\" value=\"$mailPersona\"/> <br>";
 echo"    <input type=\"submit\" value=\"modifica\"/>";
 echo"</form>";
 }

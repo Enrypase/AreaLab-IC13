@@ -2,8 +2,6 @@
 session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
-include 'cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css';
-include 'cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js';
 $user=getArr($_SESSION,'username');
 ?>
 
@@ -11,7 +9,9 @@ $user=getArr($_SESSION,'username');
 <html>
     <head>
         <title> IC13 </title>
-  
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+		<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script> 
     </head>
 <body>
 
@@ -34,8 +34,8 @@ if (in_array($user, $arrayUtenti)){
 	}catch(PDOException $ex) {
 	    include 'errore.php';
 	}
-	echo "<table id=\"table_id\" class=\"display\" border='1'>";
-	        echo "<tr>";
+	echo "<table id=\"example\" class=\"display\" style=\"width:100%\">";
+	        echo "<thead><tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
 	            echo "<th>cognome</th>";
@@ -43,7 +43,7 @@ if (in_array($user, $arrayUtenti)){
 				echo "<th>data nascita</th>";
 				echo "<th>servizio</th>";
 				echo "<th>mail</th>";
-	        echo "</tr>";
+	        echo "</tr> </thead><tbody>";
 	  
 	
 	        foreach ($res as $row) {
@@ -64,12 +64,21 @@ if (in_array($user, $arrayUtenti)){
 					echo "<td>".$row['mailPersona']."</td>";
 	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 }
 else{
 	include 'erroreaccesso.php';
 }
 ?> 
+<script>
 
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "paging":   true,
+        "ordering": true,
+        "info":     false
+    } );
+} );
+</script>
 </body>
 </html>

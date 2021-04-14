@@ -9,6 +9,7 @@ $user=getArr($_SESSION,'username');
 <html>
     <head>
         <title> IC13 </title>
+		
     </head>
 <body>
 

@@ -26,15 +26,21 @@ $query = "select distinct username from utenti";
 if (in_array($user, $arrayUtenti)){
 	echo"<a href=\"aggiornacorsi.php\">back</a>";
 	$idCorso="";
+	$nomeCorso="";
+	$descrizioneCorso="";
+	$durataOraCorso="";
 	if ($_POST) {
         $idCorso= getArr($_POST, "id");
+		$nomeCorso= getArr($_POST, "nome");
+		$descrizioneCorso= getArr($_POST, "descr");
+		$durataOraCorso= getArr($_POST, "durata");
 	}
 	
 echo"<form action=\"domodificacorso.php\" method=\"POST\">";
 echo"	id: <input type=\"text\" name=\"id\" value=\"$idCorso\"/> <br>";
-echo"    nome: <input type=\"text\" name=\"nome\"/> <br>";
-echo"    descr: <input type=\"text\" name=\"descrizione\"/> <br>";
-echo"    durata: <input type=\"decimal\" name=\"durata\"/> <br>";
+echo"    nome: <input type=\"text\" name=\"nome\" value=\"$nomeCorso\"/> <br>";
+echo"    descr: <input type=\"text\" name=\"descrizione\" value=\"$descrizioneCorso\"/> <br>";
+echo"    durata: <input type=\"decimal\" name=\"durata\" value=\"$durataOraCorso\"/> <br>";
 echo"    <input type=\"submit\" value=\"Modifica\"/>";
 echo"</form>";
 }

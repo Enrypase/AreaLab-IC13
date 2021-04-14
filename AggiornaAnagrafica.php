@@ -9,7 +9,9 @@ $user=getArr($_SESSION,'username');
 <html>
     <head>
         <title> IC13 </title>
-  
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+		<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script> 
     </head>
 <body>
 
@@ -37,8 +39,8 @@ if (in_array($user, $arrayUtenti)){
 	    include 'errore.php';
 	}
 	
-	    echo "<table border='1'>";
-	        echo "<tr>";
+	    echo "<table id=\"example\" class=\"display\" style=\"width:100%\">";
+	        echo "<thead><tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
 	            echo "<th>cognome</th>";
@@ -47,10 +49,15 @@ if (in_array($user, $arrayUtenti)){
 				echo "<th>servizio</th>";
 				echo "<th>mail</th>";
 				echo "<th></th>";
-	        echo "</tr>";
+	        echo "</tr></thead><tbody>";
 	  
 	        foreach ($res as $row) {
 				$codFiscPersona=$row['codFiscPersona'];
+				$nomePersona=$row['nomePersona'];
+				$cognomePersona=$row['cognomePersona'];
+				$ruoloPersona=$row['ruoloPersona'];
+				$dataNascitaPersona=$row['dataNascitaPersona'];
+				$mailPersona=$row['mailPersona'];
 				$servizio=$row['servizio'];
 				if ($servizio=='1'){
 					$servizio="in servizio";
@@ -60,14 +67,23 @@ if (in_array($user, $arrayUtenti)){
 				}
 	            echo "<tr>";
 	                echo "<td>".$codFiscPersona."</td>";
-	                echo "<td>".$row['nomePersona']."</td>";
-	                echo "<td>".$row['cognomePersona']."</td>";
-					echo "<td>".$row['ruoloPersona']."</td>";
-					echo "<td>".$row['dataNascitaPersona']."</td>";
+	                echo "<td>".$nomePersona."</td>";
+	                echo "<td>".$cognomePersona."</td>";
+					echo "<td>".$ruoloPersona."</td>";
+					echo "<td>".$dataNascitaPersona."</td>";
 	                echo "<td>".$servizio."</td>";
-					echo "<td>".$row['mailPersona']."</td>";
-					echo "<td><form method=\"POST\" action=\"modificapersona.php\"><input type=\"hidden\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
-	            echo "</tr>";
+					echo "<td>".$mailPersona."</td>";
+					echo "<td><form method=\"POST\" action=\"modificapersona.php\">
+					<input type=\"hidden\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/>
+					<input type=\"hidden\" name=\"nome\" value=\"$nomePersona\"/>
+					<input type=\"hidden\" name=\"cognome\" value=\"$cognomePersona\"/>
+					<input type=\"hidden\" name=\"ruolo\" value=\"$ruoloPersona\"/>
+					<input type=\"hidden\" name=\"datan\" value=\"$dataNascitaPersona\"/>
+					<input type=\"hidden\" name=\"servizio\" value=\"$servizio\"/>
+					<input type=\"hidden\" name=\"mail\" value=\"$mailPersona\"/>
+					<input type=\"submit\" value=\"modifica\"/>
+					</form></td>";
+	            echo "</tr></tbody>";
 	        }
 	    echo "</table>";
 
@@ -76,6 +92,15 @@ else{
 	include 'erroreaccesso.php';
 }
 ?> 
- 
+<script>
+
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "paging":   true,
+        "ordering": true,
+        "info":     false
+    } );
+} );
+</script>
 </body>
 </html>

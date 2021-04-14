@@ -4,7 +4,6 @@ include 'libs/util.php';
 include 'libs/db_connect.php';
 $user=getArr($_SESSION,'username');
 ?>
-
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -25,14 +24,21 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
-	
-echo"	<form action=\"dobackup.php\" method=\"post\">";
-echo"            Password <input type=\"password\" name=\"password\" /><br>";
-echo"			<input type =\"submit\" value=\"verifica\">";
-echo"	</form>";
-}
-else{
-	include 'erroreaccesso.php';
+if ($_POST) {
+        $pw= getArr($_POST, "password");
+		$query = "select * from Utenti where username= ? and password= ?";
+		$stmt = $con->prepare( $query );
+		$stmt->bindParam(1, $user);
+		$stmt->bindParam(2, $pw);  
+		$stmt->execute();
+		
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		
+		if ($row){  // password coincide 
+			echo" <a href=\"homepage.php\">Home</a><br><br>";
+			echo" <a href=\"sicurezza.db\" download=\"backup.db\"><button>download</a>";
+		}
+	}
 }
 ?>
 </body>
