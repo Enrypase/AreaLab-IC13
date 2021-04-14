@@ -51,7 +51,7 @@ if (in_array($user, $arrayUtenti)){
 	                echo "<td>".$row['nomeCorso']."</td>";
 	                echo "<td>".$row['descrizioneCorso']."</td>";
 					echo "<td>".$row['durataOraCorso']."</td>";
-					echo "<td><form method=\"POST\" action=\"modificacorso.php\"><input type=\"checkbox\" name=\"id\" value=\"$idCorso\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
+					echo "<td><form method=\"POST\" action=\"modificacorso.php\"><input type=\"hidden\" name=\"id\" value=\"$idCorso\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";

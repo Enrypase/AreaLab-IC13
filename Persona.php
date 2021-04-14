@@ -2,6 +2,8 @@
 session_start();
 include 'libs/util.php';
 include 'libs/db_connect.php';
+include 'cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css';
+include 'cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js';
 $user=getArr($_SESSION,'username');
 ?>
 
@@ -32,7 +34,7 @@ if (in_array($user, $arrayUtenti)){
 	}catch(PDOException $ex) {
 	    include 'errore.php';
 	}
-	echo "<table border='1'>";
+	echo "<table id=\"table_id\" class=\"display\" border='1'>";
 	        echo "<tr>";
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
@@ -68,6 +70,6 @@ else{
 	include 'erroreaccesso.php';
 }
 ?> 
- 
+
 </body>
 </html>

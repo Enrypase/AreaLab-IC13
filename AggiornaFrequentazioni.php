@@ -52,7 +52,7 @@ if (in_array($user, $arrayUtenti)){
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
 					echo "<td>".$row['sum(f.oreEffettuate)']."</td>";
-					echo "<td><form method=\"POST\" action=\"aggiungifrequentazione.php\"><input type=\"checkbox\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"aggiungi frequentazione\"/></form></td>";
+					echo "<td><form method=\"POST\" action=\"aggiungifrequentazione.php\"><input type=\"hidden\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"aggiungi frequentazione\"/></form></td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";

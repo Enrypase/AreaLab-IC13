@@ -66,7 +66,7 @@ if (in_array($user, $arrayUtenti)){
 					echo "<td>".$row['dataNascitaPersona']."</td>";
 	                echo "<td>".$servizio."</td>";
 					echo "<td>".$row['mailPersona']."</td>";
-					echo "<td><form method=\"POST\" action=\"modificapersona.php\"><input type=\"checkbox\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
+					echo "<td><form method=\"POST\" action=\"modificapersona.php\"><input type=\"hidden\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/><input type=\"submit\" value=\"modifica\"/></form></td>";
 	            echo "</tr>";
 	        }
 	    echo "</table>";
