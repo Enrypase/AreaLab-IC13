@@ -55,6 +55,8 @@ body{
 			text-align: center;
 			padding: 2vh;
 			grid-gap: 20.5%;
+
+			min-height: 100%;
 		}
 			.elenco {
 				grid-row : 1;
@@ -89,7 +91,7 @@ body{
 			}
 			
 		.bottom{
-			margin: 1vw;
+			margin-top: 5vh;
 			background-color: #eee;
 			grid-column: 2;
 			grid-row: 2;

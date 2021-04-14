@@ -27,7 +27,7 @@ $detect = new Mobile_Detect();
 			<div class="testo">
 				<div class="elenco">
 					<div class="titolo">
-						<b>Persone che devono svolgere dei corsi:</b>
+						<b>Benvenuto alla home! <br>  Di seguito troverai tutte le funzionalità che il programma offre. <br><br> Persone che devono svolgere dei corsi:</b>
 					</div>
 					<div class="persone">
 						<?php
