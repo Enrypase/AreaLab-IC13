@@ -48,9 +48,9 @@ echo"	<b>corsi disponibili<b>";
 	            echo "<tr>";
 	                echo "<td>".$row['idCorso']."</td>";
 	                echo "<td>".$row['nomeCorso']."</td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 
 echo" <br><form action=\"stampa.php\" method=\"post\" >";
 echo"    inserisci corso<input type=\"text\" name=\"corso\" /><br>";

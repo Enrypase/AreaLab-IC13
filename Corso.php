@@ -50,9 +50,9 @@ echo"	<a href=\"consulta.php\">back</a><br>";
 	                echo "<td>".$row['nomeCorso']."</td>";
 	                echo "<td>".$row['descrizioneCorso']."</td>";
 					echo "<td>".$row['durataOraCorso']."</td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 }
 else{
 	include 'erroreaccesso.php';

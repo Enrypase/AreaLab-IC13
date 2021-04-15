@@ -55,9 +55,9 @@ echo"	<a href=\"aggiornafrequentazioni.php\"><button onClick=\"aggiornafrequenta
 	                echo "<td>".$row['cognomePersona']."</td>";
 					echo "<td>".$row['oreEffettuate']."</td>";
 					echo "<td>".$row['data']."</td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 }
 else{
 	include 'erroreaccesso.php';
@@ -67,9 +67,9 @@ else{
 
 $(document).ready(function() {
     $('#example').DataTable( {
-        "paging":   true,
-        "ordering": true,
-        "info":     false
+        'paging':   true,
+        'ordering': true,
+        'info':     false
     } );
 } );
 </script> 

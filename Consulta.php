@@ -53,9 +53,9 @@ if ($_POST) {
 	                echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 }
 }
 else{

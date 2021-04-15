@@ -63,9 +63,9 @@ if (in_array($user, $arrayUtenti)){
 					<input type=\"hidden\" name=\"durata\" value=\"$durataOraCorso\"/>
 					<input type=\"submit\" value=\"modifica\"/>
 					</form></td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 }
 else{
 	include 'erroreaccesso.php';

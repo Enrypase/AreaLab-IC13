@@ -60,9 +60,9 @@ if (in_array($user, $arrayUtenti)){
 					<input type=\"hidden\" name=\"nomeCorso\" value=\"$nomeCorso\"/>
 					<input type=\"submit\" value=\"aggiungi frequentazione\"/>
 					</form></td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 }
 else{
 	include 'erroreaccesso.php';

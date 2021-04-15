@@ -83,9 +83,9 @@ if (in_array($user, $arrayUtenti)){
 					<input type=\"hidden\" name=\"mail\" value=\"$mailPersona\"/>
 					<input type=\"submit\" value=\"modifica\"/>
 					</form></td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table>";
+	    echo "</tbody></table>";
 
 }
 else{

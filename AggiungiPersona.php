@@ -33,7 +33,7 @@ echo"    nome: <input type=\"decimal\" name=\"nomePersona\"/> <br>";
 echo"    cognome: <input type=\"text\" name=\"cognomePersona\"/> <br>";
 echo"   ruolo: <input type=\"text\" name=\"ruoloPersona\"/> <br>";
 echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
-echo"    servizio: <input type=\"text\" name=\"servizio\"/> <br>";
+echo"    servizio: <input type=\"checkbox\" name=\"servizio\"/> <br>";
 echo"	mail: <input type=\"mail\" name=\"mailPersona\"/> <br>";
 echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
 echo"	</form>";

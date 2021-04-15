@@ -46,9 +46,9 @@ if (in_array($user, $arrayUtenti)){
 					echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
-	            echo "</tr></tbody>";
+	            echo "</tr>";
 	        }
-	    echo "</table><br>";
+	    echo "</tbody></table><br>";
 
 
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
@@ -65,7 +65,7 @@ if (in_array($user, $arrayUtenti)){
 	    echo "<th>codice fiscale</th>";
 		echo "<th>corso</th>";
 		echo "<th>ore mancanti</th>";
-	    echo "</tr><thead><tbody>";
+	    echo "</tr></thead><tbody>";
 	    foreach ($res as $row) {
 	        echo "<tr>";
 	        echo "<td>".$row['nomePersona']."</td>";
@@ -74,9 +74,9 @@ if (in_array($user, $arrayUtenti)){
 			echo "<td>".$row['nomeCorso']."</td>";
 			$oreMancanti=6-$row['sum(f.oreEffettuate)'];
 			echo "<td>".$oreMancanti."</td>";
-			echo "</tr></tbody>";
+			echo "</tr>";
 	        }
-	    echo "</table><br>";
+	    echo "</tbody></table><br>";
 
 	
 	print("<a href=\"index.php\"><button onClick=\"index.php\"> logout</button></a><br>");
@@ -94,12 +94,12 @@ else{
 <script>
 
 $(document).ready(function() {
-    $('#example').DataTable( {
+    $('#example1').DataTable( {
         "paging":   true,
         "ordering": true,
         "info":     false
     } );
-	$('#example1').DataTable( {
+	$('#example').DataTable( {
         "paging":   true,
         "ordering": true,
         "info":     false
