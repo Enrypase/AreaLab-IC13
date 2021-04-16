@@ -38,21 +38,23 @@ La prima pagina a cui l'utente avrà accesso dopo aver eseguito il login in modo
 
 
 Nell Header ci saranno due icone nuove che si aggiungeranno alle tre viste in precedenza :<br>
-:open_book: Libro: riporta l'utente all Home page
+:open_book: Libro: riporta l'utente all Home page <br>
 Off: serve per effettuare il logout
 
-
-
-Nel Body ci sono diversi bottoni che indicano le varie opzioni di scelta.
+Nel Body  è possibile visualizzare le informazioni **urgenti riguardanti il personale** in due tabelle, nella prima le urgenze rivelate per personale che non ha mai svolto un corso mentre l'altra per personale che svolgere un corso, rinnovarlo.<br>
+Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni di scelta.
 
 ![image](https://user-images.githubusercontent.com/73341469/115042314-a5177c80-9ed3-11eb-8a55-c93a82292f10.png)
- Ogni borrone se cliccato esegue funzionelita differenti:
+ Ogni bottone se cliccato esegue una funzionelita differente :<br>
  **Aggiorna corsi**<br>
  **Aggiorna anagrafica**<br>
  **Aggiorna frequentanti**<br>
  **Consulta**<br>
  **Ottieni il backup**<br>
- **Ottieni foglio firme**<br>
+ **Ottieni foglio firma**<br>
+ ![a](/Immagini/SitoGrafica/FoglioFirme.PNG)
+ La tabella mostra i corsi esistenti per cui è possibile creare un foglio firma, Quello che l'utente dovra inserire negli appositi riquadri, dopo avere consultato al tabella, sono il nome del corso, il ruolo del personale, ora di inizio e di fine e infine cliccare il pulsante invio.
+
  
  
  
