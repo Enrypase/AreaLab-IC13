@@ -32,7 +32,7 @@ if (in_array($user, $arrayUtenti)){
 	echo "<td><form method=\"POST\" action=\"aggiungifrequentazione.php\"><input type=\"submit\" value=\"aggiungi frequentazione\"/></form></td>";
 	
 	//select all data
-	$query = "select sum(f.oreEffettuate), c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso";
+	$query = "select sum(f.oreEffettuate), p.plesso, c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
@@ -43,6 +43,7 @@ if (in_array($user, $arrayUtenti)){
 	            echo "<th>corso</th>";
 	            echo "<th>nome</th>";
 	            echo "<th>cognome</th>";
+				echo "<th>plesso</th>";
 				echo "<th>ore effettuate</th>";
 				echo "<th></th>";
 	        echo "</tr></thead><tbody>";
@@ -54,6 +55,7 @@ if (in_array($user, $arrayUtenti)){
 	                echo "<td>".$nomeCorso."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
+					echo "<td>".$row['plesso']."</td>";
 					echo "<td>".$row['sum(f.oreEffettuate)']."</td>";
 					echo "<td><form method=\"POST\" action=\"aggiungifrequentazione.php\">
 					<input type=\"hidden\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/>

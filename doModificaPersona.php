@@ -21,13 +21,14 @@ if (in_array($user, $arrayUtenti)){
 		$ruoloPersona= getArr($_POST, "ruoloPersona");
         $dataNascitaPersona= getArr($_POST, "dataNascitaPersona");
 		$servizio= getArr($_POST, "servizio");
+		$plesso= getArr($_POST, "plesso");
         $mailPersona= getArr($_POST, "mailPersona");
 		if($servizio!='1'){
 			$servizio="0";
 		}
 		
-        if ($codFiscPersona!="" && $nomePersona!="" && $cognomePersona!="" && $ruoloPersona!="" && $dataNascitaPersona!="" && $mailPersona!=""){
-			$query="update personale set nomePersona='$nomePersona', cognomePersona='$cognomePersona', ruoloPersona='$ruoloPersona', dataNascitaPersona='$dataNascitaPersona', servizio='$servizio', mailPersona='$mailPersona' where codFiscPersona='$codFiscPersona'";
+        if ($codFiscPersona!="" && $plesso!="" && $nomePersona!="" && $cognomePersona!="" && $ruoloPersona!="" && $dataNascitaPersona!="" && $mailPersona!=""){
+			$query="update personale set nomePersona='$nomePersona', cognomePersona='$cognomePersona', ruoloPersona='$ruoloPersona', dataNascitaPersona='$dataNascitaPersona', servizio='$servizio', plesso='$plesso', mailPersona='$mailPersona' where codFiscPersona='$codFiscPersona'";
 			try{
 				$stmt=$con->prepare($query);
 				$stmt->execute();

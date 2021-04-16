@@ -42,6 +42,7 @@ if (in_array($user, $arrayUtenti)){
 				echo "<th>ruolo</th>";
 				echo "<th>data nascita</th>";
 				echo "<th>servizio</th>";
+				echo "<th>plesso</th>";
 				echo "<th>mail</th>";
 	        echo "</tr> </thead><tbody>";
 	  
@@ -61,6 +62,7 @@ if (in_array($user, $arrayUtenti)){
 					echo "<td>".$row['ruoloPersona']."</td>";
 					echo "<td>".$row['dataNascitaPersona']."</td>";
 	                echo "<td>".$servizio."</td>";
+					echo "<td>".$row['plesso']."</td>";
 					echo "<td>".$row['mailPersona']."</td>";
 	            echo "</tr>";
 	        }

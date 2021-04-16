@@ -34,6 +34,7 @@ echo"    cognome: <input type=\"text\" name=\"cognomePersona\"/> <br>";
 echo"   ruolo: <input type=\"text\" name=\"ruoloPersona\"/> <br>";
 echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
 echo"    servizio: <input type=\"checkbox\" name=\"servizio\"/> <br>";
+echo"	plesso: <input type=\"text\" name=\"plesso\"/> <br>";
 echo"	mail: <input type=\"mail\" name=\"mailPersona\"/> <br>";
 echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
 echo"	</form>";
@@ -45,14 +46,15 @@ echo"	</form>";
 		$ruoloPersona= getArr($_POST, "ruoloPersona");
         $dataNascitaPersona= getArr($_POST, "dataNascitaPersona");
         $servizio= getArr($_POST, "servizio");
+		$plesso= getArr($_POST, "plesso");
 		$mailPersona= getArr($_POST, "mailPersona");
 
-        if ($codFiscPersona!="" && $servizio!="" && $nomePersona!="" && $cognomePersona!="" && $ruoloPersona!="" && $dataNascitaPersona!="" && $mailPersona!=""){
+        if ($codFiscPersona!="" && $servizio!="" && $plesso!="" && $nomePersona!="" && $cognomePersona!="" && $ruoloPersona!="" && $dataNascitaPersona!="" && $mailPersona!=""){
 			$servizio=true;
-			$query="INSERT INTO personale(codFiscPersona,nomePersona,cognomePersona,ruoloPersona,dataNascitaPersona,servizio,servizio,mailPersona) VALUES (?,?,?,?,?,?,?,?)";
+			$query="INSERT INTO personale(codFiscPersona,nomePersona,cognomePersona,ruoloPersona,dataNascitaPersona,servizio,plesso,mailPersona) VALUES (?,?,?,?,?,?,?,?)";
 			try{
 				$stmt=$con->prepare($query);
-				$stmt->execute(array($codFiscPersona, $nomePersona, $cognomePersona, $ruoloPersona, $dataNascitaPersona, $servizio, $servizio, $mailPersona));
+				$stmt->execute(array($codFiscPersona, $nomePersona, $cognomePersona, $ruoloPersona, $dataNascitaPersona, $servizio, $plesso, $mailPersona));
 				header('Location: aggiornaanagrafica.php');
 			} catch (Exception $ex) {
                 include 'errore.php';

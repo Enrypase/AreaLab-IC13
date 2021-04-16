@@ -29,6 +29,7 @@ if (in_array($user, $arrayUtenti)){
 	$cognomePersona="";
 	$ruoloPersona="";
 	$dataNascitaPersona="";
+	$plesso="";
 	$servizio="";
 	$mailPersona="";
 	if ($_POST) {
@@ -38,6 +39,7 @@ if (in_array($user, $arrayUtenti)){
 		$ruoloPersona= getArr($_POST, "ruolo");
 		$dataNascitaPersona= getArr($_POST, "datan");
 		$servizio= getArr($_POST, "servizio");
+		$plesso= getArr($_POST, "plesso");
 		$mailPersona= getArr($_POST, "mail");
 	}
 
@@ -47,7 +49,8 @@ echo"    nome: <input type=\"decimal\" name=\"nomePersona\" value=\"$nomePersona
 echo"    cognome: <input type=\"text\" name=\"cognomePersona\" value=\"$cognomePersona\"/> <br>";
 echo"    ruolo: <input type=\"text\" name=\"ruoloPersona\" value=\"$ruoloPersona\"/> <br>";
 echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\" value=\"$dataNascitaPersona\"/> <br>";
-echo"	in servizio: <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
+echo"	 in servizio: <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
+echo"    plesso: <input type=\"text\" name=\"plesso\" value=\"$plesso\"/> <br>";
 echo"    mail: <input type=\"mail\" name=\"mailPersona\" value=\"$mailPersona\"/> <br>";
 echo"    <input type=\"submit\" value=\"modifica\"/>";
 echo"</form>";

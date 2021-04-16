@@ -47,6 +47,7 @@ if (in_array($user, $arrayUtenti)){
 				echo "<th>ruolo</th>";
 				echo "<th>data nascita</th>";
 				echo "<th>servizio</th>";
+				echo "<th>plesso</th>";
 				echo "<th>mail</th>";
 				echo "<th></th>";
 	        echo "</tr></thead><tbody>";
@@ -59,6 +60,7 @@ if (in_array($user, $arrayUtenti)){
 				$dataNascitaPersona=$row['dataNascitaPersona'];
 				$mailPersona=$row['mailPersona'];
 				$servizio=$row['servizio'];
+				$plesso=$row['plesso'];
 				if ($servizio=='1'){
 					$servizio="in servizio";
 				}
@@ -72,6 +74,7 @@ if (in_array($user, $arrayUtenti)){
 					echo "<td>".$ruoloPersona."</td>";
 					echo "<td>".$dataNascitaPersona."</td>";
 	                echo "<td>".$servizio."</td>";
+					echo "<td>".$plesso."</td>";
 					echo "<td>".$mailPersona."</td>";
 					echo "<td><form method=\"POST\" action=\"modificapersona.php\">
 					<input type=\"hidden\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/>
@@ -80,6 +83,7 @@ if (in_array($user, $arrayUtenti)){
 					<input type=\"hidden\" name=\"ruolo\" value=\"$ruoloPersona\"/>
 					<input type=\"hidden\" name=\"datan\" value=\"$dataNascitaPersona\"/>
 					<input type=\"hidden\" name=\"servizio\" value=\"$servizio\"/>
+					<input type=\"hidden\" name=\"plesso\" value=\"$plesso\"/>
 					<input type=\"hidden\" name=\"mail\" value=\"$mailPersona\"/>
 					<input type=\"submit\" value=\"modifica\"/>
 					</form></td>";

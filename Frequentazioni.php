@@ -43,6 +43,7 @@ echo"	<a href=\"aggiornafrequentazioni.php\"><button onClick=\"aggiornafrequenta
 	            echo "<th>corso</th>";
 	            echo "<th>nome</th>";
 	            echo "<th>cognome</th>";
+				echo "<th>plesso</th>";
 				echo "<th>ore effettuate</th>";
 				echo "<th>data</th>";
 	        echo "</tr></thead><tbody>";
@@ -53,6 +54,7 @@ echo"	<a href=\"aggiornafrequentazioni.php\"><button onClick=\"aggiornafrequenta
 	                echo "<td>".$row['nomeCorso']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
+					echo "<td>".$row['plesso']."</td>";
 					echo "<td>".$row['oreEffettuate']."</td>";
 					echo "<td>".$row['data']."</td>";
 	            echo "</tr>";

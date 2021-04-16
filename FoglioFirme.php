@@ -54,6 +54,7 @@ echo"	<b>corsi disponibili<b>";
 
 echo" <br><form action=\"stampa.php\" method=\"post\" >";
 echo"    inserisci corso<input type=\"text\" name=\"corso\" /><br>";
+echo"    inserisci plesso<input type=\"text\" name=\"plesso\" /><br>";
 echo"	ruolo personale<input type=\"text\" name=\"ruolo\" /><br>";
 echo"	ora di inizio<input type=\"time\" name=\"oraI\" /><br>";
 echo"	ora di fine<input type=\"time\" name=\"oraF\" /><br>";

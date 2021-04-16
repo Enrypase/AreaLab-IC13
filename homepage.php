@@ -38,6 +38,7 @@ if (in_array($user, $arrayUtenti)){
 	            echo "<th>codice fiscale</th>";
 	            echo "<th>nome</th>";
 	            echo "<th>cognome</th>";
+				echo "<th>plesso</th>";
 	        echo "</tr></thead><tbody>";
 	  
 	
@@ -46,13 +47,14 @@ if (in_array($user, $arrayUtenti)){
 					echo "<td>".$row['codFiscPersona']."</td>";
 	                echo "<td>".$row['nomePersona']."</td>";
 	                echo "<td>".$row['cognomePersona']."</td>";
+					echo "<td>".$row['plesso']."</td>";
 	            echo "</tr>";
 	        }
 	    echo "</tbody></table><br>";
 
 
 	echo "<b>Persone che devono svolgere dei corsi:</b>";
-	$query = "select sum(f.oreEffettuate), c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso HAVING sum(f.oreEffettuate)<6";
+	$query = "select sum(f.oreEffettuate), p.plesso, c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso HAVING sum(f.oreEffettuate)<6";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
@@ -62,6 +64,7 @@ if (in_array($user, $arrayUtenti)){
 	    echo "<thead><tr>";
 	    echo "<th>nome</th>";
 	    echo "<th>cognome</th>";
+		echo "<th>plesso</th>";
 	    echo "<th>codice fiscale</th>";
 		echo "<th>corso</th>";
 		echo "<th>ore mancanti</th>";
@@ -70,6 +73,7 @@ if (in_array($user, $arrayUtenti)){
 	        echo "<tr>";
 	        echo "<td>".$row['nomePersona']."</td>";
 	        echo "<td>".$row['cognomePersona']."</td>";
+			echo "<td>".$row['plesso']."</td>";
 	        echo "<td>".$row['codFiscPersona']."</td>";
 			echo "<td>".$row['nomeCorso']."</td>";
 			$oreMancanti=6-$row['sum(f.oreEffettuate)'];

@@ -48,15 +48,26 @@ if ($_POST) {
 	        foreach ($res as $row) {
 				$arrayRuoli[]=$row['ruoloPersona'];
 	        }
+	
+	$query = "select distinct plesso from personale";
+	try{
+		$res=$con->query($query);
+	}catch(PDOException $ex) {
+	    include 'errore.php';
+	} 
+	        foreach ($res as $row) {
+				$arrayPlessi[]=$row['plesso'];
+	        }
 			
 	$nomeCorso=getArr($_POST,"corso");
+	$plesso=getArr($_POST,"plesso");
 	$ruoloPersona=getArr($_POST,"ruolo");
 	$oraI=getArr($_POST,"oraI");
 	$oraF=getArr($_POST,"oraF");
 	
-	if ($nomeCorso!="" && $ruoloPersona!="" && in_array($nomeCorso, $arrayCorsi) && in_array($ruoloPersona, $arrayRuoli)){
+	if ($nomeCorso!="" && $plesso!="" && $ruoloPersona!="" && in_array($nomeCorso, $arrayCorsi) && in_array($plesso, $arrayPlessi) && in_array($ruoloPersona, $arrayRuoli)){
 	
-	$query = "select * from personale where ruoloPersona='$ruoloPersona' and servizio='1'";
+	$query = "select * from personale where ruoloPersona='$ruoloPersona' and servizio='1' and plesso='$plesso'";
 	try{
 		$res=$con->query($query);
 	}catch(PDOException $ex) {
@@ -64,7 +75,7 @@ if ($_POST) {
 	}
 	
 	$data=date("d/m/Y");
-	echo "<center><h1>$nomeCorso - $data $oraI-$oraF</h1>";
+	echo "<center><h1>$plesso, $nomeCorso - $data $oraI-$oraF</h1>";
 	echo "<table border='1'>";
 	        echo "<tr>";
 				echo "<th>codice fiscale</th>";
