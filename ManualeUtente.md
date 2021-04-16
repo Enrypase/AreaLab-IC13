@@ -4,7 +4,7 @@ Questa applicazione Web consente all'utete tramite una grafica User-friendly,di 
 ## **ACCESSO ALL'APPLICAZIONE**<br>
 All'avvio dell' applicazione, la pagina risultera essere questa:<br>
 
-![a](/Immagini/Installazione/img1.jpg)
+![a](/Immagini/SitoGrafica/HomePage.PNG)
 
 Nell Header sono presenti tre icone:<br>
 
