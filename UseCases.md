@@ -70,7 +70,7 @@ Dopo aver cliccato sul pulsante `AGGIORNAMENTO CORSI` Nella pagina dove sono pre
 
 ## OTTIENI FOGLI FIRMA 
 
-Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme relative ad un determinato corso, specificato precedentemente dall'utente, nel momento in cui 'applicazione lo chiederà.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br> 
+Questo pulsante permette al gestore di ottenere la stampa su carta di uno o più fogli per le firme relative ad un determinato corso, specificato precedentemente dall'utente con il nome del relativo plesso, nel momento in cui 'applicazione lo chiederà.<br>  I fogli sono costituiti da un titolo "nome del corso" e da una tabella dove sono presenti alcune informazioni del personale, il codice del corso e lo spazio nel quale apporre la firma di presenza.<br> 
 Dopo aver cliccato sul pulsante `OTTIENI FOGLI FIRMA` verrà chiesto di inserire il nome del corso. Una volta inserito il nome del corso ciò che si otterrà sarà una schermata stampabile formata da: 
 
 >                                   Titolo del corso  
