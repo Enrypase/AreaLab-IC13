@@ -19,6 +19,7 @@ $detect = new Mobile_Detect();
 		?>
 		<script type="text/javascript" charset="utf8" src="./JS/jquery.js"></script>
   		<script type="text/javascript" charset="utf8" src="./JS/jqueryDataTables.js"></script> 
+  		<link rel="stylesheet" type="text/css" href="./Stile/dataTables.css">
 
 		<title>Foglio Firme</title>
     </head>
@@ -40,7 +41,7 @@ $detect = new Mobile_Detect();
 					
 				if (in_array($user, $arrayUtenti)){
 
-				echo "Corsi disponibili: ";
+				echo "<h2>Nella seguente tabella verranno visualizzati i corsi disponibili. <br> Inoltre è possibile ottenere un foglio-firma di un determinato corso data un'ora di inizio e una di fine:</h2> ";
 					$corso=getArr($_POST,"corso");
 					
 					$query = "select distinct nomeCorso, idCorso from corsi";
@@ -49,11 +50,11 @@ $detect = new Mobile_Detect();
 					}catch(PDOException $ex) {
 					    include 'errore.php';
 					} 
-					    echo "<table border='1'>";
-					        echo "<tr>";
+					    echo "<table id='tab' class='display' style='width:100%'>";
+					        echo "<thead><tr>";
 					            echo "<th>id</th>";
 					            echo "<th>nome</th>";
-					        echo "</tr>";
+					        echo "</tr> </thead> <tbody>";
 							
 					        foreach ($res as $row) {
 					            echo "<tr>";
@@ -61,23 +62,31 @@ $detect = new Mobile_Detect();
 					                echo "<td>".$row['nomeCorso']."</td>";
 					            echo "</tr>";
 					        }
-					    echo "</table>";
+					    echo "</tbody></table>";
 
 				echo" <br><form action='stampa.php' method='post' >";
-				echo"   Nome del corso: <br> <input type='text' name='corso' placeholder='Corso'><br>";
-				echo"	Ruolo del personale: <br> <input type='text' name='ruolo' placeholder='Ruolo'><br>";
-				echo"	Ora di inizio: <br> <input type='time' name='oraI'><br>";
-				echo"	Ora di conclusione: <br> <input type='time' name='oraF'><br>";
-				echo"	<input type ='submit' value='Invio'>";
+				echo"   Nome del corso: <br> <input type='text' class='input' name='corso' placeholder='Corso'><br>";
+				echo"	Ruolo del personale: <br> <input type='text' class='input' name='ruolo' placeholder='Ruolo'><br>";
+				echo"	Ora di inizio: <br> <input type='time' class='input' name='oraI'><br>";
+				echo"	Ora di conclusione: <br> <input type='time' class='input' name='oraF'><br>";
+				echo"	<input type ='submit' class='input' value='Invio'>";
 				echo" </form>";
 				}
 				else{
 					include 'erroreaccesso.php';
 				}
 				?>
-
 			</div>
 			<?php echo file_get_contents('./pages/footer-logged.html');	?>
 		</div>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#tab').DataTable( {
+		        "paging":   true,
+		        "ordering": true,
+		        "info":     false
+		    } );
+		} );
+		</script>
 </body>
 </html>

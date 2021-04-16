@@ -4,7 +4,7 @@ html{
 body{
 	background-color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(1vw, 1.30vw, 3vw);
+	font-size: clamp(1vw, 1.29vw, 3vw);
 }
 table { 
 	width: 100%;
@@ -35,6 +35,7 @@ table {
 			display: grid;
 			grid-template-rows:2fr 1fr;
 			grid-template-columns: 100%;
+			grid-row-gap: 4vh;	
 		}
 			.notLogged{
 				grid-row: 1;
@@ -91,6 +92,15 @@ table {
 				background-color: #FE9900;
 				color: white;
 				border-color: #CD7A00;
+			}
+			input, select{
+				width: 10vw;
+				height: 3.5vw;
+				font-size: clamp(1vw, 1.30vw, 3vw);
+			}
+			tr{
+				height: 5vh;
+				width: 100%;
 			}
 			
 		.bottom{

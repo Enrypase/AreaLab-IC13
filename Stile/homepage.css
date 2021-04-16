@@ -83,6 +83,7 @@ table {
 			.pulsanti button{
 				width: 100%;
 				border-radius: 1vh;
+				border: 0.4vh solid black;
 				font-size: 1.5vh;
 				padding: 0.5vh;
 				font-weight: bold;
@@ -92,7 +93,15 @@ table {
 				color: white;
 				border-color: #CD7A00;
 			}
-			
+			input, select{
+				width: 10vh;
+				height: 3.5vh;
+				font-size: clamp(0.5vh, 1.45vh, 2.5vh)
+			}
+			tr{
+				height: 5vh;
+				width: 100%;
+			}
 		.bottom{
 			background-color: #eee;
 			text-align: center;

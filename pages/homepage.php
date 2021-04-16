@@ -19,6 +19,7 @@ $detect = new Mobile_Detect();
 		?>
 		<script type="text/javascript" charset="utf8" src="./JS/jquery.js"></script>
   		<script type="text/javascript" charset="utf8" src="./JS/jqueryDataTables.js"></script> 
+  		<link rel="stylesheet" type="text/css" href="./Stile/DataTables.css">
 
 		<title>Home</title>
 	</head>
@@ -114,7 +115,7 @@ $detect = new Mobile_Detect();
 			<?php echo file_get_contents('./pages/footer-logged.html');	?>
 		</div>
 
-		<script>
+		<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#tab1').DataTable( {
 		        "paging":   true,
@@ -123,7 +124,7 @@ $detect = new Mobile_Detect();
 		    } );
 		} );
 		</script>
-		<script>
+		<script type="text/javascript">
 		$(document).ready(function() {
 		    $('#tab2').DataTable( {
 		        "paging":   true,
