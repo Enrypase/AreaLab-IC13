@@ -20,7 +20,13 @@ Nel Footer; sono presenti le informazioni quali, l'indirizzo, i recapiti, politi
 
  
 La prima pagina a cui lutente avrà accesso dopo aver eseguito il login in modo corretto, è questa:
+![a](/Immagini/SitoGrafica/Home.PNG)
+
+
+Nell Header ci saranno due icone nuove che si aggiungeranno alle tre viste in precedenza :<br>
+Libro:?
+Off: serve per effettuare il logout
 
 
 
- opzioni di scelta
+Nel Body ci sono diversi bottoni che indicano le varie opzioni di scelta
