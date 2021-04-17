@@ -22,15 +22,18 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array('adminuser', $arrayUtenti)){
-	
-echo"<b>INSERISCI UN NUOVO USERNAME E UNA NUOVA PASSWORD<b>";
+echo"<center>";	
+echo"<h2>necessario inserire nuovo username e password</h2>";
+echo"<table>";
 echo"<form action='nuovoutente.php' method='post' >";
-echo"            Username<input type='text' name='username' /><br>";
-echo"			Mail <input type='mail' name='mail' /><br>";
-echo"            Password <input type='password' name='password1' /><br>";
-echo"			Ripeti la password <input type='password' name='password2' /><br>";
+echo"   <tr><td>nuovo username</td>			<td><input type='text' name='username' /></td></tr><br>";
+echo"	<tr><td>nuova mail</td> 				<td><input type='mail' name='mail' /></td></tr><br>";
+echo"   <tr><td>password</td> 			<td><input type='password' name='password1' /></td></tr><br>";
+echo"	<tr><td>ripeti la password</td>	<td><input type='password' name='password2' /></td></tr><br>";
+echo"</table>";
 echo"			<input type ='submit' value='torna al login'>";
 echo"</form>";
+echo"</center>";	
 }
 else{
 	include 'erroreaccesso.php';

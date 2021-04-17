@@ -26,7 +26,7 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
-	echo "<b>Persone che non hanno svolto alcun corso:</b>";	
+	echo "<h2>Persone che non hanno svolto alcun corso:</h2>";	
 	$query = "select * from personale where codFiscPersona not in (select codFiscPersona from frequentazioni)";
 	try{
 		$res=$con->query($query);
@@ -53,7 +53,7 @@ if (in_array($user, $arrayUtenti)){
 	    echo "</tbody></table><br>";
 
 
-	echo "<b>Persone che devono svolgere dei corsi:</b>";
+	echo "<h2>Persone che devono svolgere dei corsi:</h2>";
 	$query = "select sum(f.oreEffettuate), p.plesso, c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso HAVING sum(f.oreEffettuate)<6";
 	try{
 		$res=$con->query($query);
@@ -82,14 +82,15 @@ if (in_array($user, $arrayUtenti)){
 	        }
 	    echo "</tbody></table><br>";
 
-	
-	print("<a href=\"index.php\"><button onClick=\"index.php\"> logout</button></a><br>");
-	print("<a href=\"aggiornacorsi.php\"><button onClick=\"AggiornaCorsi.php\"> aggiorna corsi</button></a><br>");
-	print("<a href=\"aggiornaanagrafica.php\"><button onClick=\"aggiornaanagrafica.php\"> aggiorna anagrafica</button></a><br>");
-	print("<a href=\"aggiornafrequentazioni.php\"><button onClick=\"aggiornafrequentazioni.php\"> aggiorna frequentazioni</button></a><br>");
-	print("<a href=\"consulta.php\"><button onClick=\"consulta.php\"> consulta</button></a><br>");
-	print("<a href=\"backup.php\"><button onClick=\"backup.php\"> ottieni backup</button></a><br>");
-	print("<a href=\"fogliofirme.php\"><button onClick=\"fogliofirme.php\"> ottieni foglio firme</button></a><br>");
+echo"<center><table>";
+	print("<tr><td><b>disconnettiti ed esci dall'applicazione</b></td>		<td><a href=\"index.php\"><button onClick=\"index.php\"> logout</button></a></td></tr><br>");
+	print("<tr><td><b>aggiorna, modifica e aggiungi corsi</b></td>			<td><a href=\"aggiornacorsi.php\"><button onClick=\"AggiornaCorsi.php\"> aggiorna corsi</button></a></td></tr><br>");
+	print("<tr><td><b>aggiorna, modifica e aggiungi personale</b></td>		<td><a href=\"aggiornaanagrafica.php\"><button onClick=\"aggiornaanagrafica.php\"> aggiorna anagrafica</button></a></td></tr><br>");
+	print("<tr><td><b>aggiorna, modifica e aggiungi frequentazioni</b></td>	<td><a href=\"aggiornafrequentazioni.php\"><button onClick=\"aggiornafrequentazioni.php\"> aggiorna frequentazioni</button></a></td></tr><br>");
+	print("<tr><td><b>consulta corsi, personale e frequentazioni</b></td>	<td><a href=\"consulta.php\"><button onClick=\"consulta.php\"> consulta</button></a></td></tr><br>");
+	print("<tr><td><b>ottieni una copia backup del database</b></td>		<td><a href=\"backup.php\"><button onClick=\"backup.php\"> ottieni backup</button></a></td></tr><br>");
+	print("<tr><td><b>ottieni i fogli firme</b></td>						<td><a href=\"fogliofirme.php\"><button onClick=\"fogliofirme.php\"> ottieni foglio firme</button></a></td></tr><br>");
+echo"</table></center>";
 }
 else{
 	include 'erroreaccesso.php';

@@ -7,15 +7,20 @@ $user=getArr($_SESSION,'username');
 <html>
     <head>
         <title> IC13 </title>
-  
+		<center>
+		<h1>Portale di accesso</h1>
+		<h2>servizio di gestione corsi di sicurezza e formazione</h2>
+		</center>
     </head>
 <body>
-	
+<center><table>
 <form action='dologin.php' method='post' >
-            Username<input type='text' name='username' /><br>
-            Password <input type='password' name='password' /><br>
-			<input type ='submit' value='Login'>
+            <tr><td>username</td><td> <input type='text' name='username' /></td></tr><br>
+            <tr><td>password</td><td> <input type='password' name='password' /></td></tr><br>
+			</table>
+			<input type ='submit' value='Login'><br><br><br><br><br><br>
 </form>
+</center>
 </body>
 </html>
 

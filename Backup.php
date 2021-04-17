@@ -25,11 +25,15 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
-	
+echo"<center>";
+echo"<h2>inserisci la password per continuare</h2>";
+echo"<table>";
 echo"	<form action=\"dobackup.php\" method=\"post\">";
-echo"            Password <input type=\"password\" name=\"password\" /><br>";
+echo"            <tr><td>Password:</td><td> <input type=\"password\" name=\"password\" /></td></tr><br>";
+echo"</table>";
 echo"			<input type =\"submit\" value=\"verifica\">";
 echo"	</form>";
+echo"</center>";
 }
 else{
 	include 'erroreaccesso.php';

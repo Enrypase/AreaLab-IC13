@@ -24,6 +24,7 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
+	echo"<center>";
 	echo"<a href=\"aggiornacorsi.php\">back</a>";
 	$idCorso="";
 	$nomeCorso="";
@@ -36,13 +37,17 @@ if (in_array($user, $arrayUtenti)){
 		$durataOraCorso= getArr($_POST, "durata");
 	}
 	
+echo"<h2>modifica il corso</h2>";
+echo"<table>";
 echo"<form action=\"domodificacorso.php\" method=\"POST\">";
-echo"	id: <input type=\"text\" name=\"id\" value=\"$idCorso\"/> <br>";
-echo"    nome: <input type=\"text\" name=\"nome\" value=\"$nomeCorso\"/> <br>";
-echo"    descr: <input type=\"text\" name=\"descrizione\" value=\"$descrizioneCorso\"/> <br>";
-echo"    durata: <input type=\"decimal\" name=\"durata\" value=\"$durataOraCorso\"/> <br>";
+echo"	 <tr><td>codice corso:	</td><td> <input type=\"text\" name=\"id\" value=\"$idCorso\"/></td></tr> <br>";
+echo"    <tr><td>nome corso:	</td><td> <input type=\"text\" name=\"nome\" value=\"$nomeCorso\"/></td></tr> <br>";
+echo"    <tr><td>descrizione: 	</td><td> <input type=\"text\" name=\"descrizione\" value=\"$descrizioneCorso\"/></td></tr> <br>";
+echo"    <tr><td>durata ore: 	</td><td><input type=\"decimal\" name=\"durata\" value=\"$durataOraCorso\"/></td></tr> <br>";
+echo"</table>";
 echo"    <input type=\"submit\" value=\"Modifica\"/>";
 echo"</form>";
+echo"</center>";
 }
 else{
 	include 'erroreaccesso.php';

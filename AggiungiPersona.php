@@ -24,21 +24,23 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
-	
+echo"<center>";
+echo"<h2>aggiungi una persona</h2>";
 echo"<a href=\"aggiornaanagrafica.php\">back</a>";
-
+echo"<table>";
 echo"	<form method=\"POST\">";
-echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\"/> <br>";
-echo"    nome: <input type=\"decimal\" name=\"nomePersona\"/> <br>";
-echo"    cognome: <input type=\"text\" name=\"cognomePersona\"/> <br>";
-echo"   ruolo: <input type=\"text\" name=\"ruoloPersona\"/> <br>";
-echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
-echo"    servizio: <input type=\"checkbox\" name=\"servizio\"/> <br>";
-echo"	plesso: <input type=\"text\" name=\"plesso\"/> <br>";
-echo"	mail: <input type=\"mail\" name=\"mailPersona\"/> <br>";
+echo"<tr><td>	codice fiscale:</td><td>	<input type=\"text\" name=\"codFiscPersona\"/></td></tr> <br>";
+echo"<tr><td>    nome:</td><td>				<input type=\"decimal\" name=\"nomePersona\"/></td></tr> <br>";
+echo"<tr><td>    cognome:</td><td>			<input type=\"text\" name=\"cognomePersona\"/></td></tr> <br>";
+echo"<tr><td>   ruolo:</td><td>				<input type=\"text\" name=\"ruoloPersona\"/></td></tr> <br>";
+echo"<tr><td>    data di nascita:</td><td>	<input type=\"date\" name=\"dataNascitaPersona\"/></td></tr> <br>";
+echo"<tr><td>    servizio:</td><td>			<input type=\"checkbox\" name=\"servizio\"/></td></tr> <br>";
+echo"<tr><td>	plesso:</td><td>			<input type=\"text\" name=\"plesso\"/></td></tr> <br>";
+echo"<tr><td>	mail:</td><td> 				<input type=\"mail\" name=\"mailPersona\"/></td></tr> <br>";
+echo"</table>";
 echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
 echo"	</form>";
-
+echo"</center>";
 	if ($_POST) {
         $codFiscPersona= getArr($_POST, "codFiscPersona");
         $nomePersona= getArr($_POST, "nomePersona");

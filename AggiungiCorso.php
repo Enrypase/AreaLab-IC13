@@ -24,15 +24,19 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
-	
+echo"<center>";
+echo"<h2> aggiungi un corso</h2><br>";
 echo"	<a href=\"aggiornacorsi.php\">back</a>";
-	
+
+echo"<table>"	;
 echo"	<form method=\"POST\"> ";
-echo"    nome: <input type=\"text\" name=\"nomeCorso\"/> <br>";
-echo"    descr: <input type=\"text\" name=\"descrizioneCorso\"/> <br>";
-echo"    durata: <input type=\"decimal\" name=\"durataOreCorso\"/> <br>";
+echo"    <tr><td>nome del corso:</td>  			<td><input type=\"text\" name=\"nomeCorso\"/></td></tr> <br>";
+echo"    <tr><td>descrizione del corso:</td>  	<td><input type=\"text\" name=\"descrizioneCorso\"/></td></tr> <br>";
+echo"    <tr><td>durata ore del corso:</td> 	<td><input type=\"decimal\" name=\"durataOreCorso\"/></td></tr> <br>";
+echo"</table>";
 echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
-echo"	</form>";
+echo"	 </form>";
+echo"</center>";
 	
 	if ($_POST) {
         $nomeCorso= getArr($_POST, "nomeCorso");

@@ -51,15 +51,18 @@ echo"	<b>corsi disponibili<b>";
 	            echo "</tr>";
 	        }
 	    echo "</tbody></table>";
-
+echo"<center>";
+echo"<table>";
 echo" <br><form action=\"stampa.php\" method=\"post\" >";
-echo"    inserisci corso<input type=\"text\" name=\"corso\" /><br>";
-echo"    inserisci plesso<input type=\"text\" name=\"plesso\" /><br>";
-echo"	ruolo personale<input type=\"text\" name=\"ruolo\" /><br>";
-echo"	ora di inizio<input type=\"time\" name=\"oraI\" /><br>";
-echo"	ora di fine<input type=\"time\" name=\"oraF\" /><br>";
+echo"<tr><td>   nome corso:</td><td>		<input type=\"text\" name=\"corso\" /></td></tr><br>";
+echo"<tr><td>   plesso:</td><td>			<input type=\"text\" name=\"plesso\" /></td></tr><br>";
+echo"<tr><td> 	ruolo personale:</td><td>	<input type=\"text\" name=\"ruolo\" /></td></tr><br>";
+echo"<tr><td> 	ora di inizio:</td><td>		<input type=\"time\" name=\"oraI\" /></td></tr><br>";
+echo"<tr><td> 	ora di fine:</td><td>		<input type=\"time\" name=\"oraF\" /></td></tr><br>";
+echo"</table>";
 echo"	<input type =\"submit\" value=\"submit\">";
 echo" </form>";
+echo"</center>";
 }
 else{
 	include 'erroreaccesso.php';

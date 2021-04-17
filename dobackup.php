@@ -26,6 +26,7 @@ $query = "select distinct username from utenti";
 if (in_array($user, $arrayUtenti)){
 if ($_POST) {
         $pw= getArr($_POST, "password");
+		$pw=hash('sha256',$pw);
 		$query = "select * from Utenti where username= ? and password= ?";
 		$stmt = $con->prepare( $query );
 		$stmt->bindParam(1, $user);
@@ -36,7 +37,13 @@ if ($_POST) {
 		
 		if ($row){  // password coincide 
 			echo" <a href=\"homepage.php\">Home</a><br><br>";
+			echo"<center>";
+			echo"<h2>scarica la copia del database</h2>";
 			echo" <a href=\"sicurezza.db\" download=\"backup.db\"><button>download</a>";
+			echo"</center>";
+		}
+		else{
+			header('Location: backup.php');
 		}
 	}
 }

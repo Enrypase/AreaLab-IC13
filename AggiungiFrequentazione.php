@@ -24,7 +24,8 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
-	
+echo"<center>";	
+echo"<h2>aggiungi una frequentazione</h2>";
 	echo"<a href=\"aggiornafrequentazioni.php\">back</a>";
 	$codFiscPersona="";
 	$nomeCorso="";
@@ -32,14 +33,17 @@ if (in_array($user, $arrayUtenti)){
         $codFiscPersona= getArr($_POST, "codFiscPersona");
 		$nomeCorso= getArr($_POST, "nomeCorso");
 	}
-	
+
+echo"<table>";
 echo"<form action='dofrequentazioni.php' method=\"POST\">";
-echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
-echo"    ore effettuate: <input type=\"text\" name=\"oreEffettuate\"/> <br>";
-echo"    corso: <input type=\"text\" name=\"corso\" value=\"$nomeCorso\"/> <br>";
-echo"	data: <input type=\"date\" name=\"data\"/> <br>";
+echo"<tr><td>	codice fiscale:</td><td> <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/></td></tr> <br>";
+echo"<tr><td>    ore effettuate:</td><td> <input type=\"text\" name=\"oreEffettuate\"/></td></tr> <br>";
+echo"<tr><td>    nome corso:</td><td> <input type=\"text\" name=\"corso\" value=\"$nomeCorso\"/></td></tr> <br>";
+echo"<tr><td>	data:</td><td> <input type=\"date\" name=\"data\"/></td></tr> <br>";
+echo"</table>";
 echo"    <input type=\"submit\" value=\"Aggiungi\"/>";
 echo"</form>";
+echo"</center>";
 }
 else{
 	include 'erroreaccesso.php';

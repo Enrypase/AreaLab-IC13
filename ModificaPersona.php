@@ -23,6 +23,8 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
+	echo"<center>";
+	echo"<h2>modifica una persona</h2>";
 	echo"<a href=\"aggiornaanagrafica.php\">back</a>";
 	$codFiscPersona="";
 	$nomePersona="";
@@ -42,18 +44,20 @@ if (in_array($user, $arrayUtenti)){
 		$plesso= getArr($_POST, "plesso");
 		$mailPersona= getArr($_POST, "mail");
 	}
-
+echo"<table>";
 echo"<form action='domodificapersona.php' method=\"POST\">";
-echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
-echo"    nome: <input type=\"decimal\" name=\"nomePersona\" value=\"$nomePersona\"/> <br>";
-echo"    cognome: <input type=\"text\" name=\"cognomePersona\" value=\"$cognomePersona\"/> <br>";
-echo"    ruolo: <input type=\"text\" name=\"ruoloPersona\" value=\"$ruoloPersona\"/> <br>";
-echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\" value=\"$dataNascitaPersona\"/> <br>";
-echo"	 in servizio: <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
-echo"    plesso: <input type=\"text\" name=\"plesso\" value=\"$plesso\"/> <br>";
-echo"    mail: <input type=\"mail\" name=\"mailPersona\" value=\"$mailPersona\"/> <br>";
+echo"<tr><td>	codice fiscale:</td><td>	<input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/></td></tr> <br>";
+echo"<tr><td>    nome:</td><td> 			<input type=\"decimal\" name=\"nomePersona\" value=\"$nomePersona\"/></td></tr> <br>";
+echo"<tr><td>    cognome:</td><td> 			<input type=\"text\" name=\"cognomePersona\" value=\"$cognomePersona\"/></td></tr> <br>";
+echo"<tr><td>    ruolo:</td><td> 			<input type=\"text\" name=\"ruoloPersona\" value=\"$ruoloPersona\"/></td></tr> <br>";
+echo"<tr><td>   data di nascita:</td><td> 	<input type=\"date\" name=\"dataNascitaPersona\" value=\"$dataNascitaPersona\"/></td></tr> <br>";
+echo"<tr><td>	 in servizio:</td><td> 		<input type=\"checkbox\" name=\"servizio\" value=\"1\"/></td></tr> <br>";
+echo"<tr><td>    plesso:</td><td> 			<input type=\"text\" name=\"plesso\" value=\"$plesso\"/></td></tr> <br>";
+echo"<tr><td>    mail:</td><td> 			<input type=\"mail\" name=\"mailPersona\" value=\"$mailPersona\"/></td></tr> <br>";
+echo"</table>";
 echo"    <input type=\"submit\" value=\"modifica\"/>";
 echo"</form>";
+echo"</center>";
 }
 else{
 	include 'erroreaccesso.php';
