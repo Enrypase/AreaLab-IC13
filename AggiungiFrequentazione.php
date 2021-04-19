@@ -24,6 +24,7 @@ $query = "select distinct username from utenti";
 	}
 	
 if (in_array($user, $arrayUtenti)){
+	
 echo"<center>";	
 echo"<h2>aggiungi una frequentazione</h2>";
 	echo"<a href=\"aggiornafrequentazioni.php\">back</a>";

@@ -13,6 +13,54 @@ $user=getArr($_SESSION,'username');
   		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
     </head>
 <body>
+<center>
+<?php
+$file = $_SERVER['DOCUMENT_ROOT'] . 'contatore.txt';
+$visite = file($file);
+$visite[0]++;
+$fp = fopen($file , "w");
+fputs($fp , "$visite[0]");
+fclose($fp);
+
+function view_tot_entries() {
+  // recupero il numero di accessi
+  $file = $_SERVER['DOCUMENT_ROOT'] . 'contatore.txt';
+  $fp = fopen($file, "r");
+  $tot = fgets($fp, 4096);
+  fclose($fp);
+  $tot="visite: $tot";
+  
+  // valore di ritorno
+  return $tot;
+}
+
+echo view_tot_entries();
+?>
+<script type="text/javascript">
+    window.onload = function(){clock()};
+    function clock() {
+        // creiamo l'oggetto data
+        var data = new Date();
+        // recuperiamo l'ora corrente
+        var ora = data.getHours();
+        // recuperiamo i minuti attuali
+        var min = data.getMinutes();
+        // recuperiamo i secondi attuali
+        var sec = data.getSeconds();
+        // formattiamo i minuti
+        if (min < 10) {
+            min = "0" + min;
+        }
+        // prepariamo l'output
+        var output = ora + ":" + min + ":"+ sec;
+        // scriviamo l'ora nell'elemento
+        document.getElementById("orologio").innerHTML = output;
+        // richiamiamo la funione tra un secondo
+        setTimeout("clock()",1000);
+    }
+</script>
+<div id="orologio"></div>
+</center>
 
 <?php
 $query = "select distinct username from utenti";
@@ -51,7 +99,6 @@ if (in_array($user, $arrayUtenti)){
 	            echo "</tr>";
 	        }
 	    echo "</tbody></table><br>";
-
 
 	echo "<h2>Persone che devono svolgere dei corsi:</h2>";
 	$query = "select sum(f.oreEffettuate), p.plesso, c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso HAVING sum(f.oreEffettuate)<6";
