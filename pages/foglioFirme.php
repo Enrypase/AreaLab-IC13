@@ -38,8 +38,6 @@ $detect = new Mobile_Detect();
 					foreach ($res as $row) {
 						$arrayUtenti[]=$row['username'];
 					}
-					
-				if (in_array($user, $arrayUtenti)){
 
 				echo "<h2>Nella seguente tabella verranno visualizzati i corsi disponibili. <br> Inoltre è possibile ottenere un foglio-firma di un determinato corso data un'ora di inizio e una di fine:</h2> ";
 					$corso=getArr($_POST,"corso");
@@ -66,16 +64,13 @@ $detect = new Mobile_Detect();
 
 				echo" <br><form action='stampa.php' method='post' >";
 				echo"   Nome del corso: <br> <input type='text' class='input' name='corso' placeholder='Corso'><br>";
+				echo"Nome del plesso: <br> <input type='text' class='input' name='plesso' placeholder='Plesso'><br>";
 				echo"	Ruolo del personale: <br> <input type='text' class='input' name='ruolo' placeholder='Ruolo'><br>";
 				echo"	Ora di inizio: <br> <input type='time' class='input' name='oraI'><br>";
 				echo"	Ora di conclusione: <br> <input type='time' class='input' name='oraF'><br>";
 				echo"	<input type ='submit' class='input' value='Invio'>";
 				echo" </form>";
-				}
-				else{
-					include 'erroreaccesso.php';
-				}
-				?>
+			?>
 			</div>
 			<?php echo file_get_contents('./pages/footer-logged.html');	?>
 		</div>

@@ -43,7 +43,6 @@ $detect = new Mobile_Detect();
 						}
 
 						echo "<div class='tabella1'>";
-					if (in_array($user, $arrayUtenti)){
 						echo "<b>Persone che non hanno svolto alcun corso:</b>";	
 						$query = "select * from personale where codFiscPersona not in (select codFiscPersona from frequentazioni)";
 						try{
@@ -78,7 +77,7 @@ $detect = new Mobile_Detect();
 						    include 'errore.php';
 						}
 							echo "<table id='tab2' class='display' style='width:100%'>";
-						        echo "<thead> <tr>";
+						    echo "<thead> <tr>";
 						    echo "<th>nome</th>";
 						    echo "<th>cognome</th>";
 						    echo "<th>codice fiscale</th>";
@@ -97,16 +96,12 @@ $detect = new Mobile_Detect();
 						        }
 						    echo "</tbody></table><br>";
 						    echo "</div>";
-					}
-					else{
-						include 'erroreaccesso.php';
-					}
 					?>
 
 				<div class="pulsanti">
 					<a href="AggiornaCorsi.php"><button onClick="AggiornaCorsi.php">Aggiorna corsi</button></a>
 					<a href="AggiornaAnagrafica.php"><button onClick="AggiornaAnagrafica.php">Aggiorna anagrafica</button></a>
-					<a href="AggiornaFrequentazioni.php"><button onClick="AggiornaFrequentazioni.php">Aggiorna frequentazioni</button></a>
+					<a href="AggiornaFrequentazioni.php"><button onClick="AggiornaFrequentazioni.php">Aggiorna frequenze</button></a>
 					<a href="Consulta.php"><button onClick="index.php">Consulta</button></a>	
 					<a href="Backup.php"><button onClick="Backup.php">Ottieni backup</button></a>
 					<a href="FoglioFirme.php"><button onClick="FoglioFirme.php">Ottieni foglio firme</button></a>
