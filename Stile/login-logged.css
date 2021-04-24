@@ -1,11 +1,3 @@
-html{
-	scroll-behavior: smooth;
-}
-body{
-	background-color: white;
-	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(0.5vh, 1.75vh, 2.5vh);
-}
 	.grid{
 		display: grid;
 		grid-template-columns: 10% 80% 10%;
@@ -88,10 +80,4 @@ body{
 			input[type=submit]:hover {
 				background-color: #2E3033;
 			}
-		.bottom{
-			background-color: #eee;
-			text-align: center;
-			grid-column: 2;
-			grid-row: 3;
-			vertical-align: middle;
-		}		
+

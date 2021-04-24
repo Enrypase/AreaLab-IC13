@@ -1,11 +1,4 @@
-html{
-	scroll-behavior: smooth;
-}
-body{
-	background-color: white;
-	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(0.5vh, 1.45vh, 2.5vh);
-}
+
 table { 
 	width: 100%;
   	font-size: clamp(0.5vh, 1.45vh, 2.5vh);
@@ -99,12 +92,3 @@ table {
 				height: 5vh;
 				width: 100%;
 			}
-		.bottom{
-			background-color: #eee;
-			text-align: center;
-			grid-column: 2;
-			grid-row: 3;
-			vertical-align: middle;
-
-
-		}		

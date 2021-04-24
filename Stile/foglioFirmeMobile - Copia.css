@@ -1,20 +1,4 @@
-html{
-	scroll-behavior: smooth;
-}
-body{
-	background-color: white;
-	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(1vw, 1.3vw, 3vw);
-}
-table { 
-	width: 100%;
-  	font-size: 150%;
-}
-	.grid{
-		display: grid;
-		grid-template-columns: 25% 75%;
-		grid-template-rows: auto auto;
-	}
+	
 		.header{
 			overflow: hidden;
 			position: fixed;
@@ -114,11 +98,4 @@ table {
 			h2{
 				grid-row: 1;
 			}
-		.bottom{
-			background-color: #eee;
-			grid-column: 2;
-			grid-row: 3;
-
-			text-align: center;
-			vertical-align: middle;
-		}	
+		

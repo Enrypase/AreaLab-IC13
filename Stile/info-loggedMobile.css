@@ -1,11 +1,4 @@
-html{
-	scroll-behavior: smooth;
-}
-body{
-	background-color: white;
-	font-family: 'Roboto Mono', monospace;
-	font-size: clamp(1vw, 1.45vw, 3vw);
-}
+
 	.grid{
 		display: grid;
 		grid-template-columns: 25% 75%;
@@ -66,10 +59,3 @@ body{
 			.aboutUs img{
 				width: 5vw;
 			}
-		.bottom{
-			background-color: #eee;
-			text-align: center;
-			grid-column: 2;
-			grid-row: 3;
-			vertical-align: middle;
-		}		

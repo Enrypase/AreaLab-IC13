@@ -4,7 +4,10 @@ include './Logica/security.php';
 include './libs/mobileDetect.php';
 $detect = new Mobile_Detect();
 ?>
+
 <!DOCTYPE html>
+<html lang="IT-it">
+<meta charset="UTF-8">
 <head>
 	<?php 
 		include './pages/defS.html';
@@ -12,7 +15,11 @@ $detect = new Mobile_Detect();
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/indexMobile.css'>";
 		}
 		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/default.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/header.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/index.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottom.css'>";
 		}
 	?>
 	<title>Home</title>
@@ -33,3 +40,4 @@ $detect = new Mobile_Detect();
 		<?php echo file_get_contents('./pages/footer.html'); ?>
 	</div>
 </body>
+</html>
