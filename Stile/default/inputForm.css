@@ -1,0 +1,39 @@
+
+		.input {
+			    font-size: clamp(0.5vh, 1.75vh, 2.5vh);
+			    line-height: 3;
+			    padding: 0.5vh;
+			    border-radius: 0.5vh;
+			}
+			.input {
+				width: 50%;
+				margin-bottom: 1vh;
+				border: 0.25vh solid black;
+				resize: vertical;
+			}
+			input[type=time] {
+				width: 25%;
+				margin-bottom: 1vh;
+				cursor: pointer;
+			}
+			input[type=date] {
+				width: 25%;
+				margin-bottom: 1vh;
+				cursor: pointer;
+			}
+			input[type=submit] {
+				width: 50%;
+				padding: 2.5vh;
+				margin-bottom: 1vh;
+				cursor: pointer;
+		        line-height: 0%;
+		        vertical-align: middle;
+		        text-align: center;
+			}
+			input:hover{
+				border-color: #CD7A00;
+			}
+			input[type=submit]:hover {
+				background-color: #FE9900;
+				color: white;
+			}

@@ -2,6 +2,7 @@
 session_start();
 include 'libs/util.php';
 
+$_SESSION["username"] = "El Sas";
 $user=$_SESSION["username"];
 
 $_SESSION["currentPage"] = "index.php";

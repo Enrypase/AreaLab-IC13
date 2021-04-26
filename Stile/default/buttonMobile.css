@@ -1,18 +1,15 @@
 .pulsanti{
 				grid-row: 4;
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				grid-column-gap: 1vh;
-				grid-row-gap: 1vh;
-				grid-template-rows: 1fr 1fr;
+				grid-template-rows: 1fr;
 				align-items: center;
 			}
 			.pulsanti button{
-				width: 100%;
+				width: 75%;
 				border-radius: 1vh;
-				border: 0.4vh solid black;
-				font-size: 1.5vh;
+				font-size: 200%;
 				padding: 0.5vh;
+				margin: 0.5vh;
 				font-weight: bold;
 			}
 			.pulsanti button:hover{

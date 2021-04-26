@@ -1,0 +1,9 @@
+input, select{
+				width: 10vw;
+				height: 3.5vw;
+				font-size: clamp(1vw, 1.30vw, 3vw);
+			}
+			tr{
+				height: 5vh;
+				width: 100%;
+			}

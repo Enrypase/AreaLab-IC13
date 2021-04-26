@@ -9,13 +9,25 @@ $detect = new Mobile_Detect();
 <html>
 	<head>
 		<?php 
-			include './pages/defS.html';
+        	include './pages/defS.html';
 			if($detect->isMobile()){
-				echo "<link rel='stylesheet' type='text/css' href='./Stile/aggiungiFrequentazioneMobile.css'>";
-			}
-			else{
-				echo "<link rel='stylesheet' type='text/css' href='./Stile/aggiungiFrequentazione.css'>";
-			}
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/defaultMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLoggedMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/aggiungiFrequentazioneMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/gridMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputFormMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLoggedMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInputMobile.css'>";
+		}
+		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/default.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLogged.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/aggiungiFrequentazione.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputForm.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLogged.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInput.css'>";
+		}
 		?>
 		<script type="text/javascript" charset="utf8" src="./JS/jquery.js"></script>
   		<script type="text/javascript" charset="utf8" src="./JS/jqueryDataTables.js"></script> 
@@ -38,7 +50,7 @@ $detect = new Mobile_Detect();
 						$arrayUtenti[]=$row['username'];
 					}
 
-				echo"<center>";	
+		
 				echo"<h2>Aggiungi una frequentazione: </h2>";
 
 					$codFiscPersona="";
@@ -53,10 +65,9 @@ $detect = new Mobile_Detect();
 				echo"ore effettuate: <br> <input type='text' name='oreEffettuate'/> <br>";
 				echo"nome corso: <br> <input type='text' name='corso' value='$nomeCorso'/> <br>";
 				echo"data: <br> <input type='date' name='data'/> <br>";
-				echo"</table>";
-				echo"    <input type='submit' value='Aggiungi'/>";
+				echo"    <input type='submit' value='Aggiungi Frequentazione'/>";
 				echo"</form>";
-				echo"</center>";
+
 				
 				?>
 			</div>

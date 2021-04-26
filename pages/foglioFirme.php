@@ -8,15 +8,29 @@ $detect = new Mobile_Detect();
 <!DOCTYPE HTML>
 <html>
     <head>
-        <?php 
-			include './pages/defS.html';
-			if($detect->isMobile()){
-				echo "<link rel='stylesheet' type='text/css' href='./Stile/foglioFirmeMobile.css'>";
-			}
-			else{
-				echo "<link rel='stylesheet' type='text/css' href='./Stile/foglioFirme.css'>";
-			}
-		?>
+        <?php
+		include './pages/defS.html';
+		if($detect->isMobile()){
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/defaultMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLoggedMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/foglioFirmeMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/gridMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLoggedMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/buttonMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInputMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputFormMobile.css'>";
+		}
+		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/default.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLogged.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/foglioFirme.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLogged.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/button.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInput.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputForm.css'>";
+		}
+	?>
 		<script type="text/javascript" charset="utf8" src="./JS/jquery.js"></script>
   		<script type="text/javascript" charset="utf8" src="./JS/jqueryDataTables.js"></script> 
   		<link rel="stylesheet" type="text/css" href="./Stile/dataTables.css">

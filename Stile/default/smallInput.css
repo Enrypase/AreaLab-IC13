@@ -1,0 +1,9 @@
+select{
+				width: 10vh;
+				height: 4.25vh;
+				font-size: clamp(0.5vh, 1.45vh, 2.5vh);
+			}
+			tr{
+				height: 5vh;
+				width: 100%;
+			}

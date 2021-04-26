@@ -1,0 +1,43 @@
+input, select{
+				width: 15vw;
+				height: 4vw;
+				font-size: clamp(1vw, 2.5vw, 3vw);
+			}	
+		.input {
+			    line-height: 3;
+			    padding: 1.5vw;
+			    border-radius: 0.5vw;
+			}
+			.input {
+				width: 70%;
+				margin-bottom: 1vw;
+				border: 0.25vw solid black;
+				resize: vertical;
+			}
+			input[type=time] {
+				width: 35%;
+				margin-bottom: 1vw;
+				cursor: pointer;
+			}
+			input[type=date] {
+				width: 35%;
+				margin-bottom: 1vw;
+				cursor: pointer;
+			}
+			input[type=submit] {
+				width: 70%;
+				padding: 2.5vw;
+				margin-bottom: 1vw;
+				cursor: pointer;
+		        line-height: 0%;
+		        vertical-align: middle;
+		        text-align: center;
+			}
+			input:hover{
+				border-color: #CD7A00;
+			}
+			input[type=submit]:hover {
+				background-color: #FE9900;
+				color: white;
+				border-color: #CD7A00;
+			}

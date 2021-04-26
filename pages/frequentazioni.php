@@ -9,13 +9,25 @@ $detect = new Mobile_Detect();
 <html>
 	<head>
 		<?php 
-			include './pages/defS.html';
+        	include './pages/defS.html';
 			if($detect->isMobile()){
-				echo "<link rel='stylesheet' type='text/css' href='./Stile/frequentazioniMobile.css'>";
-			}
-			else{
-				echo "<link rel='stylesheet' type='text/css' href='./Stile/frequentazioni.css'>";
-			}
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/defaultMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLoggedMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/frequentazioniMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/gridMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputFormMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLoggedMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInputMobile.css'>";
+		}
+		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/default.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLogged.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/frequentazioni.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputForm.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLogged.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInput.css'>";
+		}
 		?>
 		<script type="text/javascript" charset="utf8" src="./JS/jquery.js"></script>
   		<script type="text/javascript" charset="utf8" src="./JS/jqueryDataTables.js"></script> 

@@ -1,48 +1,5 @@
 
-table { 
-	width: 100%;
-  	font-size: clamp(0.5vh, 1.45vh, 2.5vh);
-}
-	.grid{
-		display: grid;
-		grid-template-columns: 10% 80% 10%;
-		grid-template-rows: 10vh auto auto;
-		grid-gap: 2vh;
-	}
-		.header{
-			background-color: #eee;
-			grid-column: 2;
-			grid-row: 1;
-
-			text-align: center;
-			vertical-align: middle;
-
-			display: grid;
-			grid-template-columns: 50% 50%;
-			grid-template-rows: 100%;
-		}
-		.header img{
-			transition: transform 0.15s, filter 0.15s ease-in-out;
-			height: 100%;
-			transform: scale(0.7);
-		}
-		.header img:hover{
-			transform: scale(0.9);
-		}
-			.notLogged{
-				grid-column: 1;
-			}
-			.logged{
-				grid-column: 2;
-			}
-		.header img{
-			transition: transform 0.15s, filter 0.15s ease-in-out;
-			height: 100%;
-			transform: scale(0.7);
-		}
-		.header img:hover{
-			transform: scale(0.9);
-		}
+		
 		.testo{
 			background-color: #eee;
 			grid-row: 2;
@@ -53,42 +10,12 @@ table {
 			text-align: center;
 			padding: 2vh;			
 		}
-			.paragrafo{
-				grid-row: 1;
-			}
-			.tabella{
-				grid-row: 2;
-				padding: 2vh 0vh 2vh 0vh;
-			}
-			.pulsanti{
-				grid-row: 4;
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				grid-column-gap: 1vh;
-				align-items: center;
-			}
-			.pulsanti button{
-				border-radius: 1vh;
-				border: 0.4vh solid black;
-				font-size: 1.5vh;
-				padding: 0.5vh;
-				font-weight: bold;
-			}
 			.rowT{
 				width: 100%;
 				font-family: 'Roboto Mono', monospace;
 			}
-			.pulsanti button:hover, .rowT:hover{
+			.rowT:hover{
 				background-color: #FE9900;
 				color: white;
 				border-color: #CD7A00;
-			}
-			input, select{
-				width: 10vh;
-				height: 3.5vh;
-				font-size: clamp(0.5vh, 1.45vh, 2.5vh)
-			}
-			tr{
-				height: 5vh;
-				width: 100%;
 			}
