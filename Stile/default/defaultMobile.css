@@ -1,0 +1,8 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-size: clamp(1vw, 1.29vw, 3vw);
+}

@@ -1,0 +1,27 @@
+.header{
+			overflow: hidden;
+			position: fixed;
+
+		    top: 0;
+		    left: 0;
+		    z-index: 999;
+		    height: 100%;
+		    width: 25%;
+		    max-width: 25vw;
+
+			background-color: #eee;
+
+			grid-column: 1;
+			grid-row: 1/2;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.header img{
+			transition: transform 0.15s, filter 0.15s ease-in-out;
+			width: 100%;
+			max-width: 33vh;
+			transform: scale(0.7);
+		}
+		.header img:hover{
+			transform: scale(0.9);
+		}

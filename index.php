@@ -3,6 +3,7 @@ session_start();
 include 'libs/util.php';
 
 $user=$_SESSION["username"];
+
 $_SESSION["currentPage"] = "index.php";
 ?>
 <!-- Aggiungere nomenclatura decente per i <head> <title> xxxx </></>

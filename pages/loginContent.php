@@ -10,10 +10,20 @@ $detect = new Mobile_Detect();
 	<?php 
 		include './pages/defS.html';
 		if($detect->isMobile()){
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/defaultMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerMobile.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/loginMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/gridMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputMobile.css'>";
 		}
 		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/default.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/header.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/login.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottom.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/input.css'>";
 		}
 	?>
 	<title>Login</title>

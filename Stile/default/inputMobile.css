@@ -1,0 +1,28 @@
+input{
+				width: 80%;
+				height: 20%;
+				font-size: 200%;
+			}
+			input[type=text], select, textarea {
+				margin: 1vw;
+				padding: 0.75vw;
+				border: 0.1vw solid #ccc;
+				border-radius: 0.5vw;
+			}
+			input[type=password], select, textarea {
+				margin: 1vw;
+				padding: 0.75vw;
+				border: 0.1vw solid #ccc;
+				border-radius: 0.5vw;
+			}
+			input[type=submit] {
+				margin: 1vw;
+				background-color: #048BF9;
+				color: white;
+				padding: 0.75vw;
+				border: none;
+				border-radius: 0.5vw;
+			}
+			input[type=submit]:hover {
+				background-color: #2E3033;
+			}

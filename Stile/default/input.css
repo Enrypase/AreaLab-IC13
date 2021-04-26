@@ -1,28 +1,33 @@
-input{
-	width: 80%;
-	height: 20%;
-	font-size: 200%;
-}
-input[type=text], select, textarea {
-	margin: 1vw;
-	padding: 0.75vw;
-	border: 0.1vw solid #ccc;
-	border-radius: 0.5vw;
-}
-input[type=password], select, textarea {
-	margin: 1vw;
-	padding: 0.75vw;
-	border: 0.1vw solid #ccc;
-	border-radius: 0.5vw;
-}
-input[type=submit] {
-	margin: 1vw;
-	background-color: #048BF9;
-	color: white;
-	padding: 0.75vw;
-	border: none;
-	border-radius: 0.5vw;
-}
-input[type=submit]:hover {
-	background-color: #2E3033;
-}
+input {
+			    font-size: clamp(0.5vh, 1.75vh, 2.5vh);
+			    line-height: 3;
+			}
+			input[type=text], select, textarea {
+				width: 50vh;
+				margin-bottom: 1vh;
+				padding: 0.5vh;
+				border: 0.2vh solid #ccc;
+				border-radius: 0.5vh;
+				resize: vertical;
+			}
+			input[type=password], select, textarea {
+				width: 50vh;
+				margin-bottom: 1vh;
+				padding: 0.5vh;
+				border: 0.2vh solid #ccc;
+				border-radius: 0.5vh;
+				resize: vertical;
+			}
+			input[type=submit] {
+				width: 30vh;
+				margin-bottom: 1vh;
+				padding: 0.5vh;
+				background-color: #048BF9;
+				color: white;
+				border: none;
+				border-radius: 0.5vh;
+				cursor: pointer;
+			}
+			input[type=submit]:hover {
+				background-color: #2E3033;
+			}

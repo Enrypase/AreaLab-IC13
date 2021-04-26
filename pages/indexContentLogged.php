@@ -9,10 +9,18 @@ $detect = new Mobile_Detect();
 	<?php 
 		include './pages/defS.html';
 		if($detect->isMobile()){
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/defaultMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLoggedMobile.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/index-loggedMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/gridMobile.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomMobile.css'>";
 		}
 		else{
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/default.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/headerLogged.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/index-logged.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
+			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLogged.css'>";
 		}
 	?>
 	<title>Home</title>
