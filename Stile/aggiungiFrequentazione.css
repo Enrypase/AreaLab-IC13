@@ -11,5 +11,5 @@
 			padding: 2vh;			
 		}
 		input[type=submit]:hover {
-				padding: 4.2vh;  /* If I don't put this, it doesn't work even if there's no padding resizing */
+				/*padding: 4.2vh;*/  /* If I don't put this, it doesn't work even if there's no padding resizing */
 			}

@@ -1,0 +1,10 @@
+.testo{
+			background-color: #eee;
+			grid-row: 1;
+			grid-column: 2;
+			display: grid;
+			grid-template-rows: auto auto auto;
+			font-weight: bold;
+			text-align: center;
+			padding: 2vh;			
+		}

@@ -1,0 +1,29 @@
+
+		
+		.testo{
+			background-color: #eee;
+			grid-row: 1;
+			grid-column: 2;
+			display: grid;
+			grid-template-rows: auto auto auto;
+			font-weight: bold;
+			text-align: center;
+			padding: 2vh;			
+		}
+			
+			.rowT{
+				width: 100%;
+				font-family: 'Roboto Mono', monospace;
+			}
+			.rowT:hover{
+				background-color: #FE9900;
+				color: white;
+				border-color: #CD7A00;
+			}
+			
+			.rowT{
+				max-width: 16vw;
+			}
+			th, td{
+	/* Modificare perché strasborda */
+}

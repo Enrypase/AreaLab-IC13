@@ -51,7 +51,7 @@ $detect = new Mobile_Detect();
 					}
 
 		
-				echo"<h2>Aggiungi una frequentazione: </h2>";
+				echo"<h2>Per inserire nel database una nuova frequentazione, compilare i dati sottostanti e dopo cliccare sul pulsante 'Aggiungi Frequentazione'. </h2>";
 
 					$codFiscPersona="";
 					$nomeCorso="";
