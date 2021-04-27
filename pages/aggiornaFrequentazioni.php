@@ -41,17 +41,7 @@ $detect = new Mobile_Detect();
 				<div class="testo">
 					<h2>Nella seguente tabella verranno visualizzate tutte le frequentazioni presenti. <br>
 					Inoltre è possibile scegliere se visualizzare specificatamente tutte le frequentazioni nel dettaglio oppure se aggiungerne una nuova in generale premendo il pulsante in basso a destra oppure specifica del corso già presente premendo il pulsante relativo nella tabella: </h2>
-					<?php
-						$query = "select distinct username from utenti";
-							try{
-								$res=$con->query($query);
-							}catch(PDOException $ex) {
-							    include 'errore.php';
-							} 
-							foreach ($res as $row) {
-								$arrayUtenti[]=$row['username'];
-							}
-							
+					<?php							
 							$query = "select sum(f.oreEffettuate), c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso";
 							try{
 								$res=$con->query($query);

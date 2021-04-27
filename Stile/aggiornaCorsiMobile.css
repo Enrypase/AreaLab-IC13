@@ -12,5 +12,18 @@
 			grid-row-gap: 4vw;	
 		}
 		
-	
+	.rowT{
+				width: 100%;
+				font-family: 'Roboto Mono', monospace;
+			}
+			.rowT:hover{
+				background-color: #FE9900;
+				color: white;
+				border-color: #CD7A00;
+			}
+			
+			.rowT{
+				max-width: 16vw;
+			}
+
 		
