@@ -1,50 +1,9 @@
-<?php 
-session_start();
-include 'libs/util.php';
-include 'libs/db_connect.php';
-$user=getArr($_SESSION,'username');
-?>
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title> IC13 </title>
-  
-    </head>
-<body>
-
 <?php
-$query = "select distinct username from utenti";
-	try{
-		$res=$con->query($query);
-	}catch(PDOException $ex) {
-	    include 'errore.php';
-	} 
-	foreach ($res as $row) {
-		$arrayUtenti[]=$row['username'];
-	}
-	
-if (in_array($user, $arrayUtenti)){
-	echo"<a href=\"aggiornaanagrafica.php\">back</a>";
-	$codFiscPersona="";
-	if ($_POST) {
-        $codFiscPersona= getArr($_POST, "codFiscPersona");
-	}
+session_start();
+include './libs/util.php';
+include './libs/db_connect.php';
+$user= $_SESSION['username'];
+$_SESSION["currentPage"] = "modificaPersona.php";
 
-echo"<form action='domodificapersona.php' method=\"POST\">";
-echo"	codice fiscale: <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
-echo"    nome: <input type=\"decimal\" name=\"nomePersona\"/> <br>";
-echo"    cognome: <input type=\"text\" name=\"cognomePersona\"/> <br>";
-echo"    ruolo: <input type=\"text\" name=\"ruoloPersona\"/> <br>";
-echo"    data di nascita: <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
-echo"	in servizio: <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
-echo"    mail: <input type=\"mail\" name=\"mailPersona\"/> <br>";
-echo"    <input type=\"submit\" value=\"modifica\"/>";
-echo"</form>";
-}
-else{
-	include 'erroreaccesso.php';
-}
+include './pages/modificaPersona.php';
 ?>
-
-</body>
-</html>

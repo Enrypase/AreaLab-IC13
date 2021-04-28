@@ -8,8 +8,10 @@ $user=$_SESSION["username"];
 $_SESSION["currentPage"] = "index.php";
 ?>
 <!-- Aggiungere nomenclatura decente per i <head> <title> xxxx </></>
-<!-- Trovare una soluzione per il testo perchè deve essere zoommabile (boh, fa stesso se si adatta in realtà) -->
-<!-- Mettere tutte le pagine in un'unica cartella e sistemare le referenze alle librerie, altrimenti c'è problema di sicurezza -->
+<!-- Correggere bug nelle modifica cose -->
+<!-- Aggiungere il codice riguardante i plessi e i log -->
+<!-- Correzione ordine codice e bug generale -->
+<!-- Ricorda che i tipi devono configurare apache -->
 <?php 
 if($user == null || $user == "")
 	include './pages/indexContent.php'; 

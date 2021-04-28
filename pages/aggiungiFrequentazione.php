@@ -33,7 +33,7 @@ $detect = new Mobile_Detect();
   		<script type="text/javascript" charset="utf8" src="./JS/jqueryDataTables.js"></script> 
   		<link rel="stylesheet" type="text/css" href="./Stile/DataTables.css">
 
-		<title>Home</title>
+		<title>Aggiungi Frequentazione</title>
 	</head>
 	<body>
 		<div class="grid">
