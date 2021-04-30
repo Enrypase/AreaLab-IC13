@@ -17,7 +17,6 @@ $detect = new Mobile_Detect();
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/backupMobile.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/gridMobile.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/buttonMobile.css'>";
-			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputFormMobile.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLoggedMobile.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInputMobile.css'>";
 		}
@@ -27,7 +26,6 @@ $detect = new Mobile_Detect();
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/backup.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/button.css'>";
-			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputForm.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLogged.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/smallInput.css'>";
 		}
@@ -40,13 +38,7 @@ $detect = new Mobile_Detect();
 			<?php include './pages/header-logged.php'; ?>
 			<div class="testo">
 <?php
-echo"<center>";
-echo"<h3>Inserisci la password per continuare:</h3>";
-echo"	<form action=\"doBackup.php\" method=\"post\">";
-echo"            Password:</td><td> <input type=\"password\" name=\"password\" /><br>";
-echo"			<input type =\"submit\" value=\"verifica\">";
-echo"	</form>";
-echo"</center>";
+echo"<div class='pulsanti'><a href='sicurezza.db' download='backup.db'><button>Download database</button></a></div>";
 ?>
 </div>
 <?php echo file_get_contents('./pages/footer-logged.html');	?>

@@ -6,7 +6,7 @@ include "../libs/util.php";
 
 $ut=getArr($_POST,"username");
 $pw=getArr($_POST,"password");
-//$pw=hash('sha256',$pw); --> DA METTERE CON IL DB FINALE
+$pw=hash('sha256',$pw);
 $_SESSION["currentPage"] = "doLogin.php";
 $user = $_SESSION['username'];
 

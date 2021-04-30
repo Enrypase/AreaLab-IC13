@@ -59,6 +59,7 @@ $detect = new Mobile_Detect();
 				echo "<th>ruolo</th>";
 				echo "<th>data nascita</th>";
 				echo "<th>servizio</th>";
+				echo "<th>plesso</th>";
 				echo "<th>mail</th>";
 	        echo "</tr></thead><tbody>";
 	  
@@ -78,6 +79,7 @@ $detect = new Mobile_Detect();
 					echo "<td>".$row['ruoloPersona']."</td>";
 					echo "<td>".$row['dataNascitaPersona']."</td>";
 	                echo "<td>".$servizio."</td>";
+	                echo "<td>".$row['plesso']."</td>";
 					echo "<td>".$row['mailPersona']."</td>";
 	            echo "</tr>";
 	        }

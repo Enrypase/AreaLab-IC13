@@ -2,7 +2,6 @@
 session_start();
 include 'libs/util.php';
 
-$_SESSION["username"] = "El Sas";
 $user=$_SESSION["username"];
 
 $_SESSION["currentPage"] = "index.php";
@@ -12,6 +11,9 @@ $_SESSION["currentPage"] = "index.php";
 <!-- Aggiungere il codice riguardante i plessi e i log -->
 <!-- Correzione ordine codice e bug generale -->
 <!-- Ricorda che i tipi devono configurare apache -->
+<!-- Nei file doQualcosa aggiungere le funzionalità di log -->
+<!-- Aggiungere aggiunta utente -->
+<!-- Aggiungere in aggiungiFrequentazione la possibilità di visualizzare i vari utenti -->
 <?php 
 if($user == null || $user == "")
 	include './pages/indexContent.php'; 

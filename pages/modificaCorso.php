@@ -57,7 +57,7 @@ $detect = new Mobile_Detect();
 	
 
 	
-echo"<form action='domodificacorso.php' method='POST'>";
+echo"<form action='./doModificaCorso.php' method='POST'>";
 echo"	id: <br> <input type='text' name='id' value='$idCorso'/> <br>";
 echo"    nome: <br> <input type='text' name='nome'/> <br>";
 echo"    descr: <br> <input type='text' name='descrizione'/> <br>";

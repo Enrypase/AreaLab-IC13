@@ -77,6 +77,7 @@ $query = "select distinct username from utenti";
 				echo "<th>ruolo</th>";
 				echo "<th>data nascita</th>";
 				echo "<th>servizio</th>";
+				echo "<th>plesso</th>";
 				echo "<th>mail</th>";
 				echo "<th></th>";
 	        echo "</tr></thead><tbody>";
@@ -96,7 +97,14 @@ $query = "select distinct username from utenti";
 	                echo "<td>".$row['cognomePersona']."</td>";
 					echo "<td>".$row['ruoloPersona']."</td>";
 					echo "<td>".$row['dataNascitaPersona']."</td>";
-	                echo "<td>".$servizio."</td>";
+					if ($servizio=='1'){
+						$servizio="in servizio";
+					}
+					else{
+						$servizio="no";
+					}
+					echo "<td>".$servizio."</td>";
+	                echo "<td>".$row['plesso']."</td>";
 					echo "<td>".$row['mailPersona']."</td>";
 					echo "<td><form method='POST' action='modificapersona.php'><input type='hidden' name='codFiscPersona' value='$codFiscPersona'/><input type='submit' class='rowT' value='modifica'/></form></td>";
 	            echo "</tr>";

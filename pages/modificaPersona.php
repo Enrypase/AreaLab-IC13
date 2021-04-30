@@ -56,13 +56,14 @@ $detect = new Mobile_Detect();
 	    include 'errore.php';
 	} 
 
-echo"<form action='domodificapersona.php' method=\"POST\">";
+echo"<form action='./doModificaPersona.php' method=\"POST\">";
 echo"	codice fiscale: <br> <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
 echo"    nome: <br> <input type=\"decimal\" name=\"nomePersona\"/> <br>";
 echo"    cognome: <br> <input type=\"text\" name=\"cognomePersona\"/> <br>";
 echo"    ruolo: <br> <input type=\"text\" name=\"ruoloPersona\"/> <br>";
 echo"    data di nascita: <br> <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
-echo"	in servizio: <br> <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
+echo"	 in servizio: <br> <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
+echo"    plesso: <br> <input type=\"text\" name=\"plesso\" value='' /> <br>";
 echo"    mail: <br> <input type=\"mail\" name=\"mailPersona\"/> <br>";
 echo"    <input type=\"submit\" value=\"modifica\"/>";
 echo"</form>";

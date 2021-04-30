@@ -42,7 +42,7 @@ $detect = new Mobile_Detect();
 					<h2>Nella seguente tabella verranno visualizzate tutte le frequentazioni presenti. <br>
 					Inoltre è possibile scegliere se visualizzare specificatamente tutte le frequentazioni nel dettaglio oppure se aggiungerne una nuova in generale premendo il pulsante in basso a destra oppure specifica del corso già presente premendo il pulsante relativo nella tabella: </h2>
 					<?php							
-							$query = "select sum(f.oreEffettuate), c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso";
+							$query = "select sum(f.oreEffettuate), c.nomeCorso, p.nomePersona, p.cognomePersona, p.codFiscPersona, plesso from Frequentazioni f join Corsi c ON c.idCorso=f.idCorso JOIN Personale p ON p.codFiscPersona=f.codFiscPersona group BY f.codFiscPersona, f.idCorso";
 							try{
 								$res=$con->query($query);
 							}catch(PDOException $ex) {
@@ -55,6 +55,7 @@ $detect = new Mobile_Detect();
 							echo "<th>corso</th>";
 							echo "<th>nome</th>";
 							echo "<th>cognome</th>";
+							echo "<th>plesso</th>";
 							echo "<th>ore effettuate</th>";
 							echo "<th>  </th>";
 							echo "</tr> </thead> <tbody>";
@@ -65,6 +66,7 @@ $detect = new Mobile_Detect();
 							    echo "<td>".$row['nomeCorso']."</td>";
 							    echo "<td>".$row['nomePersona']."</td>";
 							    echo "<td>".$row['cognomePersona']."</td>";
+							    echo "<td>".$row['plesso']."</td>";
 								echo "<td>".$row['sum(f.oreEffettuate)']."</td>";
 								echo "<td><form method= 'POST' action='aggiungifrequentazione.php'><input type='hidden' name='codFiscPersona' value='$codFiscPersona'/><input type='submit' class='rowT' value='Aggiungi frequenze'/></form></td>";
 							    echo "</tr>";
