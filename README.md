@@ -20,9 +20,9 @@
 ### [Installazione](Installazione.md)
 - Guida all'installazione
 
-### [ManualeUtente](MaunaleUtente.md)
+### [ManualeUtente](ManualeUtente.md)
 - Guida all'utlizzo dell'applicazione
 
-### [WebServer](Webserver.md)
+### [WebServer](WebServer.md)
 - Guida al webserver
 
