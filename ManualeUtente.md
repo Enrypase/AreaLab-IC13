@@ -48,10 +48,20 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
  Ogni bottone, se cliccato, esegue una funzionelità differente :<br>
  **Aggiorna corsi**<br>
  ![a](/Immagini/SitoGrafica/aggCorsi.PNG)
+  ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
+    ![a](/Immagini/SitoGrafica/modCorsi.PNG)
  **Aggiorna anagrafica**<br>
+  ![a](/Immagini/SitoGrafica/aggAnagrafica.PNG)
+   ![a](/Immagini/SitoGrafica/aggPersona.PNG)
+    ![a](/Immagini/SitoGrafica/modPersona.PNG)
  **Aggiorna frequentanti**<br>
+  ![a](/Immagini/SitoGrafica/aggFrequentazioni.PNG)
+   ![a](/Immagini/SitoGrafica/visualFrequenze.PNG)
+   ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
  **Consulta**<br>
+  ![a](/Immagini/SitoGrafica/consulta.PNG)
  **Ottieni il backup**<br>
+  ![a](/Immagini/SitoGrafica/ottBackup.PNG)
  **Ottieni foglio firma**<br>
  ![a](/Immagini/SitoGrafica/FoglioFirme.PNG)
  La tabella mostra i corsi esistenti per cui è possibile creare un foglio firma; quello che l'utente dovra inserire negli appositi riquadri, dopo avere consultato al tabella, sono il nome del corso, il ruolo del personale, ora di inizio e di fine e infine cliccare il pulsante invio.
