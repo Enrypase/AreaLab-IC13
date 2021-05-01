@@ -57,7 +57,7 @@ $query = "select distinct username from utenti";
 if ($ut=='adminuser' && $pw==$ut && in_array($ut, $arrayUtenti)){
 	header('Location: nuovaautenticazione.php');
 }
-else{
+else if (in_array($ut, $arrayUtenti)){
 	$pw=hash('sha256',$pw);
 	try {
 		$query = "select * from Utenti where username= ? and password= ?";
@@ -84,6 +84,9 @@ else{
 		session_destroy();
 		include 'errore.php';
 	}
+}
+else{
+	header('Location: index.php');
 }
 ?>
 
