@@ -47,6 +47,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
 ![image](https://user-images.githubusercontent.com/73341469/115042314-a5177c80-9ed3-11eb-8a55-c93a82292f10.png) <br>
  Ogni bottone, se cliccato, esegue una funzionelità differente :<br>
  **Aggiorna corsi**<br>
+ Tramite aggiorna corsi è possibile modificare, qualora sia necessario, le informazioni inerenti ai corsi.
  ![a](/Immagini/SitoGrafica/aggCorsi.PNG)
   ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
     ![a](/Immagini/SitoGrafica/modCorsi.PNG)
