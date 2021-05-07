@@ -60,6 +60,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
    ![a](/Immagini/SitoGrafica/visualFrequenze.PNG)
    ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
  **Consulta**<br>
+ Nella sezione consulta è possibile personalizzare l'ordinamento in base alla persona, per corso o per frequentazioni.
   ![a](/Immagini/SitoGrafica/consulta.PNG)
  **Ottieni il backup**<br>
  Cliccando su download database si avvierà il download del DB.
