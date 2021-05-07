@@ -51,7 +51,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
  ![a](/Immagini/SitoGrafica/aggCorsi.PNG)
   ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
     ![a](/Immagini/SitoGrafica/modCorsi.PNG)
- **Aggiorna anagrafica**<br>
+ <br>**Aggiorna anagrafica**<br>
   ![a](/Immagini/SitoGrafica/aggAnagrafica.PNG)
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
     ![a](/Immagini/SitoGrafica/modPersona.PNG)
