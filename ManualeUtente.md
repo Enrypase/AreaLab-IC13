@@ -44,7 +44,7 @@ Off: serve per effettuare il logout
 Nel Body è possibile visualizzare le informazioni **urgenti riguardanti il personale** in due tabelle, nella prima tabella le urgenze rivelate per il personale che non ha mai svolto corsi, nella seconda tabella per personale che svolgere un corso o rinnovarlo.<br>
 Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni di scelta.
 
-![image](https://user-images.githubusercontent.com/73341469/115042314-a5177c80-9ed3-11eb-8a55-c93a82292f10.png)
+![image](https://user-images.githubusercontent.com/73341469/115042314-a5177c80-9ed3-11eb-8a55-c93a82292f10.png) <br>
  Ogni bottone, se cliccato, esegue una funzionelità differente :<br>
  **Aggiorna corsi**<br>
  ![a](/Immagini/SitoGrafica/aggCorsi.PNG)
@@ -61,6 +61,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
  **Consulta**<br>
   ![a](/Immagini/SitoGrafica/consulta.PNG)
  **Ottieni il backup**<br>
+ Cliccando su download database si avvierà il download del DB.
   ![a](/Immagini/SitoGrafica/ottBackup.PNG)
  **Ottieni foglio firma**<br>
  ![a](/Immagini/SitoGrafica/foglioFirme.PNG)
