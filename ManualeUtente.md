@@ -66,8 +66,9 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
   ![a](/Immagini/SitoGrafica/ottBackup.PNG)
  **Ottieni foglio firma**<br>
  ![a](/Immagini/SitoGrafica/foglioFirme.PNG)
+  La tabella mostra i corsi esistenti per cui è possibile creare un foglio firma; quello che l'utente dovra inserire negli appositi riquadri, dopo avere consultato al tabella, sono il nome del corso, il ruolo del personale, ora di inizio e di fine e infine cliccare il pulsante invio.
  ![a](/Immagini/SitoGrafica/foglioFirme2.PNG)
- La tabella mostra i corsi esistenti per cui è possibile creare un foglio firma; quello che l'utente dovra inserire negli appositi riquadri, dopo avere consultato al tabella, sono il nome del corso, il ruolo del personale, ora di inizio e di fine e infine cliccare il pulsante invio.
+
 
  
  
