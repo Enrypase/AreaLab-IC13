@@ -52,6 +52,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
   ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
     ![a](/Immagini/SitoGrafica/modCorsi.PNG)
  <br>**Aggiorna anagrafica**<br>
+ Su aggiorna anagrafica è possibile,aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente
   ![a](/Immagini/SitoGrafica/aggAnagrafica.PNG)
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
 
