@@ -57,6 +57,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
 
  **Aggiorna frequentanti**<br>
+ Su aggiorna frequentazioni possiamo, cliccando su visualizza frequentazioni, monitorare tutte le frequentazioni registrate, mentre su aggiorna frequentazioni possiamo invece  aggiornare le ore di frequentazione 
   ![a](/Immagini/SitoGrafica/aggFrequentazioni.PNG)
    ![a](/Immagini/SitoGrafica/visualFrequenze.PNG)
       ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
