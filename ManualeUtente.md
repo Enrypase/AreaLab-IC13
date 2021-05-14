@@ -29,7 +29,7 @@ Nel Footer sono presenti le informazioni quali: l'indirizzo, i recapiti, politic
 Quando si cliccherà l'icona "utente", la pagina a cui si è indirizzati è la seguente, l'utente non dovra far altro che inserire le credenziali e schiacciare il pulsante Login.
 ![a](/Immagini/SitoGrafica/Login.PNG)
 
-!!! In caso il login non sia inserito in modo corretto, l'utente rimarra nell home della seguente pagina. !!!
+!!! In caso il login non sia inserito in modo corretto, l'utente rimarra nella seguente pagina. !!!
 
 
 ## **HOME PAGE**<br>
@@ -59,18 +59,17 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
  
 ##  **Aggiorna anagrafica**<br>
  Su aggiorna anagrafica è possibile, aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente<br>
-    * Modifica
+ * Modifica
     
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
  * Aggiungi corso
  
   ![a](/Immagini/SitoGrafica/aggAnagrafica.PNG)
 
-<br>
 ##  **Aggiorna frequentanti**<br>
 
   ![a](/Immagini/SitoGrafica/aggFrequentazioni.PNG)
-  ???
+  * Visualizza frequenza
   
    ![a](/Immagini/SitoGrafica/visualFrequenze.PNG)
    * Aggiungi frequentazione
