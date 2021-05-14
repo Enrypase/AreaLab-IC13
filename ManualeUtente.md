@@ -49,24 +49,23 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
 
 ## **Aggiorna corsi**<br>
  Tramite aggiorna corsi è possibile modificare, qualora sia necessario, le informazioni inerenti ai corsi.
- ![a](/Immagini/SitoGrafica/aggCorsi.PNG
-  *Modifica
+
+ ![a](/Immagini/SitoGrafica/aggCorsi.PNG)
+  * Modifica
  ![a](/Immagini/SitoGrafica/modCorsi.PNG)
-  *Aggiungi corso
+  * Aggiungi corso
   ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
     
  
- ##**Aggiorna anagrafica**<br>
+##  **Aggiorna anagrafica**<br>
  Su aggiorna anagrafica è possibile, aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente<br>
-    *Modifica
+    * Modifica
     
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
- *Aggiungi corso
+ * Aggiungi corso
  
   ![a](/Immagini/SitoGrafica/aggAnagrafica.PNG)
-   *Modifica
-   
-   ![a](/Immagini/SitoGrafica/aggPersona.PNG)
+
 <br>
 ##  **Aggiorna frequentanti**<br>
 
@@ -74,7 +73,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
   ???
   
    ![a](/Immagini/SitoGrafica/visualFrequenze.PNG)
-   *Aggiungi frequentazione
+   * Aggiungi frequentazione
    
   ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
       
