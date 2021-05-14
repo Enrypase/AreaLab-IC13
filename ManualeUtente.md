@@ -59,30 +59,43 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
  ##**Aggiorna anagrafica**<br>
  Su aggiorna anagrafica è possibile, aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente<br>
     *Modifica
+    
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
  *Aggiungi corso
+ 
   ![a](/Immagini/SitoGrafica/aggAnagrafica.PNG)
    *Modifica
+   
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
 <br>
 ##  **Aggiorna frequentanti**<br>
+
   ![a](/Immagini/SitoGrafica/aggFrequentazioni.PNG)
   ???
+  
    ![a](/Immagini/SitoGrafica/visualFrequenze.PNG)
    *Aggiungi frequentazione
-      ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
+   
+  ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
+      
       <br>
 ##  **Consulta**<br>
  Nella sezione consulta è possibile personalizzare l'ordinamento della tabella in base alla persona, per corso o per frequentazioni.
+ 
   ![a](/Immagini/SitoGrafica/consulta.PNG)
+  
   <br>
 ##  **Ottieni il backup**<br>
  Cliccando su download database si avvierà il download del DB.
+ 
   ![a](/Immagini/SitoGrafica/ottBackup.PNG)
+  
   <br>
 ##  **Ottieni foglio firma**<br>
 La pagina mostrera i vari corsi disponibili, l'utente non dovrà far altro che riempire i riquadri con le caratteristiche del corso scelto, ed infie premere invio.
+
  ![a](/Immagini/SitoGrafica/foglioFirme.PNG)
+ 
  ![a](/Immagini/SitoGrafica/foglioFirme2.PNG)<br>
  
  
