@@ -16,9 +16,9 @@ All'avvio dell' applicazione, la **pagina iniziale** risulterà essere questa:<b
 
 Nell Header sono presenti tre icone:<br>
 
-Utente: Se non si è loggati, si apre la pagina di benvenuto e viene richiesto di inserire le credenziali (devono essere inserite negli appositi riquadri, dopo occorre schiacciare il pulsante login)<br>
-Info: La pagina illustra varie informazioni riguardanti questo progetto.<br>
-Home:Riporta alla pagina iniziale.<br>
+- Utente: Se non si è loggati, si apre la pagina di benvenuto e viene richiesto di inserire le credenziali (devono essere inserite negli appositi riquadri, dopo occorre schiacciare il pulsante login)<br>
+- Info: La pagina illustra varie informazioni riguardanti questo progetto.<br>
+- Home:Riporta alla pagina iniziale.<br>
 
 Nel Body le icone dell'utente e quella informativa, sono ripetute, con la sottostante descrizione.<br>
 
@@ -38,8 +38,8 @@ La pagina a cui l'utente avrà accesso dopo aver eseguito il login è questa:
 
 
 Nell Header ci saranno due icone nuove che si aggiungeranno alle tre viste in precedenza :<br>
-:open_book: Libro: riporta l'utente all Home page <br>
-Off: serve per effettuare il logout
+- Libro: riporta l'utente all Home page <br>
+- Off: serve per effettuare il logout
 
 Nel Body è possibile visualizzare le informazioni **urgenti riguardanti il personale** in due tabelle, nella prima tabella le urgenze rivelate per il personale che non ha mai svolto corsi, nella seconda tabella per personale che svolgere un corso o rinnovarlo.<br>
 Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni di scelta.
