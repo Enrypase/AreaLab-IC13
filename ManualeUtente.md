@@ -46,7 +46,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
 
 ![image](https://user-images.githubusercontent.com/73341469/115042314-a5177c80-9ed3-11eb-8a55-c93a82292f10.png) <br>
  Ogni bottone, se cliccato, esegue una funzionelità differente :<br>
- <br>
+
 ## **Aggiorna corsi**<br>
  Tramite aggiorna corsi è possibile modificare, qualora sia necessario, le informazioni inerenti ai corsi.
  ![a](/Immagini/SitoGrafica/aggCorsi.PNG
@@ -55,7 +55,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
   *Aggiungi corso
   ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
     
- <br>
+ 
  ##**Aggiorna anagrafica**<br>
  Su aggiorna anagrafica è possibile, aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente<br>
     *Modifica
@@ -78,19 +78,19 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
    
   ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
       
-      <br>
+      
 ##  **Consulta**<br>
  Nella sezione consulta è possibile personalizzare l'ordinamento della tabella in base alla persona, per corso o per frequentazioni.
  
   ![a](/Immagini/SitoGrafica/consulta.PNG)
   
-  <br>
+ 
 ##  **Ottieni il backup**<br>
  Cliccando su download database si avvierà il download del DB.
  
   ![a](/Immagini/SitoGrafica/ottBackup.PNG)
   
-  <br>
+  
 ##  **Ottieni foglio firma**<br>
 La pagina mostrera i vari corsi disponibili, l'utente non dovrà far altro che riempire i riquadri con le caratteristiche del corso scelto, ed infie premere invio.
 
