@@ -83,7 +83,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
 ##  **Ottieni foglio firma**<br>
 La pagina mostrera i vari corsi disponibili, l'utente non dovrà far altro che riempire i riquadri con le caratteristiche del corso scelto, ed infie premere invio.
  ![a](/Immagini/SitoGrafica/foglioFirme.PNG)
- ![a](/Immagini/SitoGrafica/foglioFirme2.PNG)
+ ![a](/Immagini/SitoGrafica/foglioFirme2.PNG)<br>
  
  
  
