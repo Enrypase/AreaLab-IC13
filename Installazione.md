@@ -38,6 +38,9 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
  
 
 
-## XAMPP
+## XAMPP <BR>
+Andiamo a questo link: https://www.apachefriends.org/it/index.html <br>
+ 
+![a](/Immagini//Installazione/img4.jpg) <br>
 2. copiare il sorgente nella cartella htdocs di xampp
 3. enjoy your experience, :c
