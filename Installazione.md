@@ -1,6 +1,6 @@
 # INSTALLAZIONE GUIDATA <br>
-[:small_orange_diamond:CONSULTAZIONE:book:](#SQL SERVER)<br> 
-[:small_orange_diamond:CONSULTAZIONE:book:](#XAMPP)<br> 
+[:small_orange_diamond:CONSULTAZIONE:book:](SQL SERVER)<br> 
+[:small_orange_diamond:CONSULTAZIONE:book:](#AMPP)<br> 
 ## SQL SERVER 
 In questa guida seguiremo l’installazione SQL per la versione gratuita **SQL Server 2017 Express**.
 
