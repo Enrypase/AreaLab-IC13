@@ -4,6 +4,7 @@ Questa applicazione Web consente all'utente, tramite una grafica User-friendly, 
 * LOGIN
   * Come eseguirlo?   
 * HOME PAGE
+  * [Come aggiornare, modificare e creare i corsi.](#Aggiorna-corsi) <br>
   * Come aggiornare, modificare e creare i corsi.
   * Come aggiornare, modificare e inserire dati del personale.
   * Come consultare i dati.
@@ -47,7 +48,8 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
 ![image](https://user-images.githubusercontent.com/73341469/115042314-a5177c80-9ed3-11eb-8a55-c93a82292f10.png) <br>
  Ogni bottone, se cliccato, esegue una funzionelità differente :<br>
 
-## **Aggiorna corsi**<br>
+## Aggiorna corsi
+<br>
  Tramite aggiorna corsi è possibile modificare, qualora sia necessario, le informazioni inerenti ai corsi.
 
  ![a](/Immagini/SitoGrafica/aggCorsi.PNG)
@@ -59,8 +61,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
  
 ##  **Aggiorna anagrafica**<br>
  Su aggiorna anagrafica è possibile, aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente<br>
- * Modifica
-    
+ * Modifica   
    ![a](/Immagini/SitoGrafica/aggPersona.PNG)
  * Aggiungi corso
  
