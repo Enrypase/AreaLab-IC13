@@ -10,7 +10,7 @@ Altermine del download eseguiamo il file SQLServer2017-SSEI-Expr.exe
 
 Accettiamo le condizioni di licenza e confermiamo l’installazione nel percorso predefinito.
 
-![a](/Immagini/img2.gif) <br>
+![a](/Immagini//Installazione/img2.gif) <br>
 
 A questo punto il programma di installazione procederà a scaricare da internet tutti i file necessari e, alla fine del download, inizierà l'installazione vera e propria. 
 La procedura durerà quindi parecchi minuti a seconda della velocità della linea internet e delle prestazioni del computer. <br>
