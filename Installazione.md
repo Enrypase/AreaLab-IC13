@@ -1,5 +1,5 @@
 # INSTALLAZIONE GUIDATA <br>
-[SQL SERVER](#SQL SERVER)<br> 
+[SQL_SERVER](#SQL SERVER)<br> 
 [XAMPP](#XAMPP)<br> 
 ## SQL SERVER 
 In questa guida seguiremo l’installazione SQL per la versione gratuita **SQL Server 2017 Express**.
