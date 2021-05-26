@@ -6,7 +6,7 @@ Per iniziare dobbiamo scaricare il sorgente da questo link https://go.microsoft.
 
 Altermine del download eseguiamo il file SQLServer2017-SSEI-Expr.exe
 
-![a](/Immagini/img1.jpg) <br>
+![a](/Immagini/1.jpg) <br>
 
 Accettiamo le condizioni di licenza e confermiamo l’installazione nel percorso predefinito.
 
