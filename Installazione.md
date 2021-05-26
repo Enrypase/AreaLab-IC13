@@ -27,7 +27,7 @@ alla fine dell'installazione verrà mostrata questa finestra <br>
  ![a](/Immagini//Installazione/img5.jpg) <br>
 Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. Se l'installazione è andata a buon fine si aprirà questa finestra che mostra la versione di SQL Server installata. <br></p>
  ![a](/Immagini//Installazione/14img.jpg) <br>
-  ![a](/Immagini//Installazione/img5.jpg) <br>
+  ![a](/Immagini//Installazione/14img3.jpg) <br>
    ![a](/Immagini//Installazione/img5.jpg) <br>
 https://www.edtc.it/guide/microsoft-sql-server/installare-sql-server/
 windows server 2019 -> windows 10
