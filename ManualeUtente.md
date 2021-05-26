@@ -2,7 +2,7 @@
 ## **MANUALE UTENTE**<br>
 Questa applicazione Web consente all'utente, tramite una grafica User-friendly, di interfacciarsi con i dati di corsi e partecipazioni del personale di uno specifico istituto scolastico.<br>
 * LOGIN
-  * Come eseguirlo?   
+  * [Come farlo](#LOGIN) <br>   
 * HOME PAGE
   * [Come aggiornare, modificare e creare i corsi.](#Aggiorna-corsi) <br>
   * [Come aggiornare, modificare e inserire dati del personale.](#AGGIORNA-PERSNALE) <br>
@@ -25,7 +25,8 @@ Nel Body le icone dell'utente e quella informativa, sono ripetute, con la sottos
 Nel Footer sono presenti le informazioni quali: l'indirizzo, i recapiti, politica di copyright (è uguale e comune in tutte le pagine che compongono il sito).<br>
 
 
-## **LOGIN**<br>
+## LOGIN
+<br>
 Quando si cliccherà l'icona "utente", la pagina a cui si è indirizzati è la seguente, l'utente non dovra far altro che inserire le credenziali e schiacciare il pulsante Login.
 ![a](/Immagini/SitoGrafica/Login.PNG)
 
