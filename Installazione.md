@@ -31,7 +31,7 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
    ![a](/Immagini//Installazione/img5.jpg) <br>
 https://www.edtc.it/guide/microsoft-sql-server/installare-sql-server/
 windows server 2019 -> windows 10
-windows server 2017 -> windo
+windows server 2017 -> windoWS 8 o precedenti
 1. installare xampp
 2. copiare il sorgente nella cartella htdocs di xampp
 3. enjoy your experience, :c
