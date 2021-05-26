@@ -37,5 +37,10 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
 Andiamo a questo link: https://www.apachefriends.org/it/index.html <br>
  
 ![a](/Immagini//Installazione/xampp.PNG) <br>
+
+Scarichiamo la versione di xampp in base al sistema operativo del nostro terminale. <br>
+
+Una volta fatto ciò eseguiamo il file appena scaricato e continuiamo con l'installazione.
+
 2. copiare il sorgente nella cartella htdocs di xampp
 3. enjoy your experience, :c
