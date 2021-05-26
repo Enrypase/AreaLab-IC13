@@ -5,11 +5,10 @@ Questa applicazione Web consente all'utente, tramite una grafica User-friendly, 
   * Come eseguirlo?   
 * HOME PAGE
   * [Come aggiornare, modificare e creare i corsi.](#Aggiorna-corsi) <br>
-  * Come aggiornare, modificare e creare i corsi.
-  * Come aggiornare, modificare e inserire dati del personale.
-  * Come consultare i dati.
-  * Come ottenere il backup dei dati.
-  * Come ottenere foglio firme di un corso.
+  * [Come aggiornare, modificare e inserire dati del personale.](#AGGIORNA PERSNALE) <br>
+  * [Come consultare i dati.](#Consulta) <br>
+  * [Come ottenere il backup dei dati.](#Ottieni-il-backup) <br>
+  * [Come ottenere foglio firme di un corso.](#Ottieni-foglio-firma) <br>
 ## **ACCESSO ALL'APPLICAZIONE**<br>
 All'avvio dell' applicazione, la **pagina iniziale** risulterà essere questa:<br>
 
@@ -59,6 +58,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
   ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
     
  
+## AGGIORNA PERSNALE
 ##  **Aggiorna anagrafica**<br>
  Su aggiorna anagrafica è possibile, aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente<br>
  * Modifica   
@@ -78,19 +78,22 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
   ![a](/Immagini/SitoGrafica/aggFrequen.PNG)
       
       
-##  **Consulta**<br>
+##  Consulta
+<br>
  Nella sezione consulta è possibile personalizzare l'ordinamento della tabella in base alla persona, per corso o per frequentazioni.
  
   ![a](/Immagini/SitoGrafica/consulta.PNG)
   
  
-##  **Ottieni il backup**<br>
+##  Ottieni il backup
+<br>
  Cliccando su download database si avvierà il download del DB.
  
   ![a](/Immagini/SitoGrafica/ottBackup.PNG)
   
   
-##  **Ottieni foglio firma**<br>
+##  Ottieni foglio firma
+<br>
 La pagina mostrera i vari corsi disponibili, l'utente non dovrà far altro che riempire i riquadri con le caratteristiche del corso scelto, ed infie premere invio.
 
  ![a](/Immagini/SitoGrafica/foglioFirme.PNG)
