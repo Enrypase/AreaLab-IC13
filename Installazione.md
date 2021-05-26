@@ -3,6 +3,8 @@
 In questa guida seguiremo l’installazione SQL per la versione gratuita **SQL Server 2017 Express**.
 
 Per iniziare dobbiamo scaricare il sorgente da questo link https://go.microsoft.com/fwlink/?linkid=853017.
+ ![a](/Immagini//Installazione/14img.PNG) <br>
+  ![a](/Immagini//Installazione/14img3.png) <br>
 
 Altermine del download eseguiamo il file SQLServer2017-SSEI-Expr.exe
 
@@ -26,8 +28,7 @@ alla fine dell'installazione verrà mostrata questa finestra <br>
 
  ![a](/Immagini//Installazione/img5.jpg) <br>
 Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. Se l'installazione è andata a buon fine si aprirà questa finestra che mostra la versione di SQL Server installata. <br></p>
- ![a](/Immagini//Installazione/14img.PNG) <br>
-  ![a](/Immagini//Installazione/14img3.png) <br>
+
  
 https://www.edtc.it/guide/microsoft-sql-server/installare-sql-server/
 windows server 2019 -> windows 10
