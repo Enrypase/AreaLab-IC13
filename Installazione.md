@@ -13,6 +13,7 @@ windows server 2017 -> windoWS 8 o precedenti
 
 Altermine del download eseguiamo il file SQLServer2017-SSEI-Expr.exe
 
+
 ![a](/Immagini/Installazione/1.jpg) <br>
 
 Accettiamo le condizioni di licenza e confermiamo l’installazione nel percorso predefinito.
@@ -35,7 +36,7 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
  ![a](/Immagini//Installazione/img5.jpg) <br> </p>
 
  
-https://www.edtc.it/guide/microsoft-sql-server/installare-sql-server/
+
 
 ## XAMPP
 2. copiare il sorgente nella cartella htdocs di xampp
