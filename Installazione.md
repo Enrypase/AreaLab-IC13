@@ -1,4 +1,4 @@
-# INSTALLAZIONE GUIDATA SQL SERVER
+# INSTALLAZIONE GUIDATA
 
 1. installare xampp
 2. copiare il sorgente nella cartella htdocs di xampp
