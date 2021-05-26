@@ -35,6 +35,6 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
  
 https://www.edtc.it/guide/microsoft-sql-server/installare-sql-server/
 
-## Installazione Xampp
+## INSTALLAZIONE XAMPP
 2. copiare il sorgente nella cartella htdocs di xampp
 3. enjoy your experience, :c
