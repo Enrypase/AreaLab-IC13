@@ -5,7 +5,7 @@ Questa applicazione Web consente all'utente, tramite una grafica User-friendly, 
   * Come eseguirlo?   
 * HOME PAGE
   * [Come aggiornare, modificare e creare i corsi.](#Aggiorna-corsi) <br>
-  * [Come aggiornare, modificare e inserire dati del personale.](#AGGIORNA PERSNALE) <br>
+  * [Come aggiornare, modificare e inserire dati del personale.](#AGGIORNA-PERSNALE) <br>
   * [Come consultare i dati.](#Consulta) <br>
   * [Come ottenere il backup dei dati.](#Ottieni-il-backup) <br>
   * [Come ottenere foglio firme di un corso.](#Ottieni-foglio-firma) <br>
