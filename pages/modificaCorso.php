@@ -25,7 +25,6 @@ $detect = new Mobile_Detect();
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/grid.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/inputForm.css'>";
 			echo "<link rel='stylesheet' type='text/css' href='./Stile/default/bottomLogged.css'>";
-
 		}
 		?>
 		<script type="text/javascript" charset="utf8" src="./JS/jquery.js"></script>
@@ -49,7 +48,17 @@ $detect = new Mobile_Detect();
 	try{
 		$res=$con->query($query);
 		foreach ($res as $row) {
-			echo"Modifica del record: <br> <b> ".$row['idCorso']." | ".$row['nomeCorso']. " | ".$row['descrizioneCorso']. " | ".$row['durataOraCorso']. "</b> <br> <br>";
+			$id = $row['idCorso']; $nome = $row['nomeCorso']; $descrizione = $row['descrizioneCorso']; $durata = $row['durataOraCorso'];
+			echo"<form action='./doModificaCorso.php' method='POST'>";
+			echo"	id: <br> <input type='text' name='id' value='{$id}'/> <br>";
+			echo"    nome: <br> <input type='text' name='nome' value='{$descrizione}'/> <br>";
+			echo"    descr: <br> <input type='text' name='descrizione' value='{$nome}']/> <br>";
+			echo"    durata: <br> <input type='decimal' name='durata' value='{$durata}'/> <br>
+			<div class='pulsanti'>";
+			
+			echo"    <input type='submit' value='Modifica'/>
+			</div>";
+			echo"</form>";
 		}
 	}catch(PDOException $ex) {
 	    include 'errore.php';
@@ -57,13 +66,7 @@ $detect = new Mobile_Detect();
 	
 
 	
-echo"<form action='./doModificaCorso.php' method='POST'>";
-echo"	id: <br> <input type='text' name='id' value='$idCorso'/> <br>";
-echo"    nome: <br> <input type='text' name='nome'/> <br>";
-echo"    descr: <br> <input type='text' name='descrizione'/> <br>";
-echo"    durata: <br> <input type='decimal' name='durata'/> <br>";
-echo"    <input type='submit' value='Modifica'/>";
-echo"</form>";
+
 ?>
 </div>
 <?php echo file_get_contents('./pages/footer-logged.html');	?>

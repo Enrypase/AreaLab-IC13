@@ -50,23 +50,31 @@ $detect = new Mobile_Detect();
 	try{
 		$res=$con->query($query);
 		foreach ($res as $row) {
-			echo"Modifica del record: <br> <b> ".$row['codFiscPersona']." | ".$row['nomePersona']. " | ".$row['cognomePersona']. " | ".$row['ruoloPersona']. " | ".$row['dataNascitaPersona']. " | ".$row['servizio']. " | ".$row['mailPersona']. " | ".$row['plesso']."</b> <br> <br>";
+			$cod = $row['codFiscPersona'];
+			$nome = $row['nomePersona'];
+			$cognome = $row['cognomePersona'];
+			$ruolo = $row['ruoloPersona'];
+			$data = $row['dataNascitaPersona'];
+			$servizio = $row['servizio'];
+			$mail = $row['mailPersona'];
+			$plesso = $row['plesso'];
+			
+			echo"<form action='./doModificaPersona.php' method=\"POST\">";
+			echo"	codice fiscale: <br> <input type='text' name='codFiscPersona' value='{$cod}'> <br>";
+			echo"    nome: <br> <input type='decimal' name='nomePersona' value='{$nome}'> <br>";
+			echo"    cognome: <br> <input type='text' name='cognomePersona' value='{$cognome}'> <br>";
+			echo"    ruolo: <br> <input type='text' name='ruoloPersona' value='{$ruolo}'/> <br>";
+			echo"    data di nascita: <br> <input type='date' name='dataNascitaPersona' value='{$data}'/> <br>";
+			echo"	 in servizio: <br> <input type='checkbox' name='servizio' value='{$servizio}'> <br>";
+			echo"    plesso: <br> <input type='text' name='plesso' value='{$plesso}' /> <br>";
+			echo"    mail: <br> <input type='mail' name='mailPersona' value='{$mail}'/> <br>";
+			echo"    <input type='submit' value='modifica'>";
+			echo"</form>";
 		}
 	}catch(PDOException $ex) {
 	    include 'errore.php';
 	} 
 
-echo"<form action='./doModificaPersona.php' method=\"POST\">";
-echo"	codice fiscale: <br> <input type=\"text\" name=\"codFiscPersona\" value=\"$codFiscPersona\"/> <br>";
-echo"    nome: <br> <input type=\"decimal\" name=\"nomePersona\"/> <br>";
-echo"    cognome: <br> <input type=\"text\" name=\"cognomePersona\"/> <br>";
-echo"    ruolo: <br> <input type=\"text\" name=\"ruoloPersona\"/> <br>";
-echo"    data di nascita: <br> <input type=\"date\" name=\"dataNascitaPersona\"/> <br>";
-echo"	 in servizio: <br> <input type=\"checkbox\" name=\"servizio\" value=\"1\"/> <br>";
-echo"    plesso: <br> <input type=\"text\" name=\"plesso\" value='' /> <br>";
-echo"    mail: <br> <input type=\"mail\" name=\"mailPersona\"/> <br>";
-echo"    <input type=\"submit\" value=\"modifica\"/>";
-echo"</form>";
 ?>
 </div>
 <?php echo file_get_contents('./pages/footer-logged.html');	?>
