@@ -6,13 +6,6 @@ In questa guida seguiremo l’installazione SQL per la versione gratuita **SQL S
 
 Per iniziare dobbiamo scaricare il sorgente da questo link SQL  https://go.microsoft.com/fwlink/?linkid=853017.
 
- ![a](/Immagini//Installazione/14img.PNG) <br>
- windows server 2019 -> windows 10
-windows server 2017 -> windoWS 8 o precedenti
-  ![a](/Immagini//Installazione/14img3.png) <br>
-  
-   Scarichiamo il sorgente da questo link SQL  https://go.microsoft.com/fwlink/?linkid=853017
-
 Altermine del download eseguiamo il file SQLServer2017-SSEI-Expr.exe
 
 
