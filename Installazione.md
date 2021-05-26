@@ -3,7 +3,10 @@
 In questa guida seguiremo l’installazione SQL per la versione gratuita **SQL Server 2017 Express**.
 
 Per iniziare dobbiamo scaricare il sorgente da questo link https://go.microsoft.com/fwlink/?linkid=853017.
+
  ![a](/Immagini//Installazione/14img.PNG) <br>
+ windows server 2019 -> windows 10
+windows server 2017 -> windoWS 8 o precedenti
   ![a](/Immagini//Installazione/14img3.png) <br>
 
 Altermine del download eseguiamo il file SQLServer2017-SSEI-Expr.exe
@@ -31,8 +34,7 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
 
  
 https://www.edtc.it/guide/microsoft-sql-server/installare-sql-server/
-windows server 2019 -> windows 10
-windows server 2017 -> windoWS 8 o precedenti
+
 1. installare xampp
 2. copiare il sorgente nella cartella htdocs di xampp
 3. enjoy your experience, :c
