@@ -34,13 +34,13 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
 
 
 ## XAMPP <BR>
-Andiamo a questo link: https://www.apachefriends.org/it/index.html <br>
  
-![a](/Immagini//Installazione/xampp.PNG) <br>
+ Per l’ultima release di XAMPP utilizzare il link https://www.apachefriends.org/it/index.html <br>
+ ![a](/Immagini//Installazione/xampp.PNG) <br>
+ Una volta entrati nella pagina scarichiamo la versione interessata, quindi effettuiamo l’installazione.
+Al momento dell’installazione è possibile selezionare solo i servizi necessari per usare meno spazio su disco, in particolare è essenziale installare
+Apache, PHP, MYSQL (MariaDB). È inoltre molto utile installare anche phpMyAdmin. Una volta effettuata l’installazione, per accedere al pannello di controllo bisogna mandare in esecuzione l’applicazione xampp_ control presente nella cartella di installazione (default C:\xampp).
+ <br>
+ 
 
-Scarichiamo la versione di xampp in base al sistema operativo del nostro terminale. <br>
 
-Una volta fatto ciò eseguiamo il file appena scaricato e continuiamo con l'installazione.
-
-2. copiare il sorgente nella cartella htdocs di xampp
-3. enjoy your experience, :c
