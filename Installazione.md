@@ -46,8 +46,7 @@ Apache, PHP, MYSQL (MariaDB). È inoltre molto utile installare anche phpMyAdmin
 moduli relativi <br>
  ![a](/Immagini//Installazione/XAMPP2.PNG) <br>
  A questo punto XAMPP è attivo. Per utilizzarlo è necessario aprire un browser e digitare il link http://localhost/nome_fle, dove nome_fle è ilnome del fle che si vuole eseguire con l’estensione (.php o .html). <br>
- Tutti i documenti www e i fle PHP che si vogliono creare vanno inseriti nella cartella \xampp\htdocs. Quindi per ultimare l'installazione della nostra applicazione dovremmo spostare nella cartella \xampp\htdocs il file 
-html (se il server Apache è in esecuzione)
+ Tutti i documenti www e i fle PHP che si vogliono creare vanno inseriti nella cartella \xampp\htdocs. Quindi per ultimare l'installazione della nostra applicazione dovremmo spostare nella cartella \xampp\htdocs il file applicazione arealab.src
  
 
 
