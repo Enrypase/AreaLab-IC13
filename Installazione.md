@@ -39,7 +39,7 @@ Verifichiamo che il server sia funzionante facendo click sul pulsante Connetti. 
  ![a](/Immagini//Installazione/xampp.PNG) <br>
  Una volta entrati nella pagina scarichiamo la versione interessata, quindi effettuiamo l’installazione.
 Al momento dell’installazione è possibile selezionare solo i servizi necessari per usare meno spazio su disco, in particolare è essenziale installare
-Apache, PHP, MYSQL (MariaDB). È inoltre molto utile installare anche phpMyAdmin. Una volta effettuata l’installazione, per accedere al pannello di controllo bisogna mandare in esecuzione l’applicazione xampp_ control presente nella cartella di installazione (default C:\xampp).
+Apache, PHP, MYSQL (MariaDB). È inoltre molto utile installare anche phpMyAdmin. Una volta effettuata l’installazione, per accedere al pannello di controllo bisogna mandare in esecuzione l’applicazione xampp_control presente nella cartella di installazione (default C:\xampp).
  <br>
  
 
