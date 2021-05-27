@@ -42,6 +42,8 @@ Al momento dell’installazione è possibile selezionare solo i servizi necessar
 Apache, PHP, MYSQL (MariaDB). È inoltre molto utile installare anche phpMyAdmin. Una volta effettuata l’installazione, per accedere al pannello di controllo bisogna mandare in esecuzione l’applicazione xampp_control presente nella cartella di installazione (default C:\xampp).
  <br>
  ![a](/Immagini//Installazione/XAMPP1.PNG) <br>
+ Una volta aperto xampp, premendo i pulsanti Start accanto ad Apache e MYSQL saranno attivati i
+moduli relativi <br>
  ![a](/Immagini//Installazione/XAMPP2.PNG) <br>
  
 
