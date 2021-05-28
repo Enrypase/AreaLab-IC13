@@ -5,7 +5,7 @@ Questa applicazione Web consente all'utente, tramite una grafica User-friendly, 
   * [Come farlo](#LOGIN) <br>   
 * HOME PAGE
   * [Come aggiornare, modificare e creare i corsi.](#Aggiorna-corsi) <br>
-  * [Come aggiornare, modificare e inserire dati del personale.](#AGGIORNA-PERSNALE) <br>
+  * [Come aggiornare, modificare e inserire dati del personale.](#AGGIORNA-PERSONALE) <br>
   * [Come consultare i dati.](#Consulta) <br>
   * [Come ottenere il backup dei dati.](#Ottieni-il-backup) <br>
   * [Come ottenere foglio firme di un corso.](#Ottieni-foglio-firma) <br>
@@ -59,7 +59,7 @@ Al di sotto delle tabelle ci sono diversi bottoni che indicano le varie opzioni 
   ![a](/Immagini/SitoGrafica/aggCorsi1.PNG)
     
  
-## AGGIORNA PERSNALE
+## AGGIORNA PERSONALE
 ##  **Aggiorna anagrafica**<br>
  Su aggiorna anagrafica è possibile, aggiungere nuovo personale al database, e anche modoficare i dati relativi al personale già presente<br>
  * Modifica   
