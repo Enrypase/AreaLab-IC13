@@ -28,7 +28,7 @@ Nel Footer sono presenti le informazioni quali: l'indirizzo, i recapiti, politic
 ## LOGIN
 <br>
 Quando si cliccherà l'icona "utente", la pagina a cui si è indirizzati è la seguente, l'utente non dovra far altro che inserire le credenziali e schiacciare il pulsante Login.
-![a](/Immagini/SitoGrafica/Login.PNG)
+![a](/Immagini/SitoGrafica/Home.PNG)
 
 !!! In caso il login non sia inserito in modo corretto, l'utente rimarra nella seguente pagina. !!!
 
